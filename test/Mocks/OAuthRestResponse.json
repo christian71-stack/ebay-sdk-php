@@ -1,6 +1,0 @@
-{
-  "access_token":"foo",
-  "token_type":"bar",
-  "expires_in":123,
-  "refresh_token":"baz"
-}
