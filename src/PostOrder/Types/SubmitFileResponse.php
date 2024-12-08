@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace cbdesk\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property string[] $removedFileIds
  */
-class SubmitFileResponse extends \DTS\eBaySDK\Types\BaseType
+class SubmitFileResponse extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

@@ -8,19 +8,19 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $DiscountProfileID
  * @property string $DiscountProfileName
- * @property \DTS\eBaySDK\Trading\Types\AmountType $EachAdditionalAmount
- * @property \DTS\eBaySDK\Trading\Types\AmountType $EachAdditionalAmountOff
+ * @property \cbdesk\eBaySDK\Trading\Types\AmountType $EachAdditionalAmount
+ * @property \cbdesk\eBaySDK\Trading\Types\AmountType $EachAdditionalAmountOff
  * @property double $EachAdditionalPercentOff
- * @property \DTS\eBaySDK\Trading\Types\MeasureType $WeightOff
+ * @property \cbdesk\eBaySDK\Trading\Types\MeasureType $WeightOff
  * @property string $MappedDiscountProfileID
  */
-class DiscountProfileType extends \DTS\eBaySDK\Types\BaseType
+class DiscountProfileType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -39,13 +39,13 @@ class DiscountProfileType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'DiscountProfileName'
         ],
         'EachAdditionalAmount' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'EachAdditionalAmount'
         ],
         'EachAdditionalAmountOff' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'EachAdditionalAmountOff'
@@ -57,7 +57,7 @@ class DiscountProfileType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'EachAdditionalPercentOff'
         ],
         'WeightOff' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\MeasureType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\MeasureType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'WeightOff'

@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Catalog\Enums;
+namespace cbdesk\eBaySDK\Catalog\Enums;
 
 class ProductAttributeName
 {

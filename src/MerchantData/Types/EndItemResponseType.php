@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property \DateTime $EndTime
  */
-class EndItemResponseType extends \DTS\eBaySDK\MerchantData\Types\AbstractResponseType
+class EndItemResponseType extends \cbdesk\eBaySDK\MerchantData\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.

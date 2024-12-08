@@ -8,22 +8,22 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ResolutionCaseManagement\Types;
+namespace cbdesk\eBaySDK\ResolutionCaseManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\CaseIdType $caseId
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Enums\ProofType $proofType
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\UploadDocumentInfoType[] $document
+ * @property \cbdesk\eBaySDK\ResolutionCaseManagement\Types\CaseIdType $caseId
+ * @property \cbdesk\eBaySDK\ResolutionCaseManagement\Enums\ProofType $proofType
+ * @property \cbdesk\eBaySDK\ResolutionCaseManagement\Types\UploadDocumentInfoType[] $document
  */
-class UploadDocumentsRequest extends \DTS\eBaySDK\ResolutionCaseManagement\Types\BaseRequest
+class UploadDocumentsRequest extends \cbdesk\eBaySDK\ResolutionCaseManagement\Types\BaseRequest
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'caseId' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\CaseIdType',
+            'type' => 'cbdesk\eBaySDK\ResolutionCaseManagement\Types\CaseIdType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'caseId'
@@ -35,7 +35,7 @@ class UploadDocumentsRequest extends \DTS\eBaySDK\ResolutionCaseManagement\Types
             'elementName' => 'proofType'
         ],
         'document' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\UploadDocumentInfoType',
+            'type' => 'cbdesk\eBaySDK\ResolutionCaseManagement\Types\UploadDocumentInfoType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'document'

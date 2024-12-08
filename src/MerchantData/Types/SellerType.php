@@ -8,39 +8,39 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property integer $PaisaPayStatus
  * @property boolean $AllowPaymentEdit
- * @property \DTS\eBaySDK\MerchantData\Enums\CurrencyCodeType $BillingCurrency
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\CurrencyCodeType $BillingCurrency
  * @property boolean $CheckoutEnabled
  * @property boolean $CIPBankAccountStored
  * @property boolean $GoodStanding
  * @property boolean $QualifiesForB2BVAT
- * @property \DTS\eBaySDK\MerchantData\Enums\SellerLevelCodeType $SellerLevel
- * @property \DTS\eBaySDK\MerchantData\Types\AddressType $SellerPaymentAddress
- * @property \DTS\eBaySDK\MerchantData\Types\SchedulingInfoType $SchedulingInfo
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\SellerLevelCodeType $SellerLevel
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AddressType $SellerPaymentAddress
+ * @property \cbdesk\eBaySDK\MerchantData\Types\SchedulingInfoType $SchedulingInfo
  * @property boolean $StoreOwner
  * @property string $StoreURL
- * @property \DTS\eBaySDK\MerchantData\Enums\SellerBusinessCodeType $SellerBusinessType
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\SellerBusinessCodeType $SellerBusinessType
  * @property boolean $RegisteredBusinessSeller
- * @property \DTS\eBaySDK\MerchantData\Enums\SiteCodeType $StoreSite
- * @property \DTS\eBaySDK\MerchantData\Enums\SellerPaymentMethodCodeType $PaymentMethod
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\SiteCodeType $StoreSite
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\SellerPaymentMethodCodeType $PaymentMethod
  * @property boolean $CharityRegistered
  * @property boolean $SafePaymentExempt
  * @property integer $PaisaPayEscrowEMIStatus
- * @property \DTS\eBaySDK\MerchantData\Types\CharityAffiliationDetailsType $CharityAffiliationDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Types\CharityAffiliationDetailsType $CharityAffiliationDetails
  * @property double $TransactionPercent
- * @property \DTS\eBaySDK\MerchantData\Types\IntegratedMerchantCreditCardInfoType $IntegratedMerchantCreditCardInfo
- * @property \DTS\eBaySDK\MerchantData\Types\FeatureEligibilityType $FeatureEligibility
+ * @property \cbdesk\eBaySDK\MerchantData\Types\IntegratedMerchantCreditCardInfoType $IntegratedMerchantCreditCardInfo
+ * @property \cbdesk\eBaySDK\MerchantData\Types\FeatureEligibilityType $FeatureEligibility
  * @property boolean $TopRatedSeller
- * @property \DTS\eBaySDK\MerchantData\Types\TopRatedSellerDetailsType $TopRatedSellerDetails
- * @property \DTS\eBaySDK\MerchantData\Types\RecoupmentPolicyConsentType $RecoupmentPolicyConsent
+ * @property \cbdesk\eBaySDK\MerchantData\Types\TopRatedSellerDetailsType $TopRatedSellerDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Types\RecoupmentPolicyConsentType $RecoupmentPolicyConsent
  * @property boolean $DomesticRateTable
  */
-class SellerType extends \DTS\eBaySDK\Types\BaseType
+class SellerType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -95,13 +95,13 @@ class SellerType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'SellerLevel'
         ],
         'SellerPaymentAddress' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AddressType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AddressType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SellerPaymentAddress'
         ],
         'SchedulingInfo' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\SchedulingInfoType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\SchedulingInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SchedulingInfo'
@@ -161,7 +161,7 @@ class SellerType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'PaisaPayEscrowEMIStatus'
         ],
         'CharityAffiliationDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\CharityAffiliationDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\CharityAffiliationDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'CharityAffiliationDetails'
@@ -173,13 +173,13 @@ class SellerType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'TransactionPercent'
         ],
         'IntegratedMerchantCreditCardInfo' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\IntegratedMerchantCreditCardInfoType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\IntegratedMerchantCreditCardInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'IntegratedMerchantCreditCardInfo'
         ],
         'FeatureEligibility' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\FeatureEligibilityType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\FeatureEligibilityType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FeatureEligibility'
@@ -191,13 +191,13 @@ class SellerType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'TopRatedSeller'
         ],
         'TopRatedSellerDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\TopRatedSellerDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\TopRatedSellerDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TopRatedSellerDetails'
         ],
         'RecoupmentPolicyConsent' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\RecoupmentPolicyConsentType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\RecoupmentPolicyConsentType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'RecoupmentPolicyConsent'

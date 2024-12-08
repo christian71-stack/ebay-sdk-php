@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property string $PickupMethod
  * @property integer $PickupPriority
  */
-class PickupOptionsType extends \DTS\eBaySDK\Types\BaseType
+class PickupOptionsType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

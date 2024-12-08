@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
@@ -29,23 +29,23 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property \DateTime $PaymentClearedTime
  * @property integer $CheckoutSiteID
  * @property \DateTime $OrderCreationTime
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $OrderSalePrice
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $TaxAmount
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $InsuranceCost
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $ShippingCost
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $OrderTotalCost
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $OrderSalePrice
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $TaxAmount
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $InsuranceCost
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $ShippingCost
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $OrderTotalCost
  * @property integer $SellingManagerSaleRecordID
- * @property \DTS\eBaySDK\MerchantData\Types\OrderItemDetailsType $OrderItemDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Types\OrderItemDetailsType $OrderItemDetails
  * @property string $BuyerStaticAlias
  * @property string $ShippingServiceToken
- * @property \DTS\eBaySDK\MerchantData\Types\CheckoutStatusType $CheckoutStatus
- * @property \DTS\eBaySDK\MerchantData\Enums\PaymentHoldStatusCodeType $PaymentHoldStatus
- * @property \DTS\eBaySDK\MerchantData\Types\ExternalTransactionType[] $ExternalTransaction
+ * @property \cbdesk\eBaySDK\MerchantData\Types\CheckoutStatusType $CheckoutStatus
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\PaymentHoldStatusCodeType $PaymentHoldStatus
+ * @property \cbdesk\eBaySDK\MerchantData\Types\ExternalTransactionType[] $ExternalTransaction
  * @property string $ShipReferenceId
- * @property \DTS\eBaySDK\MerchantData\Types\PickupDetailsType $PickupDetails
- * @property \DTS\eBaySDK\MerchantData\Types\PickupMethodSelectedType $PickupMethodSelected
+ * @property \cbdesk\eBaySDK\MerchantData\Types\PickupDetailsType $PickupDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Types\PickupMethodSelectedType $PickupMethodSelected
  */
-class OrderDetailsType extends \DTS\eBaySDK\Types\BaseType
+class OrderDetailsType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -154,31 +154,31 @@ class OrderDetailsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'OrderCreationTime'
         ],
         'OrderSalePrice' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'OrderSalePrice'
         ],
         'TaxAmount' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TaxAmount'
         ],
         'InsuranceCost' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'InsuranceCost'
         ],
         'ShippingCost' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingCost'
         ],
         'OrderTotalCost' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'OrderTotalCost'
@@ -190,7 +190,7 @@ class OrderDetailsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'SellingManagerSaleRecordID'
         ],
         'OrderItemDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\OrderItemDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\OrderItemDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'OrderItemDetails'
@@ -208,7 +208,7 @@ class OrderDetailsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ShippingServiceToken'
         ],
         'CheckoutStatus' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\CheckoutStatusType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\CheckoutStatusType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'CheckoutStatus'
@@ -220,7 +220,7 @@ class OrderDetailsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'PaymentHoldStatus'
         ],
         'ExternalTransaction' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ExternalTransactionType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\ExternalTransactionType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ExternalTransaction'
@@ -232,13 +232,13 @@ class OrderDetailsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ShipReferenceId'
         ],
         'PickupDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\PickupDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\PickupDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PickupDetails'
         ],
         'PickupMethodSelected' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\PickupMethodSelectedType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\PickupMethodSelectedType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PickupMethodSelected'

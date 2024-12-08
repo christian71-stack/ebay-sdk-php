@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property string $FeeDescription
- * @property \DTS\eBaySDK\MerchantData\Types\NonUsageTransactionType[] $Transaction
+ * @property \cbdesk\eBaySDK\MerchantData\Types\NonUsageTransactionType[] $Transaction
  */
-class AccountTransactionType extends \DTS\eBaySDK\Types\BaseType
+class AccountTransactionType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -28,7 +28,7 @@ class AccountTransactionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'FeeDescription'
         ],
         'Transaction' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\NonUsageTransactionType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\NonUsageTransactionType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'Transaction'

@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\FileTransfer\Enums;
+namespace cbdesk\eBaySDK\FileTransfer\Enums;
 
 class ErrorCategory
 {

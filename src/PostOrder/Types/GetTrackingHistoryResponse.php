@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace cbdesk\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property string $carrierUsed
- * @property \DTS\eBaySDK\PostOrder\Types\ScanDetailType[] $scanHistory
+ * @property \cbdesk\eBaySDK\PostOrder\Types\ScanDetailType[] $scanHistory
  * @property string $trackingNumber
  * @property string $trackingStatus
  */
-class GetTrackingHistoryResponse extends \DTS\eBaySDK\Types\BaseType
+class GetTrackingHistoryResponse extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -30,7 +30,7 @@ class GetTrackingHistoryResponse extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'carrierUsed'
         ],
         'scanHistory' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ScanDetailType',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\ScanDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'scanHistory'

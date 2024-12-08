@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ProductMetadata\Services;
+namespace cbdesk\eBaySDK\ProductMetadata\Services;
 
-class ProductMetadataService extends \DTS\eBaySDK\ProductMetadata\Services\ProductMetadataBaseService
+class ProductMetadataService extends \cbdesk\eBaySDK\ProductMetadata\Services\ProductMetadataBaseService
 {
     const API_VERSION = '1.3.0';
 
@@ -23,200 +23,200 @@ class ProductMetadataService extends \DTS\eBaySDK\ProductMetadata\Services\Produ
     }
 
     /**
-     * @param \DTS\eBaySDK\ProductMetadata\Types\GetProductSearchNamesRequest $request
-     * @return \DTS\eBaySDK\ProductMetadata\Types\GetProductSearchNamesResponse
+     * @param \cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchNamesRequest $request
+     * @return \cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchNamesResponse
      */
-    public function getProductSearchNames(\DTS\eBaySDK\ProductMetadata\Types\GetProductSearchNamesRequest $request)
+    public function getProductSearchNames(\cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchNamesRequest $request)
     {
         return $this->getProductSearchNamesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\ProductMetadata\Types\GetProductSearchNamesRequest $request
+     * @param \cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchNamesRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getProductSearchNamesAsync(\DTS\eBaySDK\ProductMetadata\Types\GetProductSearchNamesRequest $request)
+    public function getProductSearchNamesAsync(\cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchNamesRequest $request)
     {
         return $this->callOperationAsync(
             'getProductSearchNames',
             $request,
-            '\DTS\eBaySDK\ProductMetadata\Types\GetProductSearchNamesResponse'
+            '\cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchNamesResponse'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchNamesRequest $request
-     * @return \DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchNamesResponse
+     * @param \cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchNamesRequest $request
+     * @return \cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchNamesResponse
      */
-    public function getCompatibilitySearchNames(\DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchNamesRequest $request)
+    public function getCompatibilitySearchNames(\cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchNamesRequest $request)
     {
         return $this->getCompatibilitySearchNamesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchNamesRequest $request
+     * @param \cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchNamesRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getCompatibilitySearchNamesAsync(\DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchNamesRequest $request)
+    public function getCompatibilitySearchNamesAsync(\cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchNamesRequest $request)
     {
         return $this->callOperationAsync(
             'getCompatibilitySearchNames',
             $request,
-            '\DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchNamesResponse'
+            '\cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchNamesResponse'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\ProductMetadata\Types\GetProductSearchValuesRequest $request
-     * @return \DTS\eBaySDK\ProductMetadata\Types\GetProductSearchValuesResponse
+     * @param \cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchValuesRequest $request
+     * @return \cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchValuesResponse
      */
-    public function getProductSearchValues(\DTS\eBaySDK\ProductMetadata\Types\GetProductSearchValuesRequest $request)
+    public function getProductSearchValues(\cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchValuesRequest $request)
     {
         return $this->getProductSearchValuesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\ProductMetadata\Types\GetProductSearchValuesRequest $request
+     * @param \cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchValuesRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getProductSearchValuesAsync(\DTS\eBaySDK\ProductMetadata\Types\GetProductSearchValuesRequest $request)
+    public function getProductSearchValuesAsync(\cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchValuesRequest $request)
     {
         return $this->callOperationAsync(
             'getProductSearchValues',
             $request,
-            '\DTS\eBaySDK\ProductMetadata\Types\GetProductSearchValuesResponse'
+            '\cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchValuesResponse'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\ProductMetadata\Types\GetProductSearchValuesBulkRequest $request
-     * @return \DTS\eBaySDK\ProductMetadata\Types\GetProductSearchValuesBulkResponse
+     * @param \cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchValuesBulkRequest $request
+     * @return \cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchValuesBulkResponse
      */
-    public function getProductSearchValuesBulk(\DTS\eBaySDK\ProductMetadata\Types\GetProductSearchValuesBulkRequest $request)
+    public function getProductSearchValuesBulk(\cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchValuesBulkRequest $request)
     {
         return $this->getProductSearchValuesBulkAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\ProductMetadata\Types\GetProductSearchValuesBulkRequest $request
+     * @param \cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchValuesBulkRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getProductSearchValuesBulkAsync(\DTS\eBaySDK\ProductMetadata\Types\GetProductSearchValuesBulkRequest $request)
+    public function getProductSearchValuesBulkAsync(\cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchValuesBulkRequest $request)
     {
         return $this->callOperationAsync(
             'getProductSearchValuesBulk',
             $request,
-            '\DTS\eBaySDK\ProductMetadata\Types\GetProductSearchValuesBulkResponse'
+            '\cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchValuesBulkResponse'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesRequest $request
-     * @return \DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesResponse
+     * @param \cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesRequest $request
+     * @return \cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesResponse
      */
-    public function getCompatibilitySearchValues(\DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesRequest $request)
+    public function getCompatibilitySearchValues(\cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesRequest $request)
     {
         return $this->getCompatibilitySearchValuesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesRequest $request
+     * @param \cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getCompatibilitySearchValuesAsync(\DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesRequest $request)
+    public function getCompatibilitySearchValuesAsync(\cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesRequest $request)
     {
         return $this->callOperationAsync(
             'getCompatibilitySearchValues',
             $request,
-            '\DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesResponse'
+            '\cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesResponse'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesBulkRequest $request
-     * @return \DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesBulkResponse
+     * @param \cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesBulkRequest $request
+     * @return \cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesBulkResponse
      */
-    public function getCompatibilitySearchValuesBulk(\DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesBulkRequest $request)
+    public function getCompatibilitySearchValuesBulk(\cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesBulkRequest $request)
     {
         return $this->getCompatibilitySearchValuesBulkAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesBulkRequest $request
+     * @param \cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesBulkRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getCompatibilitySearchValuesBulkAsync(\DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesBulkRequest $request)
+    public function getCompatibilitySearchValuesBulkAsync(\cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesBulkRequest $request)
     {
         return $this->callOperationAsync(
             'getCompatibilitySearchValuesBulk',
             $request,
-            '\DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesBulkResponse'
+            '\cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchValuesBulkResponse'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\ProductMetadata\Types\GetProductSearchDataVersionRequest $request
-     * @return \DTS\eBaySDK\ProductMetadata\Types\GetProductSearchDataVersionResponse
+     * @param \cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchDataVersionRequest $request
+     * @return \cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchDataVersionResponse
      */
-    public function getProductSearchDataVersion(\DTS\eBaySDK\ProductMetadata\Types\GetProductSearchDataVersionRequest $request)
+    public function getProductSearchDataVersion(\cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchDataVersionRequest $request)
     {
         return $this->getProductSearchDataVersionAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\ProductMetadata\Types\GetProductSearchDataVersionRequest $request
+     * @param \cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchDataVersionRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getProductSearchDataVersionAsync(\DTS\eBaySDK\ProductMetadata\Types\GetProductSearchDataVersionRequest $request)
+    public function getProductSearchDataVersionAsync(\cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchDataVersionRequest $request)
     {
         return $this->callOperationAsync(
             'getProductSearchDataVersion',
             $request,
-            '\DTS\eBaySDK\ProductMetadata\Types\GetProductSearchDataVersionResponse'
+            '\cbdesk\eBaySDK\ProductMetadata\Types\GetProductSearchDataVersionResponse'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchDataVersionRequest $request
-     * @return \DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchDataVersionResponse
+     * @param \cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchDataVersionRequest $request
+     * @return \cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchDataVersionResponse
      */
-    public function getCompatibilitySearchDataVersion(\DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchDataVersionRequest $request)
+    public function getCompatibilitySearchDataVersion(\cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchDataVersionRequest $request)
     {
         return $this->getCompatibilitySearchDataVersionAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchDataVersionRequest $request
+     * @param \cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchDataVersionRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getCompatibilitySearchDataVersionAsync(\DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchDataVersionRequest $request)
+    public function getCompatibilitySearchDataVersionAsync(\cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchDataVersionRequest $request)
     {
         return $this->callOperationAsync(
             'getCompatibilitySearchDataVersion',
             $request,
-            '\DTS\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchDataVersionResponse'
+            '\cbdesk\eBaySDK\ProductMetadata\Types\GetCompatibilitySearchDataVersionResponse'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\ProductMetadata\Types\ProductMetadataBulkRequest $request
-     * @return \DTS\eBaySDK\ProductMetadata\Types\ProductMetadataBulkResponse
+     * @param \cbdesk\eBaySDK\ProductMetadata\Types\ProductMetadataBulkRequest $request
+     * @return \cbdesk\eBaySDK\ProductMetadata\Types\ProductMetadataBulkResponse
      */
-    public function getProductMetadataBulk(\DTS\eBaySDK\ProductMetadata\Types\ProductMetadataBulkRequest $request)
+    public function getProductMetadataBulk(\cbdesk\eBaySDK\ProductMetadata\Types\ProductMetadataBulkRequest $request)
     {
         return $this->getProductMetadataBulkAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\ProductMetadata\Types\ProductMetadataBulkRequest $request
+     * @param \cbdesk\eBaySDK\ProductMetadata\Types\ProductMetadataBulkRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getProductMetadataBulkAsync(\DTS\eBaySDK\ProductMetadata\Types\ProductMetadataBulkRequest $request)
+    public function getProductMetadataBulkAsync(\cbdesk\eBaySDK\ProductMetadata\Types\ProductMetadataBulkRequest $request)
     {
         return $this->callOperationAsync(
             'getProductMetadataBulk',
             $request,
-            '\DTS\eBaySDK\ProductMetadata\Types\ProductMetadataBulkResponse'
+            '\cbdesk\eBaySDK\ProductMetadata\Types\ProductMetadataBulkResponse'
         );
     }
 }

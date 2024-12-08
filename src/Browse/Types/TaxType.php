@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Browse\Types;
+namespace cbdesk\eBaySDK\Browse\Types;
 
 /**
  *
  */
-class TaxType extends \DTS\eBaySDK\Types\BaseType
+class TaxType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

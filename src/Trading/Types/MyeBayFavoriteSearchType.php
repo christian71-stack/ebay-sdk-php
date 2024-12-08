@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
@@ -16,31 +16,31 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property string $SearchQuery
  * @property string $QueryKeywords
  * @property string $CategoryID
- * @property \DTS\eBaySDK\Trading\Enums\SimpleItemSortCodeType $ItemSort
- * @property \DTS\eBaySDK\Trading\Enums\SortOrderCodeType $SortOrder
+ * @property \cbdesk\eBaySDK\Trading\Enums\SimpleItemSortCodeType $ItemSort
+ * @property \cbdesk\eBaySDK\Trading\Enums\SortOrderCodeType $SortOrder
  * @property \DateTime $EndTimeFrom
  * @property \DateTime $EndTimeTo
  * @property integer $MaxDistance
  * @property string $PostalCode
- * @property \DTS\eBaySDK\Trading\Enums\ItemTypeCodeType $ItemType
- * @property \DTS\eBaySDK\Trading\Types\AmountType $PriceMax
- * @property \DTS\eBaySDK\Trading\Types\AmountType $PriceMin
- * @property \DTS\eBaySDK\Trading\Enums\CurrencyCodeType $Currency
+ * @property \cbdesk\eBaySDK\Trading\Enums\ItemTypeCodeType $ItemType
+ * @property \cbdesk\eBaySDK\Trading\Types\AmountType $PriceMax
+ * @property \cbdesk\eBaySDK\Trading\Types\AmountType $PriceMin
+ * @property \cbdesk\eBaySDK\Trading\Enums\CurrencyCodeType $Currency
  * @property integer $BidCountMax
  * @property integer $BidCountMin
- * @property \DTS\eBaySDK\Trading\Enums\SearchFlagCodeType[] $SearchFlag
- * @property \DTS\eBaySDK\Trading\Enums\PaymentMethodSearchCodeType $PaymentMethod
- * @property \DTS\eBaySDK\Trading\Enums\PreferredLocationCodeType $PreferredLocation
+ * @property \cbdesk\eBaySDK\Trading\Enums\SearchFlagCodeType[] $SearchFlag
+ * @property \cbdesk\eBaySDK\Trading\Enums\PaymentMethodSearchCodeType $PaymentMethod
+ * @property \cbdesk\eBaySDK\Trading\Enums\PreferredLocationCodeType $PreferredLocation
  * @property string[] $SellerID
  * @property string[] $SellerIDExclude
- * @property \DTS\eBaySDK\Trading\Enums\CountryCodeType $ItemsAvailableTo
- * @property \DTS\eBaySDK\Trading\Enums\CountryCodeType $ItemsLocatedIn
- * @property \DTS\eBaySDK\Trading\Enums\SellerBusinessCodeType $SellerBusinessType
- * @property \DTS\eBaySDK\Trading\Enums\ItemConditionCodeType $Condition
+ * @property \cbdesk\eBaySDK\Trading\Enums\CountryCodeType $ItemsAvailableTo
+ * @property \cbdesk\eBaySDK\Trading\Enums\CountryCodeType $ItemsLocatedIn
+ * @property \cbdesk\eBaySDK\Trading\Enums\SellerBusinessCodeType $SellerBusinessType
+ * @property \cbdesk\eBaySDK\Trading\Enums\ItemConditionCodeType $Condition
  * @property integer $Quantity
- * @property \DTS\eBaySDK\Trading\Enums\QuantityOperatorCodeType $QuantityOperator
+ * @property \cbdesk\eBaySDK\Trading\Enums\QuantityOperatorCodeType $QuantityOperator
  */
-class MyeBayFavoriteSearchType extends \DTS\eBaySDK\Types\BaseType
+class MyeBayFavoriteSearchType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -113,13 +113,13 @@ class MyeBayFavoriteSearchType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ItemType'
         ],
         'PriceMax' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PriceMax'
         ],
         'PriceMin' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PriceMin'

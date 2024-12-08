@@ -8,17 +8,17 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace cbdesk\eBaySDK\Marketing\Types;
 
-use DTS\eBaySDK\StatusCodeTrait;
-use DTS\eBaySDK\HttpHeadersTrait;
+use cbdesk\eBaySDK\StatusCodeTrait;
+use cbdesk\eBaySDK\HttpHeadersTrait;
 
 /**
  *
- * @property \DTS\eBaySDK\Marketing\Types\ErrorDetailV3[] $errors
- * @property \DTS\eBaySDK\Marketing\Types\ErrorDetailV3[] $warnings
+ * @property \cbdesk\eBaySDK\Marketing\Types\ErrorDetailV3[] $errors
+ * @property \cbdesk\eBaySDK\Marketing\Types\ErrorDetailV3[] $warnings
  */
-class FindCampaignByAdReferenceRestResponse extends \DTS\eBaySDK\Marketing\Types\Campaigns
+class FindCampaignByAdReferenceRestResponse extends \cbdesk\eBaySDK\Marketing\Types\Campaigns
 {
     use StatusCodeTrait;
     use HttpHeadersTrait;
@@ -28,13 +28,13 @@ class FindCampaignByAdReferenceRestResponse extends \DTS\eBaySDK\Marketing\Types
      */
     private static $propertyTypes = [
         'errors' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\ErrorDetailV3',
+            'type' => 'cbdesk\eBaySDK\Marketing\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'
         ],
         'warnings' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\ErrorDetailV3',
+            'type' => 'cbdesk\eBaySDK\Marketing\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

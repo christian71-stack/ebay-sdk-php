@@ -8,18 +8,18 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace cbdesk\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property integer $count
  * @property integer $countInTestMode
- * @property \DTS\eBaySDK\PostOrder\Types\RuleActionDetailType $invalidAction
- * @property \DTS\eBaySDK\PostOrder\Types\RuleConditionDetailType[] $invalidConditions
+ * @property \cbdesk\eBaySDK\PostOrder\Types\RuleActionDetailType $invalidAction
+ * @property \cbdesk\eBaySDK\PostOrder\Types\RuleConditionDetailType[] $invalidConditions
  * @property \DateTime $lastModifiedDate
  * @property integer $priority
  */
-class RuleSummaryType extends \DTS\eBaySDK\Types\BaseType
+class RuleSummaryType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -38,13 +38,13 @@ class RuleSummaryType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'countInTestMode'
         ],
         'invalidAction' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\RuleActionDetailType',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\RuleActionDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'invalidAction'
         ],
         'invalidConditions' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\RuleConditionDetailType',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\RuleConditionDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'invalidConditions'

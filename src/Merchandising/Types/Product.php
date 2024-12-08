@@ -8,27 +8,27 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Merchandising\Types;
+namespace cbdesk\eBaySDK\Merchandising\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Merchandising\Types\ProductId $productId
+ * @property \cbdesk\eBaySDK\Merchandising\Types\ProductId $productId
  * @property string $title
  * @property string $productURL
  * @property string $catalogName
  * @property string $imageURL
  * @property integer $reviewCount
- * @property \DTS\eBaySDK\Merchandising\Types\Amount $priceRangeMin
- * @property \DTS\eBaySDK\Merchandising\Types\Amount $priceRangeMax
+ * @property \cbdesk\eBaySDK\Merchandising\Types\Amount $priceRangeMin
+ * @property \cbdesk\eBaySDK\Merchandising\Types\Amount $priceRangeMax
  */
-class Product extends \DTS\eBaySDK\Types\BaseType
+class Product extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'productId' => [
-            'type' => 'DTS\eBaySDK\Merchandising\Types\ProductId',
+            'type' => 'cbdesk\eBaySDK\Merchandising\Types\ProductId',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'productId'
@@ -64,13 +64,13 @@ class Product extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'reviewCount'
         ],
         'priceRangeMin' => [
-            'type' => 'DTS\eBaySDK\Merchandising\Types\Amount',
+            'type' => 'cbdesk\eBaySDK\Merchandising\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'priceRangeMin'
         ],
         'priceRangeMax' => [
-            'type' => 'DTS\eBaySDK\Merchandising\Types\Amount',
+            'type' => 'cbdesk\eBaySDK\Merchandising\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'priceRangeMax'

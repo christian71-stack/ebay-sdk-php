@@ -8,21 +8,21 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Browse\Types;
+namespace cbdesk\eBaySDK\Browse\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Browse\Types\Region $region
+ * @property \cbdesk\eBaySDK\Browse\Types\Region $region
  * @property string $taxJurisdictionId
  */
-class TaxJurisdiction extends \DTS\eBaySDK\Types\BaseType
+class TaxJurisdiction extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'region' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\Region',
+            'type' => 'cbdesk\eBaySDK\Browse\Types\Region',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'region'

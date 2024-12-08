@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\MerchantData\Types\OrderType[] $Order
+ * @property \cbdesk\eBaySDK\MerchantData\Types\OrderType[] $Order
  */
-class OrderArrayType extends \DTS\eBaySDK\Types\BaseType
+class OrderArrayType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'Order' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\OrderType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\OrderType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'Order'

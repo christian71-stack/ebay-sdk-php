@@ -8,21 +8,21 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Catalog\Types;
+namespace cbdesk\eBaySDK\Catalog\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Catalog\Types\AspectValueDistribution[] $aspectValueDistributions
+ * @property \cbdesk\eBaySDK\Catalog\Types\AspectValueDistribution[] $aspectValueDistributions
  * @property string $localizedAspectName
  */
-class AspectDistribution extends \DTS\eBaySDK\Types\BaseType
+class AspectDistribution extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'aspectValueDistributions' => [
-            'type' => 'DTS\eBaySDK\Catalog\Types\AspectValueDistribution',
+            'type' => 'cbdesk\eBaySDK\Catalog\Types\AspectValueDistribution',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'aspectValueDistributions'

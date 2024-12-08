@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\MerchantData\Enums\TaxIdentifierAttributeCodeType $name
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\TaxIdentifierAttributeCodeType $name
  */
-class TaxIdentifierAttributeType extends \DTS\eBaySDK\Types\StringType
+class TaxIdentifierAttributeType extends \cbdesk\eBaySDK\Types\StringType
 {
     /**
      * @var array Properties belonging to objects of this class.

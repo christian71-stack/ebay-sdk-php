@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
  */
-class GeteBayOfficialTimeRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class GeteBayOfficialTimeRequestType extends \cbdesk\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.

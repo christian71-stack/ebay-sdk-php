@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Fulfillment\Types;
+namespace cbdesk\eBaySDK\Fulfillment\Types;
 
 /**
  *
@@ -17,7 +17,7 @@ namespace DTS\eBaySDK\Fulfillment\Types;
  * @property string $offset
  * @property string $orderIds
  */
-class GetOrdersRestRequest extends \DTS\eBaySDK\Types\BaseType
+class GetOrdersRestRequest extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

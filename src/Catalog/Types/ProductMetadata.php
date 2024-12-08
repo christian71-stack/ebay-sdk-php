@@ -8,34 +8,34 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Catalog\Types;
+namespace cbdesk\eBaySDK\Catalog\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Catalog\Types\ProductMetadataAspect[] $aspects
- * @property \DTS\eBaySDK\Catalog\Types\ProductIdentifierForProductMetadata $brand
- * @property \DTS\eBaySDK\Catalog\Types\ProductIdentifierForProductMetadata $mpn
+ * @property \cbdesk\eBaySDK\Catalog\Types\ProductMetadataAspect[] $aspects
+ * @property \cbdesk\eBaySDK\Catalog\Types\ProductIdentifierForProductMetadata $brand
+ * @property \cbdesk\eBaySDK\Catalog\Types\ProductIdentifierForProductMetadata $mpn
  */
-class ProductMetadata extends \DTS\eBaySDK\Types\BaseType
+class ProductMetadata extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'aspects' => [
-            'type' => 'DTS\eBaySDK\Catalog\Types\ProductMetadataAspect',
+            'type' => 'cbdesk\eBaySDK\Catalog\Types\ProductMetadataAspect',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'aspects'
         ],
         'brand' => [
-            'type' => 'DTS\eBaySDK\Catalog\Types\ProductIdentifierForProductMetadata',
+            'type' => 'cbdesk\eBaySDK\Catalog\Types\ProductIdentifierForProductMetadata',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'brand'
         ],
         'mpn' => [
-            'type' => 'DTS\eBaySDK\Catalog\Types\ProductIdentifierForProductMetadata',
+            'type' => 'cbdesk\eBaySDK\Catalog\Types\ProductIdentifierForProductMetadata',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'mpn'

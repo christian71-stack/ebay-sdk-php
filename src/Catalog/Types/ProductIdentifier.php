@@ -8,21 +8,21 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Catalog\Types;
+namespace cbdesk\eBaySDK\Catalog\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Catalog\Types\ProductIdentifierConstraint $constraint
+ * @property \cbdesk\eBaySDK\Catalog\Types\ProductIdentifierConstraint $constraint
  * @property string[] $values
  */
-class ProductIdentifier extends \DTS\eBaySDK\Types\BaseType
+class ProductIdentifier extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'constraint' => [
-            'type' => 'DTS\eBaySDK\Catalog\Types\ProductIdentifierConstraint',
+            'type' => 'cbdesk\eBaySDK\Catalog\Types\ProductIdentifierConstraint',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'constraint'

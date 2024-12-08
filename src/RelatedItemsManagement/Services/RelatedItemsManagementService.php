@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\RelatedItemsManagement\Services;
+namespace cbdesk\eBaySDK\RelatedItemsManagement\Services;
 
-class RelatedItemsManagementService extends \DTS\eBaySDK\RelatedItemsManagement\Services\RelatedItemsManagementBaseService
+class RelatedItemsManagementService extends \cbdesk\eBaySDK\RelatedItemsManagement\Services\RelatedItemsManagementBaseService
 {
     const API_VERSION = '1.0.0';
 
@@ -23,156 +23,156 @@ class RelatedItemsManagementService extends \DTS\eBaySDK\RelatedItemsManagement\
     }
 
     /**
-     * @param \DTS\eBaySDK\RelatedItemsManagement\Types\CreateBundlesRequest $request
-     * @return \DTS\eBaySDK\RelatedItemsManagement\Types\CreateBundlesResponse
+     * @param \cbdesk\eBaySDK\RelatedItemsManagement\Types\CreateBundlesRequest $request
+     * @return \cbdesk\eBaySDK\RelatedItemsManagement\Types\CreateBundlesResponse
      */
-    public function createBundles(\DTS\eBaySDK\RelatedItemsManagement\Types\CreateBundlesRequest $request)
+    public function createBundles(\cbdesk\eBaySDK\RelatedItemsManagement\Types\CreateBundlesRequest $request)
     {
         return $this->createBundlesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\RelatedItemsManagement\Types\CreateBundlesRequest $request
+     * @param \cbdesk\eBaySDK\RelatedItemsManagement\Types\CreateBundlesRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function createBundlesAsync(\DTS\eBaySDK\RelatedItemsManagement\Types\CreateBundlesRequest $request)
+    public function createBundlesAsync(\cbdesk\eBaySDK\RelatedItemsManagement\Types\CreateBundlesRequest $request)
     {
         return $this->callOperationAsync(
             'createBundles',
             $request,
-            '\DTS\eBaySDK\RelatedItemsManagement\Types\CreateBundlesResponse'
+            '\cbdesk\eBaySDK\RelatedItemsManagement\Types\CreateBundlesResponse'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\RelatedItemsManagement\Types\FindBundlesRequest $request
-     * @return \DTS\eBaySDK\RelatedItemsManagement\Types\FindBundlesResponse
+     * @param \cbdesk\eBaySDK\RelatedItemsManagement\Types\FindBundlesRequest $request
+     * @return \cbdesk\eBaySDK\RelatedItemsManagement\Types\FindBundlesResponse
      */
-    public function findBundles(\DTS\eBaySDK\RelatedItemsManagement\Types\FindBundlesRequest $request)
+    public function findBundles(\cbdesk\eBaySDK\RelatedItemsManagement\Types\FindBundlesRequest $request)
     {
         return $this->findBundlesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\RelatedItemsManagement\Types\FindBundlesRequest $request
+     * @param \cbdesk\eBaySDK\RelatedItemsManagement\Types\FindBundlesRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function findBundlesAsync(\DTS\eBaySDK\RelatedItemsManagement\Types\FindBundlesRequest $request)
+    public function findBundlesAsync(\cbdesk\eBaySDK\RelatedItemsManagement\Types\FindBundlesRequest $request)
     {
         return $this->callOperationAsync(
             'findBundles',
             $request,
-            '\DTS\eBaySDK\RelatedItemsManagement\Types\FindBundlesResponse'
+            '\cbdesk\eBaySDK\RelatedItemsManagement\Types\FindBundlesResponse'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\RelatedItemsManagement\Types\GetBundlesRequest $request
-     * @return \DTS\eBaySDK\RelatedItemsManagement\Types\GetBundlesResponse
+     * @param \cbdesk\eBaySDK\RelatedItemsManagement\Types\GetBundlesRequest $request
+     * @return \cbdesk\eBaySDK\RelatedItemsManagement\Types\GetBundlesResponse
      */
-    public function getBundles(\DTS\eBaySDK\RelatedItemsManagement\Types\GetBundlesRequest $request)
+    public function getBundles(\cbdesk\eBaySDK\RelatedItemsManagement\Types\GetBundlesRequest $request)
     {
         return $this->getBundlesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\RelatedItemsManagement\Types\GetBundlesRequest $request
+     * @param \cbdesk\eBaySDK\RelatedItemsManagement\Types\GetBundlesRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getBundlesAsync(\DTS\eBaySDK\RelatedItemsManagement\Types\GetBundlesRequest $request)
+    public function getBundlesAsync(\cbdesk\eBaySDK\RelatedItemsManagement\Types\GetBundlesRequest $request)
     {
         return $this->callOperationAsync(
             'getBundles',
             $request,
-            '\DTS\eBaySDK\RelatedItemsManagement\Types\GetBundlesResponse'
+            '\cbdesk\eBaySDK\RelatedItemsManagement\Types\GetBundlesResponse'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\RelatedItemsManagement\Types\UpdateBundlesRequest $request
-     * @return \DTS\eBaySDK\RelatedItemsManagement\Types\UpdateBundlesResponse
+     * @param \cbdesk\eBaySDK\RelatedItemsManagement\Types\UpdateBundlesRequest $request
+     * @return \cbdesk\eBaySDK\RelatedItemsManagement\Types\UpdateBundlesResponse
      */
-    public function updateBundles(\DTS\eBaySDK\RelatedItemsManagement\Types\UpdateBundlesRequest $request)
+    public function updateBundles(\cbdesk\eBaySDK\RelatedItemsManagement\Types\UpdateBundlesRequest $request)
     {
         return $this->updateBundlesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\RelatedItemsManagement\Types\UpdateBundlesRequest $request
+     * @param \cbdesk\eBaySDK\RelatedItemsManagement\Types\UpdateBundlesRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function updateBundlesAsync(\DTS\eBaySDK\RelatedItemsManagement\Types\UpdateBundlesRequest $request)
+    public function updateBundlesAsync(\cbdesk\eBaySDK\RelatedItemsManagement\Types\UpdateBundlesRequest $request)
     {
         return $this->callOperationAsync(
             'updateBundles',
             $request,
-            '\DTS\eBaySDK\RelatedItemsManagement\Types\UpdateBundlesResponse'
+            '\cbdesk\eBaySDK\RelatedItemsManagement\Types\UpdateBundlesResponse'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\RelatedItemsManagement\Types\UpdateBundleStatusRequest $request
-     * @return \DTS\eBaySDK\RelatedItemsManagement\Types\UpdateBundleStatusResponse
+     * @param \cbdesk\eBaySDK\RelatedItemsManagement\Types\UpdateBundleStatusRequest $request
+     * @return \cbdesk\eBaySDK\RelatedItemsManagement\Types\UpdateBundleStatusResponse
      */
-    public function updateBundleStatus(\DTS\eBaySDK\RelatedItemsManagement\Types\UpdateBundleStatusRequest $request)
+    public function updateBundleStatus(\cbdesk\eBaySDK\RelatedItemsManagement\Types\UpdateBundleStatusRequest $request)
     {
         return $this->updateBundleStatusAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\RelatedItemsManagement\Types\UpdateBundleStatusRequest $request
+     * @param \cbdesk\eBaySDK\RelatedItemsManagement\Types\UpdateBundleStatusRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function updateBundleStatusAsync(\DTS\eBaySDK\RelatedItemsManagement\Types\UpdateBundleStatusRequest $request)
+    public function updateBundleStatusAsync(\cbdesk\eBaySDK\RelatedItemsManagement\Types\UpdateBundleStatusRequest $request)
     {
         return $this->callOperationAsync(
             'updateBundleStatus',
             $request,
-            '\DTS\eBaySDK\RelatedItemsManagement\Types\UpdateBundleStatusResponse'
+            '\cbdesk\eBaySDK\RelatedItemsManagement\Types\UpdateBundleStatusResponse'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\RelatedItemsManagement\Types\DeleteBundlesRequest $request
-     * @return \DTS\eBaySDK\RelatedItemsManagement\Types\DeleteBundlesResponse
+     * @param \cbdesk\eBaySDK\RelatedItemsManagement\Types\DeleteBundlesRequest $request
+     * @return \cbdesk\eBaySDK\RelatedItemsManagement\Types\DeleteBundlesResponse
      */
-    public function deleteBundles(\DTS\eBaySDK\RelatedItemsManagement\Types\DeleteBundlesRequest $request)
+    public function deleteBundles(\cbdesk\eBaySDK\RelatedItemsManagement\Types\DeleteBundlesRequest $request)
     {
         return $this->deleteBundlesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\RelatedItemsManagement\Types\DeleteBundlesRequest $request
+     * @param \cbdesk\eBaySDK\RelatedItemsManagement\Types\DeleteBundlesRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function deleteBundlesAsync(\DTS\eBaySDK\RelatedItemsManagement\Types\DeleteBundlesRequest $request)
+    public function deleteBundlesAsync(\cbdesk\eBaySDK\RelatedItemsManagement\Types\DeleteBundlesRequest $request)
     {
         return $this->callOperationAsync(
             'deleteBundles',
             $request,
-            '\DTS\eBaySDK\RelatedItemsManagement\Types\DeleteBundlesResponse'
+            '\cbdesk\eBaySDK\RelatedItemsManagement\Types\DeleteBundlesResponse'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\RelatedItemsManagement\Types\GetVersionRequest $request
-     * @return \DTS\eBaySDK\RelatedItemsManagement\Types\GetVersionResponse
+     * @param \cbdesk\eBaySDK\RelatedItemsManagement\Types\GetVersionRequest $request
+     * @return \cbdesk\eBaySDK\RelatedItemsManagement\Types\GetVersionResponse
      */
-    public function getVersion(\DTS\eBaySDK\RelatedItemsManagement\Types\GetVersionRequest $request)
+    public function getVersion(\cbdesk\eBaySDK\RelatedItemsManagement\Types\GetVersionRequest $request)
     {
         return $this->getVersionAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\RelatedItemsManagement\Types\GetVersionRequest $request
+     * @param \cbdesk\eBaySDK\RelatedItemsManagement\Types\GetVersionRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getVersionAsync(\DTS\eBaySDK\RelatedItemsManagement\Types\GetVersionRequest $request)
+    public function getVersionAsync(\cbdesk\eBaySDK\RelatedItemsManagement\Types\GetVersionRequest $request)
     {
         return $this->callOperationAsync(
             'getVersion',
             $request,
-            '\DTS\eBaySDK\RelatedItemsManagement\Types\GetVersionResponse'
+            '\cbdesk\eBaySDK\RelatedItemsManagement\Types\GetVersionResponse'
         );
     }
 }

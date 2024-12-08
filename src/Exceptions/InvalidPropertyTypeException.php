@@ -1,5 +1,5 @@
 <?php
-namespace DTS\eBaySDK\Exceptions;
+namespace cbdesk\eBaySDK\Exceptions;
 
 /**
  * The property was assigned a value of the wrong type.

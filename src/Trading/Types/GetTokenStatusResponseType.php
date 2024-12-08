@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\TokenStatusType $TokenStatus
+ * @property \cbdesk\eBaySDK\Trading\Types\TokenStatusType $TokenStatus
  */
-class GetTokenStatusResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
+class GetTokenStatusResponseType extends \cbdesk\eBaySDK\Trading\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'TokenStatus' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\TokenStatusType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\TokenStatusType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TokenStatus'

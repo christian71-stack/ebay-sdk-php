@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\MerchantData\Types\FeeType[] $Fee
+ * @property \cbdesk\eBaySDK\MerchantData\Types\FeeType[] $Fee
  */
-class FeesType extends \DTS\eBaySDK\Types\BaseType
+class FeesType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'Fee' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\FeeType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\FeeType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'Fee'

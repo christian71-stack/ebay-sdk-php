@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property integer $ShippingProfileID
  * @property string $ShippingProfileName
  */
-class SellerShippingProfileType extends \DTS\eBaySDK\Types\BaseType
+class SellerShippingProfileType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

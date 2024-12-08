@@ -8,24 +8,24 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace cbdesk\eBaySDK\Inventory\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Inventory\Types\Amount $minimumAdvertisedPrice
- * @property \DTS\eBaySDK\Inventory\Enums\SoldOnEnum $originallySoldForRetailPriceOn
- * @property \DTS\eBaySDK\Inventory\Types\Amount $originalRetailPrice
- * @property \DTS\eBaySDK\Inventory\Types\Amount $price
- * @property \DTS\eBaySDK\Inventory\Enums\MinimumAdvertisedPriceHandlingEnum $pricingVisibility
+ * @property \cbdesk\eBaySDK\Inventory\Types\Amount $minimumAdvertisedPrice
+ * @property \cbdesk\eBaySDK\Inventory\Enums\SoldOnEnum $originallySoldForRetailPriceOn
+ * @property \cbdesk\eBaySDK\Inventory\Types\Amount $originalRetailPrice
+ * @property \cbdesk\eBaySDK\Inventory\Types\Amount $price
+ * @property \cbdesk\eBaySDK\Inventory\Enums\MinimumAdvertisedPriceHandlingEnum $pricingVisibility
  */
-class PricingSummary extends \DTS\eBaySDK\Types\BaseType
+class PricingSummary extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'minimumAdvertisedPrice' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\Amount',
+            'type' => 'cbdesk\eBaySDK\Inventory\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'minimumAdvertisedPrice'
@@ -37,13 +37,13 @@ class PricingSummary extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'originallySoldForRetailPriceOn'
         ],
         'originalRetailPrice' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\Amount',
+            'type' => 'cbdesk\eBaySDK\Inventory\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'originalRetailPrice'
         ],
         'price' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\Amount',
+            'type' => 'cbdesk\eBaySDK\Inventory\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'price'

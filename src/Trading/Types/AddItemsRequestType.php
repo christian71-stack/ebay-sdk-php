@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\AddItemRequestContainerType[] $AddItemRequestContainer
+ * @property \cbdesk\eBaySDK\Trading\Types\AddItemRequestContainerType[] $AddItemRequestContainer
  */
-class AddItemsRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class AddItemsRequestType extends \cbdesk\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'AddItemRequestContainer' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AddItemRequestContainerType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\AddItemRequestContainerType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'AddItemRequestContainer'

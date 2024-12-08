@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace cbdesk\eBaySDK\Inventory\Types;
 
 /**
  *
@@ -18,7 +18,7 @@ namespace DTS\eBaySDK\Inventory\Types;
  * @property string $offset
  * @property string $sku
  */
-class GetOffersRestRequest extends \DTS\eBaySDK\Types\BaseType
+class GetOffersRestRequest extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

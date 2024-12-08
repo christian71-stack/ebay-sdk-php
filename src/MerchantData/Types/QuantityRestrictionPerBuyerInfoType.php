@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property integer $MaximumQuantity
  */
-class QuantityRestrictionPerBuyerInfoType extends \DTS\eBaySDK\Types\BaseType
+class QuantityRestrictionPerBuyerInfoType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

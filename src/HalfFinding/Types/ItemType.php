@@ -8,25 +8,25 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\HalfFinding\Types;
+namespace cbdesk\eBaySDK\HalfFinding\Types;
 
 /**
  *
  * @property string $itemID
  * @property string $itemURL
  * @property integer $quantity
- * @property \DTS\eBaySDK\HalfFinding\Types\UserType $seller
- * @property \DTS\eBaySDK\HalfFinding\Types\Amount $price
- * @property \DTS\eBaySDK\HalfFinding\Types\RentalAmount[] $rentalPrice
- * @property \DTS\eBaySDK\HalfFinding\Types\ShippingServiceOptionsType[] $shippingService
+ * @property \cbdesk\eBaySDK\HalfFinding\Types\UserType $seller
+ * @property \cbdesk\eBaySDK\HalfFinding\Types\Amount $price
+ * @property \cbdesk\eBaySDK\HalfFinding\Types\RentalAmount[] $rentalPrice
+ * @property \cbdesk\eBaySDK\HalfFinding\Types\ShippingServiceOptionsType[] $shippingService
  * @property string $itemLocation
  * @property string $excludedShippingAreas
- * @property \DTS\eBaySDK\HalfFinding\Enums\HalfItemConditionCodeType $condition
+ * @property \cbdesk\eBaySDK\HalfFinding\Enums\HalfItemConditionCodeType $condition
  * @property string $comments
  * @property string $description
- * @property \DTS\eBaySDK\HalfFinding\Types\StorefrontType $storefront
+ * @property \cbdesk\eBaySDK\HalfFinding\Types\StorefrontType $storefront
  */
-class ItemType extends \DTS\eBaySDK\Types\BaseType
+class ItemType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -51,25 +51,25 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'quantity'
         ],
         'seller' => [
-            'type' => 'DTS\eBaySDK\HalfFinding\Types\UserType',
+            'type' => 'cbdesk\eBaySDK\HalfFinding\Types\UserType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'seller'
         ],
         'price' => [
-            'type' => 'DTS\eBaySDK\HalfFinding\Types\Amount',
+            'type' => 'cbdesk\eBaySDK\HalfFinding\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'price'
         ],
         'rentalPrice' => [
-            'type' => 'DTS\eBaySDK\HalfFinding\Types\RentalAmount',
+            'type' => 'cbdesk\eBaySDK\HalfFinding\Types\RentalAmount',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'rentalPrice'
         ],
         'shippingService' => [
-            'type' => 'DTS\eBaySDK\HalfFinding\Types\ShippingServiceOptionsType',
+            'type' => 'cbdesk\eBaySDK\HalfFinding\Types\ShippingServiceOptionsType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'shippingService'
@@ -105,7 +105,7 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'description'
         ],
         'storefront' => [
-            'type' => 'DTS\eBaySDK\HalfFinding\Types\StorefrontType',
+            'type' => 'cbdesk\eBaySDK\HalfFinding\Types\StorefrontType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'storefront'

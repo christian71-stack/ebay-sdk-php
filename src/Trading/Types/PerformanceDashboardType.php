@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\SiteCodeType[] $Site
- * @property \DTS\eBaySDK\Trading\Enums\PerformanceStatusCodeType $Status
- * @property \DTS\eBaySDK\Trading\Types\SellerDashboardAlertType $Alert
+ * @property \cbdesk\eBaySDK\Trading\Enums\SiteCodeType[] $Site
+ * @property \cbdesk\eBaySDK\Trading\Enums\PerformanceStatusCodeType $Status
+ * @property \cbdesk\eBaySDK\Trading\Types\SellerDashboardAlertType $Alert
  */
-class PerformanceDashboardType extends \DTS\eBaySDK\Types\BaseType
+class PerformanceDashboardType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -35,7 +35,7 @@ class PerformanceDashboardType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'Status'
         ],
         'Alert' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellerDashboardAlertType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\SellerDashboardAlertType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Alert'

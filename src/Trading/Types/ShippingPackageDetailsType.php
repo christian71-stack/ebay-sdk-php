@@ -8,19 +8,19 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
  * @property integer $PackageID
  * @property string $Description
- * @property \DTS\eBaySDK\Trading\Enums\ShippingPackageCodeType $ShippingPackage
+ * @property \cbdesk\eBaySDK\Trading\Enums\ShippingPackageCodeType $ShippingPackage
  * @property boolean $DefaultValue
  * @property boolean $DimensionsSupported
  * @property string $DetailVersion
  * @property \DateTime $UpdateTime
  */
-class ShippingPackageDetailsType extends \DTS\eBaySDK\Types\BaseType
+class ShippingPackageDetailsType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Analytics\Types;
+namespace cbdesk\eBaySDK\Analytics\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Analytics\Enums\CycleTypeEnum $cycleType
+ * @property \cbdesk\eBaySDK\Analytics\Enums\CycleTypeEnum $cycleType
  * @property string $evaluationDate
  * @property string $evaluationMonth
  */
-class Cycle extends \DTS\eBaySDK\Types\BaseType
+class Cycle extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

@@ -1,5 +1,5 @@
 <?php
-namespace DTS\eBaySDK;
+namespace cbdesk\eBaySDK;
 
 trait StatusCodeTrait
 {

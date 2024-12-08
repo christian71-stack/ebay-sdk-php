@@ -8,65 +8,65 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property string $ApplicationData
- * @property \DTS\eBaySDK\MerchantData\Types\AttributeArrayType $AttributeArray
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AttributeArrayType $AttributeArray
  * @property boolean $AutoPay
- * @property \DTS\eBaySDK\MerchantData\Types\PaymentDetailsType $PaymentDetails
- * @property \DTS\eBaySDK\MerchantData\Types\BiddingDetailsType $BiddingDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Types\PaymentDetailsType $PaymentDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Types\BiddingDetailsType $BiddingDetails
  * @property boolean $MotorsGermanySearchable
- * @property \DTS\eBaySDK\MerchantData\Enums\BuyerProtectionCodeType $BuyerProtection
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $BuyItNowPrice
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\BuyerProtectionCodeType $BuyerProtection
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $BuyItNowPrice
  * @property boolean $CategoryMappingAllowed
- * @property \DTS\eBaySDK\MerchantData\Types\CharityType $Charity
- * @property \DTS\eBaySDK\MerchantData\Enums\CountryCodeType $Country
- * @property \DTS\eBaySDK\MerchantData\Enums\CurrencyCodeType $Currency
+ * @property \cbdesk\eBaySDK\MerchantData\Types\CharityType $Charity
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\CountryCodeType $Country
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\CurrencyCodeType $Currency
  * @property string $Description
- * @property \DTS\eBaySDK\MerchantData\Enums\DescriptionReviseModeCodeType $DescriptionReviseMode
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\DescriptionReviseModeCodeType $DescriptionReviseMode
  * @property integer $GiftIcon
- * @property \DTS\eBaySDK\MerchantData\Enums\GiftServicesCodeType[] $GiftServices
- * @property \DTS\eBaySDK\MerchantData\Enums\HitCounterCodeType $HitCounter
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\GiftServicesCodeType[] $GiftServices
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\HitCounterCodeType $HitCounter
  * @property string $ItemID
- * @property \DTS\eBaySDK\MerchantData\Types\ListingDetailsType $ListingDetails
- * @property \DTS\eBaySDK\MerchantData\Types\ListingDesignerType $ListingDesigner
+ * @property \cbdesk\eBaySDK\MerchantData\Types\ListingDetailsType $ListingDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Types\ListingDesignerType $ListingDesigner
  * @property string $ListingDuration
- * @property \DTS\eBaySDK\MerchantData\Enums\ListingEnhancementsCodeType[] $ListingEnhancement
- * @property \DTS\eBaySDK\MerchantData\Enums\ListingTypeCodeType $ListingType
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\ListingEnhancementsCodeType[] $ListingEnhancement
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\ListingTypeCodeType $ListingType
  * @property string $Location
  * @property integer $LotSize
- * @property \DTS\eBaySDK\MerchantData\Enums\BuyerPaymentMethodCodeType[] $PaymentMethods
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\BuyerPaymentMethodCodeType[] $PaymentMethods
  * @property string $PayPalEmailAddress
- * @property \DTS\eBaySDK\MerchantData\Types\CategoryType $PrimaryCategory
+ * @property \cbdesk\eBaySDK\MerchantData\Types\CategoryType $PrimaryCategory
  * @property boolean $PrivateListing
- * @property \DTS\eBaySDK\MerchantData\Types\ProductListingDetailsType $ProductListingDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Types\ProductListingDetailsType $ProductListingDetails
  * @property integer $Quantity
  * @property string $PrivateNotes
  * @property boolean $RelistLink
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $ReservePrice
- * @property \DTS\eBaySDK\MerchantData\Types\ReviseStatusType $ReviseStatus
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $ReservePrice
+ * @property \cbdesk\eBaySDK\MerchantData\Types\ReviseStatusType $ReviseStatus
  * @property \DateTime $ScheduleTime
- * @property \DTS\eBaySDK\MerchantData\Types\CategoryType $SecondaryCategory
- * @property \DTS\eBaySDK\MerchantData\Types\CategoryType $FreeAddedCategory
- * @property \DTS\eBaySDK\MerchantData\Types\UserType $Seller
- * @property \DTS\eBaySDK\MerchantData\Types\SellingStatusType $SellingStatus
- * @property \DTS\eBaySDK\MerchantData\Types\ShippingDetailsType $ShippingDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Types\CategoryType $SecondaryCategory
+ * @property \cbdesk\eBaySDK\MerchantData\Types\CategoryType $FreeAddedCategory
+ * @property \cbdesk\eBaySDK\MerchantData\Types\UserType $Seller
+ * @property \cbdesk\eBaySDK\MerchantData\Types\SellingStatusType $SellingStatus
+ * @property \cbdesk\eBaySDK\MerchantData\Types\ShippingDetailsType $ShippingDetails
  * @property string[] $ShipToLocations
- * @property \DTS\eBaySDK\MerchantData\Enums\SiteCodeType $Site
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $StartPrice
- * @property \DTS\eBaySDK\MerchantData\Types\StorefrontType $Storefront
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\SiteCodeType $Site
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $StartPrice
+ * @property \cbdesk\eBaySDK\MerchantData\Types\StorefrontType $Storefront
  * @property string $SubTitle
  * @property string $TimeLeft
  * @property string $Title
  * @property string $UUID
- * @property \DTS\eBaySDK\MerchantData\Types\VATDetailsType $VATDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Types\VATDetailsType $VATDetails
  * @property string $SellerVacationNote
  * @property integer $WatchCount
  * @property integer $HitCount
  * @property boolean $DisableBuyerRequirements
- * @property \DTS\eBaySDK\MerchantData\Types\BestOfferDetailsType $BestOfferDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Types\BestOfferDetailsType $BestOfferDetails
  * @property boolean $LocationDefaulted
  * @property boolean $ThirdPartyCheckout
  * @property boolean $UseTaxTable
@@ -80,78 +80,79 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property string $PostalCode
  * @property boolean $ShippingTermsInDescription
  * @property string $SellerInventoryID
- * @property \DTS\eBaySDK\MerchantData\Types\PictureDetailsType $PictureDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Types\PictureDetailsType $PictureDetails
  * @property integer $DispatchTimeMax
  * @property boolean $SkypeEnabled
  * @property string $SkypeID
- * @property \DTS\eBaySDK\MerchantData\Enums\SkypeContactOptionCodeType[] $SkypeContactOption
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\SkypeContactOptionCodeType[] $SkypeContactOption
  * @property boolean $ThirdPartyCheckoutIntegration
- * @property \DTS\eBaySDK\MerchantData\Types\ListingCheckoutRedirectPreferenceType $ListingCheckoutRedirectPreference
- * @property \DTS\eBaySDK\MerchantData\Types\AddressType $SellerContactDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Types\ListingCheckoutRedirectPreferenceType $ListingCheckoutRedirectPreference
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AddressType $SellerContactDetails
  * @property integer $TotalQuestionCount
  * @property boolean $ProxyItem
- * @property \DTS\eBaySDK\MerchantData\Types\ExtendedContactDetailsType $ExtendedSellerContactDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Types\ExtendedContactDetailsType $ExtendedSellerContactDetails
  * @property integer $LeadCount
  * @property integer $NewLeadCount
- * @property \DTS\eBaySDK\MerchantData\Types\NameValueListArrayType $ItemSpecifics
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $ClassifiedAdPayPerLeadFee
- * @property \DTS\eBaySDK\MerchantData\Types\BuyerProtectionDetailsType $ApplyBuyerProtection
- * @property \DTS\eBaySDK\MerchantData\Enums\ListingSubtypeCodeType $ListingSubtype2
+ * @property \cbdesk\eBaySDK\MerchantData\Types\NameValueListArrayType $ItemSpecifics
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $ClassifiedAdPayPerLeadFee
+ * @property \cbdesk\eBaySDK\MerchantData\Types\BuyerProtectionDetailsType $ApplyBuyerProtection
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\ListingSubtypeCodeType $ListingSubtype2
  * @property boolean $MechanicalCheckAccepted
  * @property boolean $UpdateSellerInfo
  * @property boolean $UpdateReturnPolicy
- * @property \DTS\eBaySDK\MerchantData\Types\ItemPolicyViolationType $ItemPolicyViolation
+ * @property \cbdesk\eBaySDK\MerchantData\Types\ItemPolicyViolationType $ItemPolicyViolation
  * @property string[] $CrossBorderTrade
- * @property \DTS\eBaySDK\MerchantData\Types\BusinessSellerDetailsType $BusinessSellerDetails
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $BuyerGuaranteePrice
- * @property \DTS\eBaySDK\MerchantData\Types\BuyerRequirementDetailsType $BuyerRequirementDetails
- * @property \DTS\eBaySDK\MerchantData\Types\ReturnPolicyType $ReturnPolicy
- * @property \DTS\eBaySDK\MerchantData\Enums\SiteCodeType[] $PaymentAllowedSite
- * @property \DTS\eBaySDK\MerchantData\Enums\InventoryTrackingMethodCodeType $InventoryTrackingMethod
+ * @property \cbdesk\eBaySDK\MerchantData\Types\BusinessSellerDetailsType $BusinessSellerDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $BuyerGuaranteePrice
+ * @property \cbdesk\eBaySDK\MerchantData\Types\BuyerRequirementDetailsType $BuyerRequirementDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Types\ReturnPolicyType $ReturnPolicy
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\SiteCodeType[] $PaymentAllowedSite
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\InventoryTrackingMethodCodeType $InventoryTrackingMethod
  * @property boolean $IntegratedMerchantCreditCardEnabled
- * @property \DTS\eBaySDK\MerchantData\Types\VariationsType $Variations
- * @property \DTS\eBaySDK\MerchantData\Types\ItemCompatibilityListType $ItemCompatibilityList
+ * @property \cbdesk\eBaySDK\MerchantData\Types\VariationsType $Variations
+ * @property \cbdesk\eBaySDK\MerchantData\Types\ItemCompatibilityListType $ItemCompatibilityList
  * @property integer $ItemCompatibilityCount
  * @property integer $ConditionID
  * @property string $ConditionDescription
  * @property string $ConditionDisplayName
  * @property string $TaxCategory
- * @property \DTS\eBaySDK\MerchantData\Enums\QuantityAvailableHintCodeType $QuantityAvailableHint
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\QuantityAvailableHintCodeType $QuantityAvailableHint
  * @property integer $QuantityThreshold
  * @property boolean $PostCheckoutExperienceEnabled
- * @property \DTS\eBaySDK\MerchantData\Types\DiscountPriceInfoType $DiscountPriceInfo
+ * @property \cbdesk\eBaySDK\MerchantData\Types\DiscountPriceInfoType $DiscountPriceInfo
  * @property boolean $UseRecommendedProduct
  * @property string $SellerProvidedTitle
  * @property string $VIN
  * @property string $VRM
- * @property \DTS\eBaySDK\MerchantData\Types\QuantityInfoType $QuantityInfo
- * @property \DTS\eBaySDK\MerchantData\Types\SellerProfilesType $SellerProfiles
- * @property \DTS\eBaySDK\MerchantData\Types\ShippingServiceCostOverrideListType $ShippingServiceCostOverrideList
- * @property \DTS\eBaySDK\MerchantData\Types\ShipPackageDetailsType $ShippingPackageDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Types\QuantityInfoType $QuantityInfo
+ * @property \cbdesk\eBaySDK\MerchantData\Types\SellerProfilesType $SellerProfiles
+ * @property \cbdesk\eBaySDK\MerchantData\Types\ShippingServiceCostOverrideListType $ShippingServiceCostOverrideList
+ * @property \cbdesk\eBaySDK\MerchantData\Types\ShipPackageDetailsType $ShippingPackageDetails
  * @property boolean $TopRatedListing
- * @property \DTS\eBaySDK\MerchantData\Types\QuantityRestrictionPerBuyerInfoType $QuantityRestrictionPerBuyer
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $FloorPrice
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $CeilingPrice
+ * @property \cbdesk\eBaySDK\MerchantData\Types\QuantityRestrictionPerBuyerInfoType $QuantityRestrictionPerBuyer
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $FloorPrice
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $CeilingPrice
  * @property boolean $IsIntermediatedShippingEligible
- * @property \DTS\eBaySDK\MerchantData\Types\UnitInfoType $UnitInfo
+ * @property \cbdesk\eBaySDK\MerchantData\Types\UnitInfoType $UnitInfo
  * @property integer $RelistParentID
  * @property string $ConditionDefinition
  * @property boolean $HideFromSearch
- * @property \DTS\eBaySDK\MerchantData\Enums\ReasonHideFromSearchCodeType $ReasonHideFromSearch
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\ReasonHideFromSearchCodeType $ReasonHideFromSearch
  * @property boolean $IncludeRecommendations
- * @property \DTS\eBaySDK\MerchantData\Types\PickupInStoreDetailsType $PickupInStoreDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Types\PickupInStoreDetailsType $PickupInStoreDetails
  * @property boolean $eBayNowEligible
  * @property boolean $eBayNowAvailable
  * @property boolean $IgnoreQuantity
  * @property boolean $AvailableForPickupDropOff
  * @property boolean $EligibleForPickupDropOff
  * @property boolean $LiveAuction
- * @property \DTS\eBaySDK\MerchantData\Types\DigitalGoodInfoType $DigitalGoodInfo
+ * @property \cbdesk\eBaySDK\MerchantData\Types\DigitalGoodInfoType $DigitalGoodInfo
  * @property boolean $eBayPlus
  * @property boolean $eBayPlusEligible
  * @property boolean $eMailDeliveryAvailable
+ * @property \cbdesk\eBaySDK\MerchantData\Types\RegulatoryType $Regulatory
  */
-class ItemType extends \DTS\eBaySDK\Types\BaseType
+class ItemType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -164,7 +165,7 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ApplicationData'
         ],
         'AttributeArray' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AttributeArrayType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AttributeArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AttributeArray'
@@ -176,13 +177,13 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'AutoPay'
         ],
         'PaymentDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\PaymentDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\PaymentDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PaymentDetails'
         ],
         'BiddingDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\BiddingDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\BiddingDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BiddingDetails'
@@ -200,7 +201,7 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'BuyerProtection'
         ],
         'BuyItNowPrice' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BuyItNowPrice'
@@ -212,7 +213,7 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'CategoryMappingAllowed'
         ],
         'Charity' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\CharityType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\CharityType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Charity'
@@ -266,13 +267,13 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ItemID'
         ],
         'ListingDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ListingDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\ListingDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ListingDetails'
         ],
         'ListingDesigner' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ListingDesignerType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\ListingDesignerType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ListingDesigner'
@@ -320,7 +321,7 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'PayPalEmailAddress'
         ],
         'PrimaryCategory' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\CategoryType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\CategoryType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PrimaryCategory'
@@ -332,7 +333,7 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'PrivateListing'
         ],
         'ProductListingDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ProductListingDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\ProductListingDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ProductListingDetails'
@@ -356,13 +357,13 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'RelistLink'
         ],
         'ReservePrice' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ReservePrice'
         ],
         'ReviseStatus' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ReviseStatusType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\ReviseStatusType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ReviseStatus'
@@ -374,31 +375,31 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ScheduleTime'
         ],
         'SecondaryCategory' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\CategoryType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\CategoryType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SecondaryCategory'
         ],
         'FreeAddedCategory' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\CategoryType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\CategoryType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FreeAddedCategory'
         ],
         'Seller' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\UserType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\UserType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Seller'
         ],
         'SellingStatus' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\SellingStatusType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\SellingStatusType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SellingStatus'
         ],
         'ShippingDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ShippingDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\ShippingDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingDetails'
@@ -416,13 +417,13 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'Site'
         ],
         'StartPrice' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'StartPrice'
         ],
         'Storefront' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\StorefrontType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\StorefrontType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Storefront'
@@ -452,7 +453,7 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'UUID'
         ],
         'VATDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\VATDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\VATDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'VATDetails'
@@ -482,7 +483,7 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'DisableBuyerRequirements'
         ],
         'BestOfferDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\BestOfferDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\BestOfferDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BestOfferDetails'
@@ -566,7 +567,7 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'SellerInventoryID'
         ],
         'PictureDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\PictureDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\PictureDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PictureDetails'
@@ -602,13 +603,13 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ThirdPartyCheckoutIntegration'
         ],
         'ListingCheckoutRedirectPreference' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ListingCheckoutRedirectPreferenceType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\ListingCheckoutRedirectPreferenceType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ListingCheckoutRedirectPreference'
         ],
         'SellerContactDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AddressType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AddressType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SellerContactDetails'
@@ -626,7 +627,7 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ProxyItem'
         ],
         'ExtendedSellerContactDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ExtendedContactDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\ExtendedContactDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ExtendedSellerContactDetails'
@@ -644,19 +645,19 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'NewLeadCount'
         ],
         'ItemSpecifics' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\NameValueListArrayType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\NameValueListArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ItemSpecifics'
         ],
         'ClassifiedAdPayPerLeadFee' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ClassifiedAdPayPerLeadFee'
         ],
         'ApplyBuyerProtection' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\BuyerProtectionDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\BuyerProtectionDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ApplyBuyerProtection'
@@ -686,7 +687,7 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'UpdateReturnPolicy'
         ],
         'ItemPolicyViolation' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ItemPolicyViolationType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\ItemPolicyViolationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ItemPolicyViolation'
@@ -698,25 +699,25 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'CrossBorderTrade'
         ],
         'BusinessSellerDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\BusinessSellerDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\BusinessSellerDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BusinessSellerDetails'
         ],
         'BuyerGuaranteePrice' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BuyerGuaranteePrice'
         ],
         'BuyerRequirementDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\BuyerRequirementDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\BuyerRequirementDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BuyerRequirementDetails'
         ],
         'ReturnPolicy' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ReturnPolicyType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\ReturnPolicyType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ReturnPolicy'
@@ -740,13 +741,13 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'IntegratedMerchantCreditCardEnabled'
         ],
         'Variations' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\VariationsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\VariationsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Variations'
         ],
         'ItemCompatibilityList' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ItemCompatibilityListType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\ItemCompatibilityListType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ItemCompatibilityList'
@@ -800,7 +801,7 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'PostCheckoutExperienceEnabled'
         ],
         'DiscountPriceInfo' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\DiscountPriceInfoType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\DiscountPriceInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'DiscountPriceInfo'
@@ -830,25 +831,25 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'VRM'
         ],
         'QuantityInfo' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\QuantityInfoType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\QuantityInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'QuantityInfo'
         ],
         'SellerProfiles' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\SellerProfilesType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\SellerProfilesType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SellerProfiles'
         ],
         'ShippingServiceCostOverrideList' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ShippingServiceCostOverrideListType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\ShippingServiceCostOverrideListType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingServiceCostOverrideList'
         ],
         'ShippingPackageDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ShipPackageDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\ShipPackageDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingPackageDetails'
@@ -860,19 +861,19 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'TopRatedListing'
         ],
         'QuantityRestrictionPerBuyer' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\QuantityRestrictionPerBuyerInfoType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\QuantityRestrictionPerBuyerInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'QuantityRestrictionPerBuyer'
         ],
         'FloorPrice' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FloorPrice'
         ],
         'CeilingPrice' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'CeilingPrice'
@@ -884,7 +885,7 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'IsIntermediatedShippingEligible'
         ],
         'UnitInfo' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\UnitInfoType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\UnitInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'UnitInfo'
@@ -920,7 +921,7 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'IncludeRecommendations'
         ],
         'PickupInStoreDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\PickupInStoreDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\PickupInStoreDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PickupInStoreDetails'
@@ -962,7 +963,7 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'LiveAuction'
         ],
         'DigitalGoodInfo' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\DigitalGoodInfoType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\DigitalGoodInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'DigitalGoodInfo'
@@ -984,7 +985,13 @@ class ItemType extends \DTS\eBaySDK\Types\BaseType
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'eMailDeliveryAvailable'
-        ]
+        ],
+        'Regulatory' => [
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\RegulatoryType',
+            'repeatable' => false,
+            'attribute' => false,
+            'elementName' => 'Regulatory'
+        ],
     ];
 
     /**

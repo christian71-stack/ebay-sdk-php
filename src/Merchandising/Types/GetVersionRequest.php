@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Merchandising\Types;
+namespace cbdesk\eBaySDK\Merchandising\Types;
 
 /**
  *
  */
-class GetVersionRequest extends \DTS\eBaySDK\Merchandising\Types\BaseServiceRequest
+class GetVersionRequest extends \cbdesk\eBaySDK\Merchandising\Types\BaseServiceRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

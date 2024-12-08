@@ -10,53 +10,53 @@ Namespaces
 ============================= ========================================
 eBay Service                  SDK Namespace
 ============================= ========================================
-`Account`_                    DTS\\eBaySDK\\Account
+`Account`_                    cbdesk\\eBaySDK\\Account
 ----------------------------- ----------------------------------------
-`Analytics`_                  DTS\\eBaySDK\\Analytics
+`Analytics`_                  cbdesk\\eBaySDK\\Analytics
 ----------------------------- ----------------------------------------
-`Browse`_                     DTS\\eBaySDK\\Browse
+`Browse`_                     cbdesk\\eBaySDK\\Browse
 ----------------------------- ----------------------------------------
-`Bulk Data Exchange`_         DTS\\eBaySDK\\BulkDataExchange
+`Bulk Data Exchange`_         cbdesk\\eBaySDK\\BulkDataExchange
 ----------------------------- ----------------------------------------
-`Business Policies`_          DTS\\eBaySDK\\BusinessPoliciesManagement
+`Business Policies`_          cbdesk\\eBaySDK\\BusinessPoliciesManagement
 ----------------------------- ----------------------------------------
-`Feedback`_                   DTS\\eBaySDK\\Feedback
+`Feedback`_                   cbdesk\\eBaySDK\\Feedback
 ----------------------------- ----------------------------------------
-`File Transfer`_              DTS\\eBaySDK\\FileTransfer
+`File Transfer`_              cbdesk\\eBaySDK\\FileTransfer
 ----------------------------- ----------------------------------------
-`Finding`_                    DTS\\eBaySDK\\Finding
+`Finding`_                    cbdesk\\eBaySDK\\Finding
 ----------------------------- ----------------------------------------
-`Fulfillment`_                DTS\\eBaySDK\\Fulfillment
+`Fulfillment`_                cbdesk\\eBaySDK\\Fulfillment
 ----------------------------- ----------------------------------------
-`Half Finding`_               DTS\\eBaySDK\\HalfFinding
+`Half Finding`_               cbdesk\\eBaySDK\\HalfFinding
 ----------------------------- ----------------------------------------
-`Inventory`_                  DTS\\eBaySDK\\Inventory
+`Inventory`_                  cbdesk\\eBaySDK\\Inventory
 ----------------------------- ----------------------------------------
-`Marketing`_                  DTS\\eBaySDK\\Marketing
+`Marketing`_                  cbdesk\\eBaySDK\\Marketing
 ----------------------------- ----------------------------------------
-`Merchandising`_              DTS\\eBaySDK\\Merchandising
+`Merchandising`_              cbdesk\\eBaySDK\\Merchandising
 ----------------------------- ----------------------------------------
-`Merchant Data`_              DTS\\eBaySDK\\MerchantData
+`Merchant Data`_              cbdesk\\eBaySDK\\MerchantData
 ----------------------------- ----------------------------------------
-`Metadata`_                   DTS\\eBaySDK\\Metadata
+`Metadata`_                   cbdesk\\eBaySDK\\Metadata
 ----------------------------- ----------------------------------------
-`Order`_                      DTS\\eBaySDK\\Order
+`Order`_                      cbdesk\\eBaySDK\\Order
 ----------------------------- ----------------------------------------
-`Post Order`_                 DTS\\eBaySDK\\PostOrder
+`Post Order`_                 cbdesk\\eBaySDK\\PostOrder
 ----------------------------- ----------------------------------------
-`Product`_                    DTS\\eBaySDK\\Product
+`Product`_                    cbdesk\\eBaySDK\\Product
 ----------------------------- ----------------------------------------
-`Product Metadata`_           DTS\\eBaySDK\\ProductMetadata
+`Product Metadata`_           cbdesk\\eBaySDK\\ProductMetadata
 ----------------------------- ----------------------------------------
-`Related Items Management`_   DTS\\eBaySDK\\RelatedItemsManagement
+`Related Items Management`_   cbdesk\\eBaySDK\\RelatedItemsManagement
 ----------------------------- ----------------------------------------
-`Resolution Case Management`_ DTS\\eBaySDK\\ResolutionCaseManagement
+`Resolution Case Management`_ cbdesk\\eBaySDK\\ResolutionCaseManagement
 ----------------------------- ----------------------------------------
-`Return Management`_          DTS\\eBaySDK\\ReturnManagement
+`Return Management`_          cbdesk\\eBaySDK\\ReturnManagement
 ----------------------------- ----------------------------------------
-`Shopping`_                   DTS\\eBaySDK\\Shopping
+`Shopping`_                   cbdesk\\eBaySDK\\Shopping
 ----------------------------- ----------------------------------------
-`Trading`_                    DTS\\eBaySDK\\Trading
+`Trading`_                    cbdesk\\eBaySDK\\Trading
 ============================= ========================================
 
 .. _Account: http://developer.ebay.com/devzone/rest/api-ref/account/index.html

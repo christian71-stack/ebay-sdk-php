@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ResolutionCaseManagement\Enums;
+namespace cbdesk\eBaySDK\ResolutionCaseManagement\Enums;
 
 class BuyerSNADEscalationReasonType
 {

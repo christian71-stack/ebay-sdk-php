@@ -8,21 +8,21 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ReturnManagement\Types;
+namespace cbdesk\eBaySDK\ReturnManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\ReturnManagement\Enums\NotificationEventNameType $NotificationEventName
+ * @property \cbdesk\eBaySDK\ReturnManagement\Enums\NotificationEventNameType $NotificationEventName
  * @property string $RecipientUserID
  * @property string $ExternalUserData
  * @property string $ReturnId
  * @property \DateTime $CreationDate
  * @property string $OtherPartyId
- * @property \DTS\eBaySDK\ReturnManagement\Enums\ReturnUserRoleType $OtherPartyRole
+ * @property \cbdesk\eBaySDK\ReturnManagement\Enums\ReturnUserRoleType $OtherPartyRole
  * @property string $ReturnStatus
  * @property string $ReturnGlobalId
  */
-class NotificationEventType extends \DTS\eBaySDK\Types\BaseType
+class NotificationEventType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

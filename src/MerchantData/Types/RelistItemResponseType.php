@@ -8,21 +8,21 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property string $ItemID
- * @property \DTS\eBaySDK\MerchantData\Types\FeesType $Fees
+ * @property \cbdesk\eBaySDK\MerchantData\Types\FeesType $Fees
  * @property \DateTime $StartTime
  * @property \DateTime $EndTime
  * @property string $CategoryID
  * @property string $Category2ID
- * @property \DTS\eBaySDK\MerchantData\Enums\DiscountReasonCodeType[] $DiscountReason
- * @property \DTS\eBaySDK\MerchantData\Types\ProductSuggestionsType $ProductSuggestions
- * @property \DTS\eBaySDK\MerchantData\Types\ListingRecommendationsType $ListingRecommendations
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\DiscountReasonCodeType[] $DiscountReason
+ * @property \cbdesk\eBaySDK\MerchantData\Types\ProductSuggestionsType $ProductSuggestions
+ * @property \cbdesk\eBaySDK\MerchantData\Types\ListingRecommendationsType $ListingRecommendations
  */
-class RelistItemResponseType extends \DTS\eBaySDK\MerchantData\Types\AbstractResponseType
+class RelistItemResponseType extends \cbdesk\eBaySDK\MerchantData\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -35,7 +35,7 @@ class RelistItemResponseType extends \DTS\eBaySDK\MerchantData\Types\AbstractRes
             'elementName' => 'ItemID'
         ],
         'Fees' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\FeesType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\FeesType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Fees'
@@ -71,13 +71,13 @@ class RelistItemResponseType extends \DTS\eBaySDK\MerchantData\Types\AbstractRes
             'elementName' => 'DiscountReason'
         ],
         'ProductSuggestions' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ProductSuggestionsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\ProductSuggestionsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ProductSuggestions'
         ],
         'ListingRecommendations' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ListingRecommendationsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\ListingRecommendationsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ListingRecommendations'

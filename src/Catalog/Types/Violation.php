@@ -8,29 +8,29 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Catalog\Types;
+namespace cbdesk\eBaySDK\Catalog\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Catalog\Types\ViolationAspectValues[] $aspectsValues
- * @property \DTS\eBaySDK\Catalog\Types\ViolationProductAttribute $productAttribute
+ * @property \cbdesk\eBaySDK\Catalog\Types\ViolationAspectValues[] $aspectsValues
+ * @property \cbdesk\eBaySDK\Catalog\Types\ViolationProductAttribute $productAttribute
  * @property integer $reason
  * @property integer $violationCode
  */
-class Violation extends \DTS\eBaySDK\Types\BaseType
+class Violation extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'aspectsValues' => [
-            'type' => 'DTS\eBaySDK\Catalog\Types\ViolationAspectValues',
+            'type' => 'cbdesk\eBaySDK\Catalog\Types\ViolationAspectValues',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'aspectsValues'
         ],
         'productAttribute' => [
-            'type' => 'DTS\eBaySDK\Catalog\Types\ViolationProductAttribute',
+            'type' => 'cbdesk\eBaySDK\Catalog\Types\ViolationProductAttribute',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'productAttribute'

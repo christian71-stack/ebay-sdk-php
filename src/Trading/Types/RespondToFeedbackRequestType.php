@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
@@ -16,11 +16,11 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property string $ItemID
  * @property string $TransactionID
  * @property string $TargetUserID
- * @property \DTS\eBaySDK\Trading\Enums\FeedbackResponseCodeType $ResponseType
+ * @property \cbdesk\eBaySDK\Trading\Enums\FeedbackResponseCodeType $ResponseType
  * @property string $ResponseText
  * @property string $OrderLineItemID
  */
-class RespondToFeedbackRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class RespondToFeedbackRequestType extends \cbdesk\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.

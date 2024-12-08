@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
@@ -17,9 +17,9 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $IncludeReportedItemDetails
  * @property \DateTime $TimeFrom
  * @property \DateTime $TimeTo
- * @property \DTS\eBaySDK\Trading\Types\PaginationType $Pagination
+ * @property \cbdesk\eBaySDK\Trading\Types\PaginationType $Pagination
  */
-class GetVeROReportStatusRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class GetVeROReportStatusRequestType extends \cbdesk\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -56,7 +56,7 @@ class GetVeROReportStatusRequestType extends \DTS\eBaySDK\Trading\Types\Abstract
             'elementName' => 'TimeTo'
         ],
         'Pagination' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\PaginationType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\PaginationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Pagination'

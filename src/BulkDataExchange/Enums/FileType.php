@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BulkDataExchange\Enums;
+namespace cbdesk\eBaySDK\BulkDataExchange\Enums;
 
 class FileType
 {

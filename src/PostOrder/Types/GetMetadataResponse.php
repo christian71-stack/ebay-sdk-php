@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace cbdesk\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Types\ReturnMetadataType[] $metadata
+ * @property \cbdesk\eBaySDK\PostOrder\Types\ReturnMetadataType[] $metadata
  */
-class GetMetadataResponse extends \DTS\eBaySDK\Types\BaseType
+class GetMetadataResponse extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'metadata' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ReturnMetadataType',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\ReturnMetadataType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'metadata'

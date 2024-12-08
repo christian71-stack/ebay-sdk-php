@@ -8,27 +8,27 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ReturnManagement\Types;
+namespace cbdesk\eBaySDK\ReturnManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\ReturnManagement\Types\IssueRefundOptionType $issueRefund
- * @property \DTS\eBaySDK\ReturnManagement\Types\ProvideSellerInfoOptionType $provideSellerInfo
+ * @property \cbdesk\eBaySDK\ReturnManagement\Types\IssueRefundOptionType $issueRefund
+ * @property \cbdesk\eBaySDK\ReturnManagement\Types\ProvideSellerInfoOptionType $provideSellerInfo
  */
-class ActivityOptionListType extends \DTS\eBaySDK\Types\BaseType
+class ActivityOptionListType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'issueRefund' => [
-            'type' => 'DTS\eBaySDK\ReturnManagement\Types\IssueRefundOptionType',
+            'type' => 'cbdesk\eBaySDK\ReturnManagement\Types\IssueRefundOptionType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'issueRefund'
         ],
         'provideSellerInfo' => [
-            'type' => 'DTS\eBaySDK\ReturnManagement\Types\ProvideSellerInfoOptionType',
+            'type' => 'cbdesk\eBaySDK\ReturnManagement\Types\ProvideSellerInfoOptionType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'provideSellerInfo'

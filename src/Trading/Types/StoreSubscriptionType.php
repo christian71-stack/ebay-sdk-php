@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\StoreSubscriptionLevelCodeType $Level
- * @property \DTS\eBaySDK\Trading\Types\AmountType $Fee
+ * @property \cbdesk\eBaySDK\Trading\Enums\StoreSubscriptionLevelCodeType $Level
+ * @property \cbdesk\eBaySDK\Trading\Types\AmountType $Fee
  */
-class StoreSubscriptionType extends \DTS\eBaySDK\Types\BaseType
+class StoreSubscriptionType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -28,7 +28,7 @@ class StoreSubscriptionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'Level'
         ],
         'Fee' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Fee'

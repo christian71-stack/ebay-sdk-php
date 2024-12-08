@@ -8,26 +8,26 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\PaginationResultType $PaginationResult
+ * @property \cbdesk\eBaySDK\Trading\Types\PaginationResultType $PaginationResult
  * @property boolean $HasMoreItems
  * @property integer $ItemsPerPage
  * @property integer $PageNumber
  * @property integer $VeROReportPacketID
- * @property \DTS\eBaySDK\Trading\Enums\VeROReportPacketStatusCodeType $VeROReportPacketStatus
- * @property \DTS\eBaySDK\Trading\Types\VeROReportedItemDetailsType $ReportedItemDetails
+ * @property \cbdesk\eBaySDK\Trading\Enums\VeROReportPacketStatusCodeType $VeROReportPacketStatus
+ * @property \cbdesk\eBaySDK\Trading\Types\VeROReportedItemDetailsType $ReportedItemDetails
  */
-class GetVeROReportStatusResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
+class GetVeROReportStatusResponseType extends \cbdesk\eBaySDK\Trading\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'PaginationResult' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\PaginationResultType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\PaginationResultType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PaginationResult'
@@ -63,7 +63,7 @@ class GetVeROReportStatusResponseType extends \DTS\eBaySDK\Trading\Types\Abstrac
             'elementName' => 'VeROReportPacketStatus'
         ],
         'ReportedItemDetails' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\VeROReportedItemDetailsType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\VeROReportedItemDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ReportedItemDetails'

@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
@@ -20,42 +20,42 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property integer $UniquePositiveFeedbackCount
  * @property double $PositiveFeedbackPercent
  * @property boolean $FeedbackPrivate
- * @property \DTS\eBaySDK\Trading\Enums\FeedbackRatingStarCodeType $FeedbackRatingStar
+ * @property \cbdesk\eBaySDK\Trading\Enums\FeedbackRatingStarCodeType $FeedbackRatingStar
  * @property boolean $IDVerified
  * @property boolean $eBayGoodStanding
  * @property boolean $NewUser
- * @property \DTS\eBaySDK\Trading\Types\AddressType $RegistrationAddress
+ * @property \cbdesk\eBaySDK\Trading\Types\AddressType $RegistrationAddress
  * @property \DateTime $RegistrationDate
- * @property \DTS\eBaySDK\Trading\Enums\SiteCodeType $Site
- * @property \DTS\eBaySDK\Trading\Enums\UserStatusCodeType $Status
+ * @property \cbdesk\eBaySDK\Trading\Enums\SiteCodeType $Site
+ * @property \cbdesk\eBaySDK\Trading\Enums\UserStatusCodeType $Status
  * @property string $UserID
  * @property boolean $UserIDChanged
  * @property \DateTime $UserIDLastChanged
- * @property \DTS\eBaySDK\Trading\Enums\VATStatusCodeType $VATStatus
- * @property \DTS\eBaySDK\Trading\Types\BuyerType $BuyerInfo
- * @property \DTS\eBaySDK\Trading\Types\SellerType $SellerInfo
- * @property \DTS\eBaySDK\Trading\Enums\BusinessRoleType $BusinessRole
- * @property \DTS\eBaySDK\Trading\Enums\PayPalAccountLevelCodeType $PayPalAccountLevel
- * @property \DTS\eBaySDK\Trading\Enums\PayPalAccountTypeCodeType $PayPalAccountType
- * @property \DTS\eBaySDK\Trading\Enums\PayPalAccountStatusCodeType $PayPalAccountStatus
- * @property \DTS\eBaySDK\Trading\Enums\EBaySubscriptionTypeCodeType[] $UserSubscription
+ * @property \cbdesk\eBaySDK\Trading\Enums\VATStatusCodeType $VATStatus
+ * @property \cbdesk\eBaySDK\Trading\Types\BuyerType $BuyerInfo
+ * @property \cbdesk\eBaySDK\Trading\Types\SellerType $SellerInfo
+ * @property \cbdesk\eBaySDK\Trading\Enums\BusinessRoleType $BusinessRole
+ * @property \cbdesk\eBaySDK\Trading\Enums\PayPalAccountLevelCodeType $PayPalAccountLevel
+ * @property \cbdesk\eBaySDK\Trading\Enums\PayPalAccountTypeCodeType $PayPalAccountType
+ * @property \cbdesk\eBaySDK\Trading\Enums\PayPalAccountStatusCodeType $PayPalAccountStatus
+ * @property \cbdesk\eBaySDK\Trading\Enums\EBaySubscriptionTypeCodeType[] $UserSubscription
  * @property boolean $eBayWikiReadOnly
  * @property integer $TUVLevel
  * @property string $VATID
  * @property boolean $MotorsDealer
- * @property \DTS\eBaySDK\Trading\Types\BiddingSummaryType $BiddingSummary
+ * @property \cbdesk\eBaySDK\Trading\Types\BiddingSummaryType $BiddingSummary
  * @property boolean $UserAnonymized
  * @property integer $UniqueNeutralFeedbackCount
  * @property boolean $EnterpriseSeller
  * @property string $BillingEmail
  * @property boolean $QualifiesForSelling
  * @property string $StaticAlias
- * @property \DTS\eBaySDK\Trading\Types\AddressType $ShippingAddress
- * @property \DTS\eBaySDK\Trading\Types\MembershipDetailsType $Membership
+ * @property \cbdesk\eBaySDK\Trading\Types\AddressType $ShippingAddress
+ * @property \cbdesk\eBaySDK\Trading\Types\MembershipDetailsType $Membership
  * @property string $UserFirstName
  * @property string $UserLastName
  */
-class UserType extends \DTS\eBaySDK\Types\BaseType
+class UserType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -134,7 +134,7 @@ class UserType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'NewUser'
         ],
         'RegistrationAddress' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AddressType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\AddressType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'RegistrationAddress'
@@ -182,13 +182,13 @@ class UserType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'VATStatus'
         ],
         'BuyerInfo' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\BuyerType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\BuyerType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BuyerInfo'
         ],
         'SellerInfo' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellerType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\SellerType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SellerInfo'
@@ -248,7 +248,7 @@ class UserType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'MotorsDealer'
         ],
         'BiddingSummary' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\BiddingSummaryType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\BiddingSummaryType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BiddingSummary'
@@ -290,13 +290,13 @@ class UserType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'StaticAlias'
         ],
         'ShippingAddress' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AddressType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\AddressType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingAddress'
         ],
         'Membership' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\MembershipDetailsType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\MembershipDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Membership'

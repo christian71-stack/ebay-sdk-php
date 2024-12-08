@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Enums;
+namespace cbdesk\eBaySDK\PostOrder\Enums;
 
 class AddressTypeEnum
 {

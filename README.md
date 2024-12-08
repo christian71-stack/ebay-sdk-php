@@ -16,7 +16,7 @@ This is a personal project that has been developed by me, [David T. Sadler](http
 
   - [User Guides](https://github.com/davidtsadler/ebay-sdk-php/wiki) - Getting started guide and in-depth information.
   - [Examples](https://github.com/davidtsadler/ebay-sdk-examples) - Several examples of using the SDK.
- 
+
 ## Requirements
 
   - PHP 5.5 or greater with the following extensions:
@@ -56,8 +56,8 @@ The SDK can be installed with [Composer](http://getcomposer.org/). Please see th
 
 require 'vendor/autoload.php';
 
-use \DTS\eBaySDK\Shopping\Services;
-use \DTS\eBaySDK\Shopping\Types;
+use \cbdesk\eBaySDK\Shopping\Services;
+use \cbdesk\eBaySDK\Shopping\Types;
 
 // Create the service object.
 $service = new Services\ShoppingService();

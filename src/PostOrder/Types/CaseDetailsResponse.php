@@ -8,54 +8,54 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace cbdesk\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Types\ActionDeadlines $actionDeadlines
- * @property \DTS\eBaySDK\PostOrder\Types\AppealDetails $appealDetails
+ * @property \cbdesk\eBaySDK\PostOrder\Types\ActionDeadlines $actionDeadlines
+ * @property \cbdesk\eBaySDK\PostOrder\Types\AppealDetails $appealDetails
  * @property string $buyerClosureReason
  * @property string $buyerProtectedProgramLink
- * @property \DTS\eBaySDK\PostOrder\Types\CaseDetails $caseDetails
- * @property \DTS\eBaySDK\PostOrder\Types\ClaimHistoryResponse $caseHistoryDetails
+ * @property \cbdesk\eBaySDK\PostOrder\Types\CaseDetails $caseDetails
+ * @property \cbdesk\eBaySDK\PostOrder\Types\ClaimHistoryResponse $caseHistoryDetails
  * @property string $caseId
  * @property integer $caseQuantity
  * @property string $caseType
- * @property \DTS\eBaySDK\PostOrder\Types\Amount $claimAmount
- * @property \DTS\eBaySDK\PostOrder\Types\DateTime $creationDate
- * @property \DTS\eBaySDK\PostOrder\Enums\UserPartyEnum $escalatedBy
+ * @property \cbdesk\eBaySDK\PostOrder\Types\Amount $claimAmount
+ * @property \cbdesk\eBaySDK\PostOrder\Types\DateTime $creationDate
+ * @property \cbdesk\eBaySDK\PostOrder\Enums\UserPartyEnum $escalatedBy
  * @property string $escalateReason
  * @property string $eventTicketsLink
  * @property string $extTransactionId
  * @property integer $fsnadDaysToAddTrackingAfterShippingItem
- * @property \DTS\eBaySDK\PostOrder\Types\DateTime $fsnadShipToSellerByDate
- * @property \DTS\eBaySDK\PostOrder\Enums\UserPartyEnum $initiator
+ * @property \cbdesk\eBaySDK\PostOrder\Types\DateTime $fsnadShipToSellerByDate
+ * @property \cbdesk\eBaySDK\PostOrder\Enums\UserPartyEnum $initiator
  * @property string $itemId
- * @property \DTS\eBaySDK\PostOrder\Types\DateTime $lastModifiedDate
+ * @property \cbdesk\eBaySDK\PostOrder\Types\DateTime $lastModifiedDate
  * @property string $payForItemLink
  * @property string $priceSignatureConfirmationAmount
  * @property string $recalledItemLink
- * @property \DTS\eBaySDK\PostOrder\Types\ReturnAddress $returnDetails
+ * @property \cbdesk\eBaySDK\PostOrder\Types\ReturnAddress $returnDetails
  * @property string $returnId
  * @property string $sellerClosureReason
- * @property \DTS\eBaySDK\PostOrder\Types\Amount $shippingFee
+ * @property \cbdesk\eBaySDK\PostOrder\Types\Amount $shippingFee
  * @property string $status
  * @property string $transactionId
  */
-class CaseDetailsResponse extends \DTS\eBaySDK\Types\BaseType
+class CaseDetailsResponse extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'actionDeadlines' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ActionDeadlines',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\ActionDeadlines',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'actionDeadlines'
         ],
         'appealDetails' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\AppealDetails',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\AppealDetails',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'appealDetails'
@@ -73,13 +73,13 @@ class CaseDetailsResponse extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'buyerProtectedProgramLink'
         ],
         'caseDetails' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\CaseDetails',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\CaseDetails',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'caseDetails'
         ],
         'caseHistoryDetails' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ClaimHistoryResponse',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\ClaimHistoryResponse',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'caseHistoryDetails'
@@ -103,13 +103,13 @@ class CaseDetailsResponse extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'caseType'
         ],
         'claimAmount' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'claimAmount'
         ],
         'creationDate' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'creationDate'
@@ -145,7 +145,7 @@ class CaseDetailsResponse extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'fsnadDaysToAddTrackingAfterShippingItem'
         ],
         'fsnadShipToSellerByDate' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'fsnadShipToSellerByDate'
@@ -163,7 +163,7 @@ class CaseDetailsResponse extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'itemId'
         ],
         'lastModifiedDate' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'lastModifiedDate'
@@ -187,7 +187,7 @@ class CaseDetailsResponse extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'recalledItemLink'
         ],
         'returnDetails' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ReturnAddress',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\ReturnAddress',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnDetails'
@@ -205,7 +205,7 @@ class CaseDetailsResponse extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'sellerClosureReason'
         ],
         'shippingFee' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingFee'

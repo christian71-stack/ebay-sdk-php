@@ -8,22 +8,22 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ResolutionCaseManagement\Types;
+namespace cbdesk\eBaySDK\ResolutionCaseManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Enums\MoneyMovementType $type
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\CaseUserType $fromParty
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\CaseUserType $toParty
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\Amount $amount
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Enums\PaymentMethodType $paymentMethod
+ * @property \cbdesk\eBaySDK\ResolutionCaseManagement\Enums\MoneyMovementType $type
+ * @property \cbdesk\eBaySDK\ResolutionCaseManagement\Types\CaseUserType $fromParty
+ * @property \cbdesk\eBaySDK\ResolutionCaseManagement\Types\CaseUserType $toParty
+ * @property \cbdesk\eBaySDK\ResolutionCaseManagement\Types\Amount $amount
+ * @property \cbdesk\eBaySDK\ResolutionCaseManagement\Enums\PaymentMethodType $paymentMethod
  * @property string $paypalTransactionId
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Enums\MoneyMovementStatusType $status
+ * @property \cbdesk\eBaySDK\ResolutionCaseManagement\Enums\MoneyMovementStatusType $status
  * @property \DateTime $transactionDate
  * @property string $id
  * @property string $parentId
  */
-class MoneyMovementDetailType extends \DTS\eBaySDK\Types\BaseType
+class MoneyMovementDetailType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -36,19 +36,19 @@ class MoneyMovementDetailType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'type'
         ],
         'fromParty' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\CaseUserType',
+            'type' => 'cbdesk\eBaySDK\ResolutionCaseManagement\Types\CaseUserType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'fromParty'
         ],
         'toParty' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\CaseUserType',
+            'type' => 'cbdesk\eBaySDK\ResolutionCaseManagement\Types\CaseUserType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'toParty'
         ],
         'amount' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\Amount',
+            'type' => 'cbdesk\eBaySDK\ResolutionCaseManagement\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'amount'

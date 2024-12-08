@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Taxonomy\Types;
+namespace cbdesk\eBaySDK\Taxonomy\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Taxonomy\Enums\MarketplaceIdEnum[] $applicableMarketplaceIds
+ * @property \cbdesk\eBaySDK\Taxonomy\Enums\MarketplaceIdEnum[] $applicableMarketplaceIds
  * @property string $categoryTreeId
  * @property string $categoryTreeVersion
- * @property \DTS\eBaySDK\Taxonomy\Types\CategoryTreeNode $rootCategoryNode
+ * @property \cbdesk\eBaySDK\Taxonomy\Types\CategoryTreeNode $rootCategoryNode
  */
-class CategoryTree extends \DTS\eBaySDK\Types\BaseType
+class CategoryTree extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -42,7 +42,7 @@ class CategoryTree extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'categoryTreeVersion'
         ],
         'rootCategoryNode' => [
-            'type' => 'DTS\eBaySDK\Taxonomy\Types\CategoryTreeNode',
+            'type' => 'cbdesk\eBaySDK\Taxonomy\Types\CategoryTreeNode',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'rootCategoryNode'

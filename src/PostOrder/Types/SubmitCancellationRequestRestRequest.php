@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace cbdesk\eBaySDK\PostOrder\Types;
 
 /**
  *
  */
-class SubmitCancellationRequestRestRequest extends \DTS\eBaySDK\PostOrder\Types\CreateCancelRequest
+class SubmitCancellationRequestRestRequest extends \cbdesk\eBaySDK\PostOrder\Types\CreateCancelRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

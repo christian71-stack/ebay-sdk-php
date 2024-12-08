@@ -8,22 +8,22 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $BestOfferID
  * @property \DateTime $ExpirationTime
- * @property \DTS\eBaySDK\Trading\Types\UserType $Buyer
- * @property \DTS\eBaySDK\Trading\Types\AmountType $Price
- * @property \DTS\eBaySDK\Trading\Enums\BestOfferStatusCodeType $Status
+ * @property \cbdesk\eBaySDK\Trading\Types\UserType $Buyer
+ * @property \cbdesk\eBaySDK\Trading\Types\AmountType $Price
+ * @property \cbdesk\eBaySDK\Trading\Enums\BestOfferStatusCodeType $Status
  * @property integer $Quantity
  * @property string $BuyerMessage
  * @property string $SellerMessage
- * @property \DTS\eBaySDK\Trading\Enums\BestOfferTypeCodeType $BestOfferCodeType
+ * @property \cbdesk\eBaySDK\Trading\Enums\BestOfferTypeCodeType $BestOfferCodeType
  * @property string $CallStatus
  */
-class BestOfferType extends \DTS\eBaySDK\Types\BaseType
+class BestOfferType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -42,13 +42,13 @@ class BestOfferType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ExpirationTime'
         ],
         'Buyer' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\UserType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\UserType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Buyer'
         ],
         'Price' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Price'

@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Feed\Services;
+namespace cbdesk\eBaySDK\Feed\Services;
 
-class FeedService extends \DTS\eBaySDK\Feed\Services\FeedBaseService
+class FeedService extends \cbdesk\eBaySDK\Feed\Services\FeedBaseService
 {
     const API_VERSION = 'v1_beta';
 
@@ -21,7 +21,7 @@ class FeedService extends \DTS\eBaySDK\Feed\Services\FeedBaseService
         'GetItemFeed' => [
             'method' => 'GET',
             'resource' => 'item_summary',
-            'responseClass' => '\DTS\eBaySDK\Feed\Types\GetItemFeedRestResponse',
+            'responseClass' => '\cbdesk\eBaySDK\Feed\Types\GetItemFeedRestResponse',
             'params' => [
                 'category_id' => [
                     'valid' => ['string'],
@@ -48,19 +48,19 @@ class FeedService extends \DTS\eBaySDK\Feed\Services\FeedBaseService
     }
 
     /**
-     * @param \DTS\eBaySDK\Feed\Types\GetItemFeedRestRequest $request
-     * @return \DTS\eBaySDK\Feed\Types\GetItemFeedRestResponse
+     * @param \cbdesk\eBaySDK\Feed\Types\GetItemFeedRestRequest $request
+     * @return \cbdesk\eBaySDK\Feed\Types\GetItemFeedRestResponse
      */
-    public function getItemFeed(\DTS\eBaySDK\Feed\Types\GetItemFeedRestRequest $request)
+    public function getItemFeed(\cbdesk\eBaySDK\Feed\Types\GetItemFeedRestRequest $request)
     {
         return $this->getItemFeedAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Feed\Types\GetItemFeedRestRequest $request
+     * @param \cbdesk\eBaySDK\Feed\Types\GetItemFeedRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getItemFeedAsync(\DTS\eBaySDK\Feed\Types\GetItemFeedRestRequest $request)
+    public function getItemFeedAsync(\cbdesk\eBaySDK\Feed\Types\GetItemFeedRestRequest $request)
     {
         return $this->callOperationAsync('GetItemFeed', $request);
     }

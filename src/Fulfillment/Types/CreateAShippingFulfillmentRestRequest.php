@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Fulfillment\Types;
+namespace cbdesk\eBaySDK\Fulfillment\Types;
 
 /**
  *
  * @property string $orderId
  */
-class CreateAShippingFulfillmentRestRequest extends \DTS\eBaySDK\Fulfillment\Types\ShippingFulfillmentDetails
+class CreateAShippingFulfillmentRestRequest extends \cbdesk\eBaySDK\Fulfillment\Types\ShippingFulfillmentDetails
 {
     /**
      * @var array Properties belonging to objects of this class.

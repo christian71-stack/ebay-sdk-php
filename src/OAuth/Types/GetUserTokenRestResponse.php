@@ -1,8 +1,8 @@
 <?php
-namespace DTS\eBaySDK\OAuth\Types;
+namespace cbdesk\eBaySDK\OAuth\Types;
 
-use DTS\eBaySDK\StatusCodeTrait;
-use DTS\eBaySDK\HttpHeadersTrait;
+use cbdesk\eBaySDK\StatusCodeTrait;
+use cbdesk\eBaySDK\HttpHeadersTrait;
 
 /**
  *
@@ -15,7 +15,7 @@ use DTS\eBaySDK\HttpHeadersTrait;
  * @property string $error_description
  * @property string $error_uri
  */
-class GetUserTokenRestResponse  extends \DTS\eBaySDK\Types\BaseType
+class GetUserTokenRestResponse  extends \cbdesk\eBaySDK\Types\BaseType
 {
     use StatusCodeTrait;
     use HttpHeadersTrait;

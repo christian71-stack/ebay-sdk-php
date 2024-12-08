@@ -8,34 +8,34 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
+namespace cbdesk\eBaySDK\BusinessPoliciesManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\BusinessPoliciesManagement\Types\PaymentProfileList $paymentProfileList
- * @property \DTS\eBaySDK\BusinessPoliciesManagement\Types\ReturnPolicyProfileList $returnPolicyProfileList
- * @property \DTS\eBaySDK\BusinessPoliciesManagement\Types\ShippingPolicyProfileList $shippingPolicyProfile
+ * @property \cbdesk\eBaySDK\BusinessPoliciesManagement\Types\PaymentProfileList $paymentProfileList
+ * @property \cbdesk\eBaySDK\BusinessPoliciesManagement\Types\ReturnPolicyProfileList $returnPolicyProfileList
+ * @property \cbdesk\eBaySDK\BusinessPoliciesManagement\Types\ShippingPolicyProfileList $shippingPolicyProfile
  */
-class GetSellerProfilesResponse extends \DTS\eBaySDK\BusinessPoliciesManagement\Types\BaseResponse
+class GetSellerProfilesResponse extends \cbdesk\eBaySDK\BusinessPoliciesManagement\Types\BaseResponse
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'paymentProfileList' => [
-            'type' => 'DTS\eBaySDK\BusinessPoliciesManagement\Types\PaymentProfileList',
+            'type' => 'cbdesk\eBaySDK\BusinessPoliciesManagement\Types\PaymentProfileList',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'paymentProfileList'
         ],
         'returnPolicyProfileList' => [
-            'type' => 'DTS\eBaySDK\BusinessPoliciesManagement\Types\ReturnPolicyProfileList',
+            'type' => 'cbdesk\eBaySDK\BusinessPoliciesManagement\Types\ReturnPolicyProfileList',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnPolicyProfileList'
         ],
         'shippingPolicyProfile' => [
-            'type' => 'DTS\eBaySDK\BusinessPoliciesManagement\Types\ShippingPolicyProfileList',
+            'type' => 'cbdesk\eBaySDK\BusinessPoliciesManagement\Types\ShippingPolicyProfileList',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingPolicyProfile'

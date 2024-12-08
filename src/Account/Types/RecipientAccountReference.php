@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Account\Types;
+namespace cbdesk\eBaySDK\Account\Types;
 
 /**
  *
  * @property string $referenceId
- * @property \DTS\eBaySDK\Account\Enums\RecipientAccountReferenceTypeEnum $referenceType
+ * @property \cbdesk\eBaySDK\Account\Enums\RecipientAccountReferenceTypeEnum $referenceType
  */
-class RecipientAccountReference extends \DTS\eBaySDK\Types\BaseType
+class RecipientAccountReference extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

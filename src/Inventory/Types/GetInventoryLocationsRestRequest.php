@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace cbdesk\eBaySDK\Inventory\Types;
 
 /**
  *
  * @property string $limit
  * @property string $offset
  */
-class GetInventoryLocationsRestRequest extends \DTS\eBaySDK\Types\BaseType
+class GetInventoryLocationsRestRequest extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

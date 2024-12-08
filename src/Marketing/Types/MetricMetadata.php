@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace cbdesk\eBaySDK\Marketing\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Marketing\Enums\DataTypeEnum $dataType
+ * @property \cbdesk\eBaySDK\Marketing\Enums\DataTypeEnum $dataType
  * @property string $metricKey
  */
-class MetricMetadata extends \DTS\eBaySDK\Types\BaseType
+class MetricMetadata extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

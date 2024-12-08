@@ -8,22 +8,22 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\BoldTitleCodeType $BoldTitle
- * @property \DTS\eBaySDK\Trading\Enums\BorderCodeType $Border
- * @property \DTS\eBaySDK\Trading\Enums\HighlightCodeType $Highlight
- * @property \DTS\eBaySDK\Trading\Enums\GiftIconCodeType $GiftIcon
- * @property \DTS\eBaySDK\Trading\Enums\HomePageFeaturedCodeType $HomePageFeatured
- * @property \DTS\eBaySDK\Trading\Enums\FeaturedFirstCodeType $FeaturedFirst
- * @property \DTS\eBaySDK\Trading\Enums\FeaturedPlusCodeType $FeaturedPlus
- * @property \DTS\eBaySDK\Trading\Enums\ProPackCodeType $ProPack
+ * @property \cbdesk\eBaySDK\Trading\Enums\BoldTitleCodeType $BoldTitle
+ * @property \cbdesk\eBaySDK\Trading\Enums\BorderCodeType $Border
+ * @property \cbdesk\eBaySDK\Trading\Enums\HighlightCodeType $Highlight
+ * @property \cbdesk\eBaySDK\Trading\Enums\GiftIconCodeType $GiftIcon
+ * @property \cbdesk\eBaySDK\Trading\Enums\HomePageFeaturedCodeType $HomePageFeatured
+ * @property \cbdesk\eBaySDK\Trading\Enums\FeaturedFirstCodeType $FeaturedFirst
+ * @property \cbdesk\eBaySDK\Trading\Enums\FeaturedPlusCodeType $FeaturedPlus
+ * @property \cbdesk\eBaySDK\Trading\Enums\ProPackCodeType $ProPack
  * @property string $DetailVersion
  * @property \DateTime $UpdateTime
  */
-class ListingFeatureDetailsType extends \DTS\eBaySDK\Types\BaseType
+class ListingFeatureDetailsType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

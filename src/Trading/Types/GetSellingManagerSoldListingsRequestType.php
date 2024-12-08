@@ -8,27 +8,27 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\SellingManagerSearchType $Search
+ * @property \cbdesk\eBaySDK\Trading\Types\SellingManagerSearchType $Search
  * @property integer $StoreCategoryID
- * @property \DTS\eBaySDK\Trading\Enums\SellingManagerSoldListingsPropertyTypeCodeType[] $Filter
+ * @property \cbdesk\eBaySDK\Trading\Enums\SellingManagerSoldListingsPropertyTypeCodeType[] $Filter
  * @property boolean $Archived
- * @property \DTS\eBaySDK\Trading\Enums\SellingManagerSoldListingsSortTypeCodeType $Sort
- * @property \DTS\eBaySDK\Trading\Enums\SortOrderCodeType $SortOrder
- * @property \DTS\eBaySDK\Trading\Types\PaginationType $Pagination
- * @property \DTS\eBaySDK\Trading\Types\TimeRangeType $SaleDateRange
+ * @property \cbdesk\eBaySDK\Trading\Enums\SellingManagerSoldListingsSortTypeCodeType $Sort
+ * @property \cbdesk\eBaySDK\Trading\Enums\SortOrderCodeType $SortOrder
+ * @property \cbdesk\eBaySDK\Trading\Types\PaginationType $Pagination
+ * @property \cbdesk\eBaySDK\Trading\Types\TimeRangeType $SaleDateRange
  */
-class GetSellingManagerSoldListingsRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class GetSellingManagerSoldListingsRequestType extends \cbdesk\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'Search' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellingManagerSearchType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\SellingManagerSearchType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Search'
@@ -64,13 +64,13 @@ class GetSellingManagerSoldListingsRequestType extends \DTS\eBaySDK\Trading\Type
             'elementName' => 'SortOrder'
         ],
         'Pagination' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\PaginationType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\PaginationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Pagination'
         ],
         'SaleDateRange' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\TimeRangeType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\TimeRangeType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SaleDateRange'

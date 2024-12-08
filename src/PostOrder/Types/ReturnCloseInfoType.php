@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace cbdesk\eBaySDK\PostOrder\Types;
 
 /**
  *
@@ -16,7 +16,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property string $buyerCloseReason
  * @property string $returnCloseReason
  */
-class ReturnCloseInfoType extends \DTS\eBaySDK\Types\BaseType
+class ReturnCloseInfoType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

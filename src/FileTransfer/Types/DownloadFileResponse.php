@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\FileTransfer\Types;
+namespace cbdesk\eBaySDK\FileTransfer\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\FileTransfer\Types\FileAttachment $fileAttachment
+ * @property \cbdesk\eBaySDK\FileTransfer\Types\FileAttachment $fileAttachment
  */
-class DownloadFileResponse extends \DTS\eBaySDK\FileTransfer\Types\BaseServiceResponse
+class DownloadFileResponse extends \cbdesk\eBaySDK\FileTransfer\Types\BaseServiceResponse
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'fileAttachment' => [
-            'type' => 'DTS\eBaySDK\FileTransfer\Types\FileAttachment',
+            'type' => 'cbdesk\eBaySDK\FileTransfer\Types\FileAttachment',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'fileAttachment'

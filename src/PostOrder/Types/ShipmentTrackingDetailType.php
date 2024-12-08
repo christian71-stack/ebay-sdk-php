@@ -8,18 +8,18 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace cbdesk\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property string $carrier
  * @property string $currentStatus
- * @property \DTS\eBaySDK\PostOrder\Types\DateTime $estimateFromDate
- * @property \DTS\eBaySDK\PostOrder\Types\DateTime $estimateToDate
+ * @property \cbdesk\eBaySDK\PostOrder\Types\DateTime $estimateFromDate
+ * @property \cbdesk\eBaySDK\PostOrder\Types\DateTime $estimateToDate
  * @property string $trackingNumber
  * @property string $trackingURL
  */
-class ShipmentTrackingDetailType extends \DTS\eBaySDK\Types\BaseType
+class ShipmentTrackingDetailType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -38,13 +38,13 @@ class ShipmentTrackingDetailType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'currentStatus'
         ],
         'estimateFromDate' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'estimateFromDate'
         ],
         'estimateToDate' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'estimateToDate'

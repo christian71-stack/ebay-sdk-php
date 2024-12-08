@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Enums;
+namespace cbdesk\eBaySDK\MerchantData\Enums;
 
 class PayPalAccountTypeCodeType
 {

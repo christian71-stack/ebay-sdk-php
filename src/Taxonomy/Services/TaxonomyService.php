@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Taxonomy\Services;
+namespace cbdesk\eBaySDK\Taxonomy\Services;
 
-class TaxonomyService extends \DTS\eBaySDK\Taxonomy\Services\TaxonomyBaseService
+class TaxonomyService extends \cbdesk\eBaySDK\Taxonomy\Services\TaxonomyBaseService
 {
     const API_VERSION = 'v1_beta';
 
@@ -21,7 +21,7 @@ class TaxonomyService extends \DTS\eBaySDK\Taxonomy\Services\TaxonomyBaseService
         'GetADefaultCategoryTreeId' => [
             'method' => 'GET',
             'resource' => 'get_default_category_tree_id',
-            'responseClass' => '\DTS\eBaySDK\Taxonomy\Types\GetADefaultCategoryTreeIdRestResponse',
+            'responseClass' => '\cbdesk\eBaySDK\Taxonomy\Types\GetADefaultCategoryTreeIdRestResponse',
             'params' => [
                 'marketplace_id' => [
                     'valid' => ['string'],
@@ -32,7 +32,7 @@ class TaxonomyService extends \DTS\eBaySDK\Taxonomy\Services\TaxonomyBaseService
         'GetACategoryTree' => [
             'method' => 'GET',
             'resource' => 'category_tree/{category_tree_id}',
-            'responseClass' => '\DTS\eBaySDK\Taxonomy\Types\GetACategoryTreeRestResponse',
+            'responseClass' => '\cbdesk\eBaySDK\Taxonomy\Types\GetACategoryTreeRestResponse',
             'params' => [
                 'category_tree_id' => [
                     'valid' => ['string'],
@@ -43,7 +43,7 @@ class TaxonomyService extends \DTS\eBaySDK\Taxonomy\Services\TaxonomyBaseService
         'GetACategorySubtree' => [
             'method' => 'GET',
             'resource' => 'category_tree/{category_tree_id}/get_category_subtree',
-            'responseClass' => '\DTS\eBaySDK\Taxonomy\Types\GetACategorySubtreeRestResponse',
+            'responseClass' => '\cbdesk\eBaySDK\Taxonomy\Types\GetACategorySubtreeRestResponse',
             'params' => [
                 'category_id' => [
                     'valid' => ['string'],
@@ -58,7 +58,7 @@ class TaxonomyService extends \DTS\eBaySDK\Taxonomy\Services\TaxonomyBaseService
         'GetSuggestedCategories' => [
             'method' => 'GET',
             'resource' => 'category_tree/{category_tree_id}/get_category_suggestions',
-            'responseClass' => '\DTS\eBaySDK\Taxonomy\Types\GetSuggestedCategoriesRestResponse',
+            'responseClass' => '\cbdesk\eBaySDK\Taxonomy\Types\GetSuggestedCategoriesRestResponse',
             'params' => [
                 'category_tree_id' => [
                     'valid' => ['string'],
@@ -73,7 +73,7 @@ class TaxonomyService extends \DTS\eBaySDK\Taxonomy\Services\TaxonomyBaseService
         'GetItemAspectsForCategory' => [
             'method' => 'GET',
             'resource' => 'category_tree/{category_tree_id}/get_item_aspects_for_category',
-            'responseClass' => '\DTS\eBaySDK\Taxonomy\Types\GetItemAspectsForCategoryRestResponse',
+            'responseClass' => '\cbdesk\eBaySDK\Taxonomy\Types\GetItemAspectsForCategoryRestResponse',
             'params' => [
                 'category_id' => [
                     'valid' => ['string'],
@@ -96,91 +96,91 @@ class TaxonomyService extends \DTS\eBaySDK\Taxonomy\Services\TaxonomyBaseService
     }
 
     /**
-     * @param \DTS\eBaySDK\Taxonomy\Types\GetADefaultCategoryTreeIdRestRequest $request
-     * @return \DTS\eBaySDK\Taxonomy\Types\GetADefaultCategoryTreeIdRestResponse
+     * @param \cbdesk\eBaySDK\Taxonomy\Types\GetADefaultCategoryTreeIdRestRequest $request
+     * @return \cbdesk\eBaySDK\Taxonomy\Types\GetADefaultCategoryTreeIdRestResponse
      */
-    public function getADefaultCategoryTreeId(\DTS\eBaySDK\Taxonomy\Types\GetADefaultCategoryTreeIdRestRequest $request)
+    public function getADefaultCategoryTreeId(\cbdesk\eBaySDK\Taxonomy\Types\GetADefaultCategoryTreeIdRestRequest $request)
     {
         return $this->getADefaultCategoryTreeIdAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Taxonomy\Types\GetADefaultCategoryTreeIdRestRequest $request
+     * @param \cbdesk\eBaySDK\Taxonomy\Types\GetADefaultCategoryTreeIdRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getADefaultCategoryTreeIdAsync(\DTS\eBaySDK\Taxonomy\Types\GetADefaultCategoryTreeIdRestRequest $request)
+    public function getADefaultCategoryTreeIdAsync(\cbdesk\eBaySDK\Taxonomy\Types\GetADefaultCategoryTreeIdRestRequest $request)
     {
         return $this->callOperationAsync('GetADefaultCategoryTreeId', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Taxonomy\Types\GetACategoryTreeRestRequest $request
-     * @return \DTS\eBaySDK\Taxonomy\Types\GetACategoryTreeRestResponse
+     * @param \cbdesk\eBaySDK\Taxonomy\Types\GetACategoryTreeRestRequest $request
+     * @return \cbdesk\eBaySDK\Taxonomy\Types\GetACategoryTreeRestResponse
      */
-    public function getACategoryTree(\DTS\eBaySDK\Taxonomy\Types\GetACategoryTreeRestRequest $request)
+    public function getACategoryTree(\cbdesk\eBaySDK\Taxonomy\Types\GetACategoryTreeRestRequest $request)
     {
         return $this->getACategoryTreeAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Taxonomy\Types\GetACategoryTreeRestRequest $request
+     * @param \cbdesk\eBaySDK\Taxonomy\Types\GetACategoryTreeRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getACategoryTreeAsync(\DTS\eBaySDK\Taxonomy\Types\GetACategoryTreeRestRequest $request)
+    public function getACategoryTreeAsync(\cbdesk\eBaySDK\Taxonomy\Types\GetACategoryTreeRestRequest $request)
     {
         return $this->callOperationAsync('GetACategoryTree', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Taxonomy\Types\GetACategorySubtreeRestRequest $request
-     * @return \DTS\eBaySDK\Taxonomy\Types\GetACategorySubtreeRestResponse
+     * @param \cbdesk\eBaySDK\Taxonomy\Types\GetACategorySubtreeRestRequest $request
+     * @return \cbdesk\eBaySDK\Taxonomy\Types\GetACategorySubtreeRestResponse
      */
-    public function getACategorySubtree(\DTS\eBaySDK\Taxonomy\Types\GetACategorySubtreeRestRequest $request)
+    public function getACategorySubtree(\cbdesk\eBaySDK\Taxonomy\Types\GetACategorySubtreeRestRequest $request)
     {
         return $this->getACategorySubtreeAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Taxonomy\Types\GetACategorySubtreeRestRequest $request
+     * @param \cbdesk\eBaySDK\Taxonomy\Types\GetACategorySubtreeRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getACategorySubtreeAsync(\DTS\eBaySDK\Taxonomy\Types\GetACategorySubtreeRestRequest $request)
+    public function getACategorySubtreeAsync(\cbdesk\eBaySDK\Taxonomy\Types\GetACategorySubtreeRestRequest $request)
     {
         return $this->callOperationAsync('GetACategorySubtree', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Taxonomy\Types\GetSuggestedCategoriesRestRequest $request
-     * @return \DTS\eBaySDK\Taxonomy\Types\GetSuggestedCategoriesRestResponse
+     * @param \cbdesk\eBaySDK\Taxonomy\Types\GetSuggestedCategoriesRestRequest $request
+     * @return \cbdesk\eBaySDK\Taxonomy\Types\GetSuggestedCategoriesRestResponse
      */
-    public function getSuggestedCategories(\DTS\eBaySDK\Taxonomy\Types\GetSuggestedCategoriesRestRequest $request)
+    public function getSuggestedCategories(\cbdesk\eBaySDK\Taxonomy\Types\GetSuggestedCategoriesRestRequest $request)
     {
         return $this->getSuggestedCategoriesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Taxonomy\Types\GetSuggestedCategoriesRestRequest $request
+     * @param \cbdesk\eBaySDK\Taxonomy\Types\GetSuggestedCategoriesRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getSuggestedCategoriesAsync(\DTS\eBaySDK\Taxonomy\Types\GetSuggestedCategoriesRestRequest $request)
+    public function getSuggestedCategoriesAsync(\cbdesk\eBaySDK\Taxonomy\Types\GetSuggestedCategoriesRestRequest $request)
     {
         return $this->callOperationAsync('GetSuggestedCategories', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Taxonomy\Types\GetItemAspectsForCategoryRestRequest $request
-     * @return \DTS\eBaySDK\Taxonomy\Types\GetItemAspectsForCategoryRestResponse
+     * @param \cbdesk\eBaySDK\Taxonomy\Types\GetItemAspectsForCategoryRestRequest $request
+     * @return \cbdesk\eBaySDK\Taxonomy\Types\GetItemAspectsForCategoryRestResponse
      */
-    public function getItemAspectsForCategory(\DTS\eBaySDK\Taxonomy\Types\GetItemAspectsForCategoryRestRequest $request)
+    public function getItemAspectsForCategory(\cbdesk\eBaySDK\Taxonomy\Types\GetItemAspectsForCategoryRestRequest $request)
     {
         return $this->getItemAspectsForCategoryAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Taxonomy\Types\GetItemAspectsForCategoryRestRequest $request
+     * @param \cbdesk\eBaySDK\Taxonomy\Types\GetItemAspectsForCategoryRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getItemAspectsForCategoryAsync(\DTS\eBaySDK\Taxonomy\Types\GetItemAspectsForCategoryRestRequest $request)
+    public function getItemAspectsForCategoryAsync(\cbdesk\eBaySDK\Taxonomy\Types\GetItemAspectsForCategoryRestRequest $request)
     {
         return $this->callOperationAsync('GetItemAspectsForCategory', $request);
     }

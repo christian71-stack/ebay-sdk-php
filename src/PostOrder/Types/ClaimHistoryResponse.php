@@ -8,27 +8,27 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace cbdesk\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Types\ClaimHistoryEventModel[] $history
- * @property \DTS\eBaySDK\PostOrder\Types\ShipmentTrackingDetailType $shipmentTrackingDetails
+ * @property \cbdesk\eBaySDK\PostOrder\Types\ClaimHistoryEventModel[] $history
+ * @property \cbdesk\eBaySDK\PostOrder\Types\ShipmentTrackingDetailType $shipmentTrackingDetails
  */
-class ClaimHistoryResponse extends \DTS\eBaySDK\Types\BaseType
+class ClaimHistoryResponse extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'history' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ClaimHistoryEventModel',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\ClaimHistoryEventModel',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'history'
         ],
         'shipmentTrackingDetails' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ShipmentTrackingDetailType',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\ShipmentTrackingDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shipmentTrackingDetails'

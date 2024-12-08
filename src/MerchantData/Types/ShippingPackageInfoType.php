@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
@@ -20,7 +20,7 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property \DateTime $EstimatedDeliveryTimeMin
  * @property \DateTime $EstimatedDeliveryTimeMax
  */
-class ShippingPackageInfoType extends \DTS\eBaySDK\Types\BaseType
+class ShippingPackageInfoType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

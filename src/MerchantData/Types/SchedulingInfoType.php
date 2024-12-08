@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
@@ -16,7 +16,7 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property integer $MinScheduledMinutes
  * @property integer $MaxScheduledItems
  */
-class SchedulingInfoType extends \DTS\eBaySDK\Types\BaseType
+class SchedulingInfoType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

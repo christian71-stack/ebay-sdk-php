@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
@@ -16,9 +16,9 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DateTime $EndTimeFrom
  * @property \DateTime $EndTimeTo
  * @property string $UserID
- * @property \DTS\eBaySDK\Trading\Enums\GranularityLevelCodeType $GranularityLevel
+ * @property \cbdesk\eBaySDK\Trading\Enums\GranularityLevelCodeType $GranularityLevel
  */
-class GetBidderListRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class GetBidderListRequestType extends \cbdesk\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.

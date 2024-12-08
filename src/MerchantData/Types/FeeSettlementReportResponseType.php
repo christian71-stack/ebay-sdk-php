@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
@@ -19,17 +19,17 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property \DateTime $ReportEndTime
  * @property \DateTime $InvoiceProcessingTime
  * @property \DateTime $ReportProcessingTime
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $FeeSettlementAmount
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $LastInvoiceAmount
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $FeeRoundingAdjustmentAmount
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $FeeTotalUsageAdjustmentAmount
- * @property \DTS\eBaySDK\MerchantData\Types\OrderDetailsType[] $OrderTransactionList
- * @property \DTS\eBaySDK\MerchantData\Types\TransactionListType[] $ListingTransactionList
- * @property \DTS\eBaySDK\MerchantData\Types\OrderDetailsType[] $OrderAdjustmentList
- * @property \DTS\eBaySDK\MerchantData\Types\AccountTransactionType[] $AccountTransactionList
- * @property \DTS\eBaySDK\MerchantData\Types\AccountTransactionType[] $DiscountTransactionList
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $FeeSettlementAmount
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $LastInvoiceAmount
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $FeeRoundingAdjustmentAmount
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $FeeTotalUsageAdjustmentAmount
+ * @property \cbdesk\eBaySDK\MerchantData\Types\OrderDetailsType[] $OrderTransactionList
+ * @property \cbdesk\eBaySDK\MerchantData\Types\TransactionListType[] $ListingTransactionList
+ * @property \cbdesk\eBaySDK\MerchantData\Types\OrderDetailsType[] $OrderAdjustmentList
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AccountTransactionType[] $AccountTransactionList
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AccountTransactionType[] $DiscountTransactionList
  */
-class FeeSettlementReportResponseType extends \DTS\eBaySDK\MerchantData\Types\AbstractResponseType
+class FeeSettlementReportResponseType extends \cbdesk\eBaySDK\MerchantData\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -78,55 +78,55 @@ class FeeSettlementReportResponseType extends \DTS\eBaySDK\MerchantData\Types\Ab
             'elementName' => 'ReportProcessingTime'
         ],
         'FeeSettlementAmount' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FeeSettlementAmount'
         ],
         'LastInvoiceAmount' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'LastInvoiceAmount'
         ],
         'FeeRoundingAdjustmentAmount' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FeeRoundingAdjustmentAmount'
         ],
         'FeeTotalUsageAdjustmentAmount' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FeeTotalUsageAdjustmentAmount'
         ],
         'OrderTransactionList' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\OrderDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\OrderDetailsType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'OrderTransactionList'
         ],
         'ListingTransactionList' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\TransactionListType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\TransactionListType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ListingTransactionList'
         ],
         'OrderAdjustmentList' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\OrderDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\OrderDetailsType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'OrderAdjustmentList'
         ],
         'AccountTransactionList' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AccountTransactionType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AccountTransactionType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'AccountTransactionList'
         ],
         'DiscountTransactionList' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AccountTransactionType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AccountTransactionType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'DiscountTransactionList'

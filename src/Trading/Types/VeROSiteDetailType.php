@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\SiteCodeType $Site
- * @property \DTS\eBaySDK\Trading\Types\ReasonCodeDetailType[] $ReasonCodeDetail
+ * @property \cbdesk\eBaySDK\Trading\Enums\SiteCodeType $Site
+ * @property \cbdesk\eBaySDK\Trading\Types\ReasonCodeDetailType[] $ReasonCodeDetail
  */
-class VeROSiteDetailType extends \DTS\eBaySDK\Types\BaseType
+class VeROSiteDetailType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -28,7 +28,7 @@ class VeROSiteDetailType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'Site'
         ],
         'ReasonCodeDetail' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ReasonCodeDetailType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\ReasonCodeDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ReasonCodeDetail'

@@ -8,17 +8,17 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Finding\Types;
+namespace cbdesk\eBaySDK\Finding\Types;
 
 /**
  *
  * @property string $itemId
  * @property string[] $categoryId
- * @property \DTS\eBaySDK\Finding\Types\ItemFilter[] $itemFilter
- * @property \DTS\eBaySDK\Finding\Types\AspectFilter[] $aspectFilter
- * @property \DTS\eBaySDK\Finding\Enums\OutputSelectorType[] $outputSelector
+ * @property \cbdesk\eBaySDK\Finding\Types\ItemFilter[] $itemFilter
+ * @property \cbdesk\eBaySDK\Finding\Types\AspectFilter[] $aspectFilter
+ * @property \cbdesk\eBaySDK\Finding\Enums\OutputSelectorType[] $outputSelector
  */
-class FindItemsByImageRequest extends \DTS\eBaySDK\Finding\Types\BestMatchFindingServiceRequest
+class FindItemsByImageRequest extends \cbdesk\eBaySDK\Finding\Types\BestMatchFindingServiceRequest
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -37,13 +37,13 @@ class FindItemsByImageRequest extends \DTS\eBaySDK\Finding\Types\BestMatchFindin
             'elementName' => 'categoryId'
         ],
         'itemFilter' => [
-            'type' => 'DTS\eBaySDK\Finding\Types\ItemFilter',
+            'type' => 'cbdesk\eBaySDK\Finding\Types\ItemFilter',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'itemFilter'
         ],
         'aspectFilter' => [
-            'type' => 'DTS\eBaySDK\Finding\Types\AspectFilter',
+            'type' => 'cbdesk\eBaySDK\Finding\Types\AspectFilter',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'aspectFilter'

@@ -8,23 +8,23 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\RelatedItemsManagement\Types;
+namespace cbdesk\eBaySDK\RelatedItemsManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\RelatedItemsManagement\Types\RelatedProduct[] $relatedProduct
+ * @property \cbdesk\eBaySDK\RelatedItemsManagement\Types\RelatedProduct[] $relatedProduct
  * @property string $groupName
  * @property integer $rank
  * @property boolean $singleRelatedSKUPurchaseOnly
  */
-class RelatedProductGroup extends \DTS\eBaySDK\Types\BaseType
+class RelatedProductGroup extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'relatedProduct' => [
-            'type' => 'DTS\eBaySDK\RelatedItemsManagement\Types\RelatedProduct',
+            'type' => 'cbdesk\eBaySDK\RelatedItemsManagement\Types\RelatedProduct',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'relatedProduct'

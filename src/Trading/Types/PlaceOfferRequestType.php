@@ -8,24 +8,24 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\OfferType $Offer
+ * @property \cbdesk\eBaySDK\Trading\Types\OfferType $Offer
  * @property string $ItemID
  * @property boolean $BlockOnWarning
- * @property \DTS\eBaySDK\Trading\Types\AffiliateTrackingDetailsType $AffiliateTrackingDetails
- * @property \DTS\eBaySDK\Trading\Types\NameValueListArrayType $VariationSpecifics
+ * @property \cbdesk\eBaySDK\Trading\Types\AffiliateTrackingDetailsType $AffiliateTrackingDetails
+ * @property \cbdesk\eBaySDK\Trading\Types\NameValueListArrayType $VariationSpecifics
  */
-class PlaceOfferRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class PlaceOfferRequestType extends \cbdesk\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'Offer' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\OfferType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\OfferType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Offer'
@@ -43,13 +43,13 @@ class PlaceOfferRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestTy
             'elementName' => 'BlockOnWarning'
         ],
         'AffiliateTrackingDetails' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AffiliateTrackingDetailsType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\AffiliateTrackingDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AffiliateTrackingDetails'
         ],
         'VariationSpecifics' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\NameValueListArrayType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\NameValueListArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'VariationSpecifics'

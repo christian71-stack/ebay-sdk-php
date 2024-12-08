@@ -8,19 +8,19 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace cbdesk\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property string $activity
- * @property \DTS\eBaySDK\PostOrder\Types\ResponseHistoryAttributesType $attributes
+ * @property \cbdesk\eBaySDK\PostOrder\Types\ResponseHistoryAttributesType $attributes
  * @property string $author
- * @property \DTS\eBaySDK\PostOrder\Types\DateTime $creationDate
+ * @property \cbdesk\eBaySDK\PostOrder\Types\DateTime $creationDate
  * @property string $fromState
  * @property string $notes
  * @property string $toState
  */
-class ReturnResponseHistoryType extends \DTS\eBaySDK\Types\BaseType
+class ReturnResponseHistoryType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -33,7 +33,7 @@ class ReturnResponseHistoryType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'activity'
         ],
         'attributes' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ResponseHistoryAttributesType',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\ResponseHistoryAttributesType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'attributes'
@@ -45,7 +45,7 @@ class ReturnResponseHistoryType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'author'
         ],
         'creationDate' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'creationDate'

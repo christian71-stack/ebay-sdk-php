@@ -8,34 +8,34 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
+namespace cbdesk\eBaySDK\BusinessPoliciesManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\BusinessPoliciesManagement\Types\PaymentProfile $paymentProfile
- * @property \DTS\eBaySDK\BusinessPoliciesManagement\Types\ReturnPolicyProfile $returnPolicyProfile
- * @property \DTS\eBaySDK\BusinessPoliciesManagement\Types\ShippingPolicyProfile $shippingPolicyProfile
+ * @property \cbdesk\eBaySDK\BusinessPoliciesManagement\Types\PaymentProfile $paymentProfile
+ * @property \cbdesk\eBaySDK\BusinessPoliciesManagement\Types\ReturnPolicyProfile $returnPolicyProfile
+ * @property \cbdesk\eBaySDK\BusinessPoliciesManagement\Types\ShippingPolicyProfile $shippingPolicyProfile
  */
-class SetSellerProfileResponse extends \DTS\eBaySDK\BusinessPoliciesManagement\Types\BaseResponse
+class SetSellerProfileResponse extends \cbdesk\eBaySDK\BusinessPoliciesManagement\Types\BaseResponse
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'paymentProfile' => [
-            'type' => 'DTS\eBaySDK\BusinessPoliciesManagement\Types\PaymentProfile',
+            'type' => 'cbdesk\eBaySDK\BusinessPoliciesManagement\Types\PaymentProfile',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'paymentProfile'
         ],
         'returnPolicyProfile' => [
-            'type' => 'DTS\eBaySDK\BusinessPoliciesManagement\Types\ReturnPolicyProfile',
+            'type' => 'cbdesk\eBaySDK\BusinessPoliciesManagement\Types\ReturnPolicyProfile',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnPolicyProfile'
         ],
         'shippingPolicyProfile' => [
-            'type' => 'DTS\eBaySDK\BusinessPoliciesManagement\Types\ShippingPolicyProfile',
+            'type' => 'cbdesk\eBaySDK\BusinessPoliciesManagement\Types\ShippingPolicyProfile',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingPolicyProfile'

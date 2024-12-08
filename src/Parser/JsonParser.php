@@ -1,10 +1,10 @@
 <?php
-namespace DTS\eBaySDK\Parser;
+namespace cbdesk\eBaySDK\Parser;
 
 class JsonParser
 {
     /**
-     * @param mixed A PHP object derived from DTS\eBaySDK\Types\BaseType
+     * @param mixed A PHP object derived from cbdesk\eBaySDK\Types\BaseType
      * @param string $json The JSON string to parse.
      */
     public static function parseAndAssignProperties($object, $json)
@@ -13,7 +13,7 @@ class JsonParser
         self::assignProperties($object, $properties);
     }
 
-    private static function assignProperties(\DTS\eBaySDK\Types\BaseType $object, array $properties)
+    private static function assignProperties(\cbdesk\eBaySDK\Types\BaseType $object, array $properties)
     {
         foreach ($properties as $property => $value) {
             $propertyMeta = $object->elementMeta($property);

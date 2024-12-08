@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace cbdesk\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property string $itemId
- * @property \DTS\eBaySDK\PostOrder\Enums\ReturnReasonEnum $reason
+ * @property \cbdesk\eBaySDK\PostOrder\Enums\ReturnReasonEnum $reason
  * @property integer $returnQuantity
  * @property string $transactionId
  */
-class GetEstimateRequest extends \DTS\eBaySDK\Types\BaseType
+class GetEstimateRequest extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

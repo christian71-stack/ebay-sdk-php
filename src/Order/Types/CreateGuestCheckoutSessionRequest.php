@@ -8,18 +8,18 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Order\Types;
+namespace cbdesk\eBaySDK\Order\Types;
 
 /**
  *
  * @property string $contactEmail
  * @property string $contactFirstName
  * @property string $contactLastName
- * @property \DTS\eBaySDK\Order\Types\CreditCard $creditCard
- * @property \DTS\eBaySDK\Order\Types\LineItemInput[] $lineItemInputs
- * @property \DTS\eBaySDK\Order\Types\ShippingAddress $shippingAddress
+ * @property \cbdesk\eBaySDK\Order\Types\CreditCard $creditCard
+ * @property \cbdesk\eBaySDK\Order\Types\LineItemInput[] $lineItemInputs
+ * @property \cbdesk\eBaySDK\Order\Types\ShippingAddress $shippingAddress
  */
-class CreateGuestCheckoutSessionRequest extends \DTS\eBaySDK\Types\BaseType
+class CreateGuestCheckoutSessionRequest extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -44,19 +44,19 @@ class CreateGuestCheckoutSessionRequest extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'contactLastName'
         ],
         'creditCard' => [
-            'type' => 'DTS\eBaySDK\Order\Types\CreditCard',
+            'type' => 'cbdesk\eBaySDK\Order\Types\CreditCard',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'creditCard'
         ],
         'lineItemInputs' => [
-            'type' => 'DTS\eBaySDK\Order\Types\LineItemInput',
+            'type' => 'cbdesk\eBaySDK\Order\Types\LineItemInput',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'lineItemInputs'
         ],
         'shippingAddress' => [
-            'type' => 'DTS\eBaySDK\Order\Types\ShippingAddress',
+            'type' => 'cbdesk\eBaySDK\Order\Types\ShippingAddress',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingAddress'

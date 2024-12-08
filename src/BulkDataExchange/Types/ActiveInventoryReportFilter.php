@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BulkDataExchange\Types;
+namespace cbdesk\eBaySDK\BulkDataExchange\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\BulkDataExchange\Enums\IncludeListingType $includeListingType
- * @property \DTS\eBaySDK\BulkDataExchange\Types\FixedPriceItemDetails $fixedPriceItemDetails
- * @property \DTS\eBaySDK\BulkDataExchange\Types\AuctionItemDetails $auctionItemDetails
+ * @property \cbdesk\eBaySDK\BulkDataExchange\Enums\IncludeListingType $includeListingType
+ * @property \cbdesk\eBaySDK\BulkDataExchange\Types\FixedPriceItemDetails $fixedPriceItemDetails
+ * @property \cbdesk\eBaySDK\BulkDataExchange\Types\AuctionItemDetails $auctionItemDetails
  */
-class ActiveInventoryReportFilter extends \DTS\eBaySDK\Types\BaseType
+class ActiveInventoryReportFilter extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -29,13 +29,13 @@ class ActiveInventoryReportFilter extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'includeListingType'
         ],
         'fixedPriceItemDetails' => [
-            'type' => 'DTS\eBaySDK\BulkDataExchange\Types\FixedPriceItemDetails',
+            'type' => 'cbdesk\eBaySDK\BulkDataExchange\Types\FixedPriceItemDetails',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'fixedPriceItemDetails'
         ],
         'auctionItemDetails' => [
-            'type' => 'DTS\eBaySDK\BulkDataExchange\Types\AuctionItemDetails',
+            'type' => 'cbdesk\eBaySDK\BulkDataExchange\Types\AuctionItemDetails',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'auctionItemDetails'

@@ -1,32 +1,32 @@
 <?php
-namespace DTS\eBaySDK;
+namespace cbdesk\eBaySDK;
 
 /**
- * Builds DTS\eBaySDK services based on passed configuration options.
+ * Builds cbdesk\eBaySDK services based on passed configuration options.
  *
- * @method \DTS\eBaySDK\Account\Services\AccountService createAccount(array $args = [])
- * @method \DTS\eBaySDK\Analytics\Services\AnalyticsService createAnalytics(array $args = [])
- * @method \DTS\eBaySDK\Browse\Services\BrowseService createBrowse(array $args = [])
- * @method \DTS\eBaySDK\BulkDataExchange\Services\BulkDataExchangeService createBulkDataExchange(array $args = [])
- * @method \DTS\eBaySDK\BusinessPoliciesManagement\Services\BusinessPoliciesManagementService createBusinessPoliciesManagement(array $args = [])
- * @method \DTS\eBaySDK\Feedback\Services\FeedbackService createFeedback(array $args = [])
- * @method \DTS\eBaySDK\FileTransfer\Services\FileTransferService createFileTransfer(array $args = [])
- * @method \DTS\eBaySDK\Finding\Services\FindingService createFinding(array $args = [])
- * @method \DTS\eBaySDK\Fulfillment\Services\FulfillmentService createFulfillment(array $args = [])
- * @method \DTS\eBaySDK\HalfFinding\Services\HalfFindingService createHalfFinding(array $args = [])
- * @method \DTS\eBaySDK\Inventory\Services\InventoryService createInventory(array $args = [])
- * @method \DTS\eBaySDK\Marketing\Services\MarketingService createMarketing(array $args = [])
- * @method \DTS\eBaySDK\Merchandising\Services\MerchandisingService createMerchandising(array $args = [])
- * @method \DTS\eBaySDK\Metadata\Services\MetadataService createMetadata(array $args = [])
- * @method \DTS\eBaySDK\Order\Services\OrderService createOrder(array $args = [])
- * @method \DTS\eBaySDK\PostOrder\Services\PostOrderService createPostOrder(array $args = [])
- * @method \DTS\eBaySDK\Product\Services\ProductService createProduct(array $args = [])
- * @method \DTS\eBaySDK\ProductMetadata\Services\ProductMetadataService createProductMetadata(array $args = [])
- * @method \DTS\eBaySDK\RelatedItemsManagement\Services\RelatedItemsManagementService createRelatedItemsManagement(array $args = [])
- * @method \DTS\eBaySDK\ResolutionCaseManagement\Services\ResolutionCaseManagementService createResolutionCaseManagement(array $args = [])
- * @method \DTS\eBaySDK\ReturnManagement\Services\ReturnManagementService createReturnManagement(array $args = [])
- * @method \DTS\eBaySDK\Shopping\Services\ShoppingService createShopping(array $args = [])
- * @method \DTS\eBaySDK\Trading\Services\TradingService createTrading(array $args = [])
+ * @method \cbdesk\eBaySDK\Account\Services\AccountService createAccount(array $args = [])
+ * @method \cbdesk\eBaySDK\Analytics\Services\AnalyticsService createAnalytics(array $args = [])
+ * @method \cbdesk\eBaySDK\Browse\Services\BrowseService createBrowse(array $args = [])
+ * @method \cbdesk\eBaySDK\BulkDataExchange\Services\BulkDataExchangeService createBulkDataExchange(array $args = [])
+ * @method \cbdesk\eBaySDK\BusinessPoliciesManagement\Services\BusinessPoliciesManagementService createBusinessPoliciesManagement(array $args = [])
+ * @method \cbdesk\eBaySDK\Feedback\Services\FeedbackService createFeedback(array $args = [])
+ * @method \cbdesk\eBaySDK\FileTransfer\Services\FileTransferService createFileTransfer(array $args = [])
+ * @method \cbdesk\eBaySDK\Finding\Services\FindingService createFinding(array $args = [])
+ * @method \cbdesk\eBaySDK\Fulfillment\Services\FulfillmentService createFulfillment(array $args = [])
+ * @method \cbdesk\eBaySDK\HalfFinding\Services\HalfFindingService createHalfFinding(array $args = [])
+ * @method \cbdesk\eBaySDK\Inventory\Services\InventoryService createInventory(array $args = [])
+ * @method \cbdesk\eBaySDK\Marketing\Services\MarketingService createMarketing(array $args = [])
+ * @method \cbdesk\eBaySDK\Merchandising\Services\MerchandisingService createMerchandising(array $args = [])
+ * @method \cbdesk\eBaySDK\Metadata\Services\MetadataService createMetadata(array $args = [])
+ * @method \cbdesk\eBaySDK\Order\Services\OrderService createOrder(array $args = [])
+ * @method \cbdesk\eBaySDK\PostOrder\Services\PostOrderService createPostOrder(array $args = [])
+ * @method \cbdesk\eBaySDK\Product\Services\ProductService createProduct(array $args = [])
+ * @method \cbdesk\eBaySDK\ProductMetadata\Services\ProductMetadataService createProductMetadata(array $args = [])
+ * @method \cbdesk\eBaySDK\RelatedItemsManagement\Services\RelatedItemsManagementService createRelatedItemsManagement(array $args = [])
+ * @method \cbdesk\eBaySDK\ResolutionCaseManagement\Services\ResolutionCaseManagementService createResolutionCaseManagement(array $args = [])
+ * @method \cbdesk\eBaySDK\ReturnManagement\Services\ReturnManagementService createReturnManagement(array $args = [])
+ * @method \cbdesk\eBaySDK\Shopping\Services\ShoppingService createShopping(array $args = [])
+ * @method \cbdesk\eBaySDK\Trading\Services\TradingService createTrading(array $args = [])
  */
 class Sdk
 {
@@ -55,7 +55,7 @@ class Sdk
      * @param string $name The method name.
      * @param array $args Arguments that will be passed to the method.
      *
-     * @return \DTS\eBaySDK\Services\BaseService
+     * @return \cbdesk\eBaySDK\Services\BaseService
      * @throws \BadMethodCallException
      */
     public function __call($name, array $args)
@@ -76,7 +76,7 @@ class Sdk
      * @param string $namespace Service namespace (e.g. Finding, Trading).
      * @param array  $config Configuration options for the service.
      *
-     * @return \DTS\eBaySDK\Services\BaseService
+     * @return \cbdesk\eBaySDK\Services\BaseService
      **/
     public function createService($namespace, array $config = [])
     {
@@ -88,7 +88,7 @@ class Sdk
 
         $configuration = arrayMergeDeep($configuration, $config);
 
-        $service = "DTS\\eBaySDK\\{$namespace}\\Services\\{$namespace}Service";
+        $service = "cbdesk\\eBaySDK\\{$namespace}\\Services\\{$namespace}Service";
 
         return new $service($configuration);
     }

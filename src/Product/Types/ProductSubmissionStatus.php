@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Product\Types;
+namespace cbdesk\eBaySDK\Product\Types;
 
 /**
  *
  * @property string $productSubmissionId
- * @property \DTS\eBaySDK\Product\Enums\ProductSubmissionStatusCode $statusCode
+ * @property \cbdesk\eBaySDK\Product\Enums\ProductSubmissionStatusCode $statusCode
  * @property string[] $ePID
  */
-class ProductSubmissionStatus extends \DTS\eBaySDK\Types\BaseType
+class ProductSubmissionStatus extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

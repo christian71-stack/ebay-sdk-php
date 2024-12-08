@@ -8,18 +8,18 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Analytics\Types;
+namespace cbdesk\eBaySDK\Analytics\Types;
 
 /**
  *
  * @property string $endDate
- * @property \DTS\eBaySDK\Analytics\Types\Header $header
+ * @property \cbdesk\eBaySDK\Analytics\Types\Header $header
  * @property string $lastUpdatedDate
- * @property \DTS\eBaySDK\Analytics\Types\Record[] $records
+ * @property \cbdesk\eBaySDK\Analytics\Types\Record[] $records
  * @property string $startDate
- * @property \DTS\eBaySDK\Analytics\Types\ErrorDetailV3[] $warnings
+ * @property \cbdesk\eBaySDK\Analytics\Types\ErrorDetailV3[] $warnings
  */
-class Report extends \DTS\eBaySDK\Types\BaseType
+class Report extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -32,7 +32,7 @@ class Report extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'endDate'
         ],
         'header' => [
-            'type' => 'DTS\eBaySDK\Analytics\Types\Header',
+            'type' => 'cbdesk\eBaySDK\Analytics\Types\Header',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'header'
@@ -44,7 +44,7 @@ class Report extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'lastUpdatedDate'
         ],
         'records' => [
-            'type' => 'DTS\eBaySDK\Analytics\Types\Record',
+            'type' => 'cbdesk\eBaySDK\Analytics\Types\Record',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'records'
@@ -56,7 +56,7 @@ class Report extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'startDate'
         ],
         'warnings' => [
-            'type' => 'DTS\eBaySDK\Analytics\Types\ErrorDetailV3',
+            'type' => 'cbdesk\eBaySDK\Analytics\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

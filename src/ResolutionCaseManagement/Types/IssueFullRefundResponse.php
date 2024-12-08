@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ResolutionCaseManagement\Types;
+namespace cbdesk\eBaySDK\ResolutionCaseManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Enums\RefundStatusType $fullRefundStatus
+ * @property \cbdesk\eBaySDK\ResolutionCaseManagement\Enums\RefundStatusType $fullRefundStatus
  * @property \DateTime $refundDate
  */
-class IssueFullRefundResponse extends \DTS\eBaySDK\ResolutionCaseManagement\Types\BaseResponse
+class IssueFullRefundResponse extends \cbdesk\eBaySDK\ResolutionCaseManagement\Types\BaseResponse
 {
     /**
      * @var array Properties belonging to objects of this class.

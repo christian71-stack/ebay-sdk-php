@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Merchandising\Enums;
+namespace cbdesk\eBaySDK\Merchandising\Enums;
 
 class PriceTreatmentEnum
 {

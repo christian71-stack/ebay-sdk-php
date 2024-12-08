@@ -8,41 +8,41 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\SellingManagerAutoListType $AutomatedListingRule
- * @property \DTS\eBaySDK\Trading\Types\SellingManagerAutoRelistType $AutomatedRelistingRule
- * @property \DTS\eBaySDK\Trading\Types\SellingManagerAutoSecondChanceOfferType $AutomatedSecondChanceOfferRule
- * @property \DTS\eBaySDK\Trading\Types\FeesType $Fees
+ * @property \cbdesk\eBaySDK\Trading\Types\SellingManagerAutoListType $AutomatedListingRule
+ * @property \cbdesk\eBaySDK\Trading\Types\SellingManagerAutoRelistType $AutomatedRelistingRule
+ * @property \cbdesk\eBaySDK\Trading\Types\SellingManagerAutoSecondChanceOfferType $AutomatedSecondChanceOfferRule
+ * @property \cbdesk\eBaySDK\Trading\Types\FeesType $Fees
  */
-class GetSellingManagerTemplateAutomationRuleResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
+class GetSellingManagerTemplateAutomationRuleResponseType extends \cbdesk\eBaySDK\Trading\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'AutomatedListingRule' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellingManagerAutoListType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\SellingManagerAutoListType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AutomatedListingRule'
         ],
         'AutomatedRelistingRule' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellingManagerAutoRelistType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\SellingManagerAutoRelistType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AutomatedRelistingRule'
         ],
         'AutomatedSecondChanceOfferRule' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellingManagerAutoSecondChanceOfferType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\SellingManagerAutoSecondChanceOfferType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AutomatedSecondChanceOfferRule'
         ],
         'Fees' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\FeesType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\FeesType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Fees'

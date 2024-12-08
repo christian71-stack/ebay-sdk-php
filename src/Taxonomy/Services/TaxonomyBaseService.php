@@ -1,10 +1,10 @@
 <?php
-namespace DTS\eBaySDK\Taxonomy\Services;
+namespace cbdesk\eBaySDK\Taxonomy\Services;
 
 /**
  * Base class for the Taxonomy service.
  */
-class TaxonomyBaseService extends \DTS\eBaySDK\Services\BaseRestService
+class TaxonomyBaseService extends \cbdesk\eBaySDK\Services\BaseRestService
 {
     /**
      * @var array $endPoints The API endpoints.
@@ -44,7 +44,7 @@ class TaxonomyBaseService extends \DTS\eBaySDK\Services\BaseRestService
         return $definitions + [
             'apiVersion' => [
                 'valid' => ['string'],
-                'default' => \DTS\eBaySDK\Taxonomy\Services\TaxonomyService::API_VERSION,
+                'default' => \cbdesk\eBaySDK\Taxonomy\Services\TaxonomyService::API_VERSION,
                 'required' => true
             ],
             'authorization' => [

@@ -8,23 +8,23 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Product\Types;
+namespace cbdesk\eBaySDK\Product\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Product\Types\ProductIdentifier $productIdentifier
+ * @property \cbdesk\eBaySDK\Product\Types\ProductIdentifier $productIdentifier
  * @property string[] $datasetPropertyName
  * @property string[] $dataset
- * @property \DTS\eBaySDK\Product\Types\ProductStatus $productStatusFilter
+ * @property \cbdesk\eBaySDK\Product\Types\ProductStatus $productStatusFilter
  */
-class ProductDetailsRequestType extends \DTS\eBaySDK\Types\BaseType
+class ProductDetailsRequestType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'productIdentifier' => [
-            'type' => 'DTS\eBaySDK\Product\Types\ProductIdentifier',
+            'type' => 'cbdesk\eBaySDK\Product\Types\ProductIdentifier',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'productIdentifier'
@@ -42,7 +42,7 @@ class ProductDetailsRequestType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'dataset'
         ],
         'productStatusFilter' => [
-            'type' => 'DTS\eBaySDK\Product\Types\ProductStatus',
+            'type' => 'cbdesk\eBaySDK\Product\Types\ProductStatus',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'productStatusFilter'

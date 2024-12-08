@@ -8,19 +8,19 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $ItemID
- * @property \DTS\eBaySDK\Trading\Enums\SetUserNotesActionCodeType $Action
+ * @property \cbdesk\eBaySDK\Trading\Enums\SetUserNotesActionCodeType $Action
  * @property string $NoteText
  * @property string $TransactionID
- * @property \DTS\eBaySDK\Trading\Types\NameValueListArrayType $VariationSpecifics
+ * @property \cbdesk\eBaySDK\Trading\Types\NameValueListArrayType $VariationSpecifics
  * @property string $SKU
  * @property string $OrderLineItemID
  */
-class SetUserNotesRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class SetUserNotesRequestType extends \cbdesk\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -51,7 +51,7 @@ class SetUserNotesRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequest
             'elementName' => 'TransactionID'
         ],
         'VariationSpecifics' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\NameValueListArrayType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\NameValueListArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'VariationSpecifics'

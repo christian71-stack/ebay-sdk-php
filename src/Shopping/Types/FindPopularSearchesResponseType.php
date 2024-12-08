@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Shopping\Types;
+namespace cbdesk\eBaySDK\Shopping\Types;
 
 /**
  *
  */
-class FindPopularSearchesResponseType extends \DTS\eBaySDK\Shopping\Types\AbstractResponseType
+class FindPopularSearchesResponseType extends \cbdesk\eBaySDK\Shopping\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.

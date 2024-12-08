@@ -8,9 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Services;
+namespace cbdesk\eBaySDK\Trading\Services;
 
-class TradingService extends \DTS\eBaySDK\Trading\Services\TradingBaseService
+use cbdesk\eBaySDK\Trading\Types\AddDisputeRequestType;
+use cbdesk\eBaySDK\Trading\Types\AddDisputeResponseType;
+
+class TradingService extends \cbdesk\eBaySDK\Trading\Services\TradingBaseService
 {
     const API_VERSION = '1057';
 
@@ -23,3060 +26,3060 @@ class TradingService extends \DTS\eBaySDK\Trading\Services\TradingBaseService
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddDisputeRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddDisputeResponseType
+     * @param AddDisputeRequestType $request
+     * @return AddDisputeResponseType
      */
-    public function addDispute(\DTS\eBaySDK\Trading\Types\AddDisputeRequestType $request)
+    public function addDispute(AddDisputeRequestType $request)
     {
         return $this->addDisputeAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddDisputeRequestType $request
+     * @param AddDisputeRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function addDisputeAsync(\DTS\eBaySDK\Trading\Types\AddDisputeRequestType $request)
+    public function addDisputeAsync(AddDisputeRequestType $request)
     {
         return $this->callOperationAsync(
             'AddDispute',
             $request,
-            '\DTS\eBaySDK\Trading\Types\AddDisputeResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\AddDisputeResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddDisputeResponseRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddDisputeResponseResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\AddDisputeResponseRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\AddDisputeResponseResponseType
      */
-    public function addDisputeResponse(\DTS\eBaySDK\Trading\Types\AddDisputeResponseRequestType $request)
+    public function addDisputeResponse(\cbdesk\eBaySDK\Trading\Types\AddDisputeResponseRequestType $request)
     {
         return $this->addDisputeResponseAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddDisputeResponseRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\AddDisputeResponseRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function addDisputeResponseAsync(\DTS\eBaySDK\Trading\Types\AddDisputeResponseRequestType $request)
+    public function addDisputeResponseAsync(\cbdesk\eBaySDK\Trading\Types\AddDisputeResponseRequestType $request)
     {
         return $this->callOperationAsync(
             'AddDisputeResponse',
             $request,
-            '\DTS\eBaySDK\Trading\Types\AddDisputeResponseResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\AddDisputeResponseResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddFixedPriceItemRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddFixedPriceItemResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\AddFixedPriceItemRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\AddFixedPriceItemResponseType
      */
-    public function addFixedPriceItem(\DTS\eBaySDK\Trading\Types\AddFixedPriceItemRequestType $request)
+    public function addFixedPriceItem(\cbdesk\eBaySDK\Trading\Types\AddFixedPriceItemRequestType $request)
     {
         return $this->addFixedPriceItemAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddFixedPriceItemRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\AddFixedPriceItemRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function addFixedPriceItemAsync(\DTS\eBaySDK\Trading\Types\AddFixedPriceItemRequestType $request)
+    public function addFixedPriceItemAsync(\cbdesk\eBaySDK\Trading\Types\AddFixedPriceItemRequestType $request)
     {
         return $this->callOperationAsync(
             'AddFixedPriceItem',
             $request,
-            '\DTS\eBaySDK\Trading\Types\AddFixedPriceItemResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\AddFixedPriceItemResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddItemRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddItemResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\AddItemRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\AddItemResponseType
      */
-    public function addItem(\DTS\eBaySDK\Trading\Types\AddItemRequestType $request)
+    public function addItem(\cbdesk\eBaySDK\Trading\Types\AddItemRequestType $request)
     {
         return $this->addItemAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddItemRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\AddItemRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function addItemAsync(\DTS\eBaySDK\Trading\Types\AddItemRequestType $request)
+    public function addItemAsync(\cbdesk\eBaySDK\Trading\Types\AddItemRequestType $request)
     {
         return $this->callOperationAsync(
             'AddItem',
             $request,
-            '\DTS\eBaySDK\Trading\Types\AddItemResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\AddItemResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddItemFromSellingManagerTemplateRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddItemFromSellingManagerTemplateResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\AddItemFromSellingManagerTemplateRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\AddItemFromSellingManagerTemplateResponseType
      */
-    public function addItemFromSellingManagerTemplate(\DTS\eBaySDK\Trading\Types\AddItemFromSellingManagerTemplateRequestType $request)
+    public function addItemFromSellingManagerTemplate(\cbdesk\eBaySDK\Trading\Types\AddItemFromSellingManagerTemplateRequestType $request)
     {
         return $this->addItemFromSellingManagerTemplateAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddItemFromSellingManagerTemplateRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\AddItemFromSellingManagerTemplateRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function addItemFromSellingManagerTemplateAsync(\DTS\eBaySDK\Trading\Types\AddItemFromSellingManagerTemplateRequestType $request)
+    public function addItemFromSellingManagerTemplateAsync(\cbdesk\eBaySDK\Trading\Types\AddItemFromSellingManagerTemplateRequestType $request)
     {
         return $this->callOperationAsync(
             'AddItemFromSellingManagerTemplate',
             $request,
-            '\DTS\eBaySDK\Trading\Types\AddItemFromSellingManagerTemplateResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\AddItemFromSellingManagerTemplateResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddItemsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddItemsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\AddItemsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\AddItemsResponseType
      */
-    public function addItems(\DTS\eBaySDK\Trading\Types\AddItemsRequestType $request)
+    public function addItems(\cbdesk\eBaySDK\Trading\Types\AddItemsRequestType $request)
     {
         return $this->addItemsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddItemsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\AddItemsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function addItemsAsync(\DTS\eBaySDK\Trading\Types\AddItemsRequestType $request)
+    public function addItemsAsync(\cbdesk\eBaySDK\Trading\Types\AddItemsRequestType $request)
     {
         return $this->callOperationAsync(
             'AddItems',
             $request,
-            '\DTS\eBaySDK\Trading\Types\AddItemsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\AddItemsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddMemberMessageAAQToPartnerRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddMemberMessageAAQToPartnerResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\AddMemberMessageAAQToPartnerRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\AddMemberMessageAAQToPartnerResponseType
      */
-    public function addMemberMessageAAQToPartner(\DTS\eBaySDK\Trading\Types\AddMemberMessageAAQToPartnerRequestType $request)
+    public function addMemberMessageAAQToPartner(\cbdesk\eBaySDK\Trading\Types\AddMemberMessageAAQToPartnerRequestType $request)
     {
         return $this->addMemberMessageAAQToPartnerAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddMemberMessageAAQToPartnerRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\AddMemberMessageAAQToPartnerRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function addMemberMessageAAQToPartnerAsync(\DTS\eBaySDK\Trading\Types\AddMemberMessageAAQToPartnerRequestType $request)
+    public function addMemberMessageAAQToPartnerAsync(\cbdesk\eBaySDK\Trading\Types\AddMemberMessageAAQToPartnerRequestType $request)
     {
         return $this->callOperationAsync(
             'AddMemberMessageAAQToPartner',
             $request,
-            '\DTS\eBaySDK\Trading\Types\AddMemberMessageAAQToPartnerResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\AddMemberMessageAAQToPartnerResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddMemberMessageRTQRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddMemberMessageRTQResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\AddMemberMessageRTQRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\AddMemberMessageRTQResponseType
      */
-    public function addMemberMessageRTQ(\DTS\eBaySDK\Trading\Types\AddMemberMessageRTQRequestType $request)
+    public function addMemberMessageRTQ(\cbdesk\eBaySDK\Trading\Types\AddMemberMessageRTQRequestType $request)
     {
         return $this->addMemberMessageRTQAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddMemberMessageRTQRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\AddMemberMessageRTQRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function addMemberMessageRTQAsync(\DTS\eBaySDK\Trading\Types\AddMemberMessageRTQRequestType $request)
+    public function addMemberMessageRTQAsync(\cbdesk\eBaySDK\Trading\Types\AddMemberMessageRTQRequestType $request)
     {
         return $this->callOperationAsync(
             'AddMemberMessageRTQ',
             $request,
-            '\DTS\eBaySDK\Trading\Types\AddMemberMessageRTQResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\AddMemberMessageRTQResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddMemberMessagesAAQToBidderRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddMemberMessagesAAQToBidderResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\AddMemberMessagesAAQToBidderRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\AddMemberMessagesAAQToBidderResponseType
      */
-    public function addMemberMessagesAAQToBidder(\DTS\eBaySDK\Trading\Types\AddMemberMessagesAAQToBidderRequestType $request)
+    public function addMemberMessagesAAQToBidder(\cbdesk\eBaySDK\Trading\Types\AddMemberMessagesAAQToBidderRequestType $request)
     {
         return $this->addMemberMessagesAAQToBidderAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddMemberMessagesAAQToBidderRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\AddMemberMessagesAAQToBidderRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function addMemberMessagesAAQToBidderAsync(\DTS\eBaySDK\Trading\Types\AddMemberMessagesAAQToBidderRequestType $request)
+    public function addMemberMessagesAAQToBidderAsync(\cbdesk\eBaySDK\Trading\Types\AddMemberMessagesAAQToBidderRequestType $request)
     {
         return $this->callOperationAsync(
             'AddMemberMessagesAAQToBidder',
             $request,
-            '\DTS\eBaySDK\Trading\Types\AddMemberMessagesAAQToBidderResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\AddMemberMessagesAAQToBidderResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddOrderRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddOrderResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\AddOrderRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\AddOrderResponseType
      */
-    public function addOrder(\DTS\eBaySDK\Trading\Types\AddOrderRequestType $request)
+    public function addOrder(\cbdesk\eBaySDK\Trading\Types\AddOrderRequestType $request)
     {
         return $this->addOrderAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddOrderRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\AddOrderRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function addOrderAsync(\DTS\eBaySDK\Trading\Types\AddOrderRequestType $request)
+    public function addOrderAsync(\cbdesk\eBaySDK\Trading\Types\AddOrderRequestType $request)
     {
         return $this->callOperationAsync(
             'AddOrder',
             $request,
-            '\DTS\eBaySDK\Trading\Types\AddOrderResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\AddOrderResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddSecondChanceItemRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddSecondChanceItemResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\AddSecondChanceItemRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\AddSecondChanceItemResponseType
      */
-    public function addSecondChanceItem(\DTS\eBaySDK\Trading\Types\AddSecondChanceItemRequestType $request)
+    public function addSecondChanceItem(\cbdesk\eBaySDK\Trading\Types\AddSecondChanceItemRequestType $request)
     {
         return $this->addSecondChanceItemAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddSecondChanceItemRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\AddSecondChanceItemRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function addSecondChanceItemAsync(\DTS\eBaySDK\Trading\Types\AddSecondChanceItemRequestType $request)
+    public function addSecondChanceItemAsync(\cbdesk\eBaySDK\Trading\Types\AddSecondChanceItemRequestType $request)
     {
         return $this->callOperationAsync(
             'AddSecondChanceItem',
             $request,
-            '\DTS\eBaySDK\Trading\Types\AddSecondChanceItemResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\AddSecondChanceItemResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddSellingManagerInventoryFolderRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddSellingManagerInventoryFolderResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\AddSellingManagerInventoryFolderRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\AddSellingManagerInventoryFolderResponseType
      */
-    public function addSellingManagerInventoryFolder(\DTS\eBaySDK\Trading\Types\AddSellingManagerInventoryFolderRequestType $request)
+    public function addSellingManagerInventoryFolder(\cbdesk\eBaySDK\Trading\Types\AddSellingManagerInventoryFolderRequestType $request)
     {
         return $this->addSellingManagerInventoryFolderAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddSellingManagerInventoryFolderRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\AddSellingManagerInventoryFolderRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function addSellingManagerInventoryFolderAsync(\DTS\eBaySDK\Trading\Types\AddSellingManagerInventoryFolderRequestType $request)
+    public function addSellingManagerInventoryFolderAsync(\cbdesk\eBaySDK\Trading\Types\AddSellingManagerInventoryFolderRequestType $request)
     {
         return $this->callOperationAsync(
             'AddSellingManagerInventoryFolder',
             $request,
-            '\DTS\eBaySDK\Trading\Types\AddSellingManagerInventoryFolderResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\AddSellingManagerInventoryFolderResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddSellingManagerProductRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddSellingManagerProductResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\AddSellingManagerProductRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\AddSellingManagerProductResponseType
      */
-    public function addSellingManagerProduct(\DTS\eBaySDK\Trading\Types\AddSellingManagerProductRequestType $request)
+    public function addSellingManagerProduct(\cbdesk\eBaySDK\Trading\Types\AddSellingManagerProductRequestType $request)
     {
         return $this->addSellingManagerProductAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddSellingManagerProductRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\AddSellingManagerProductRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function addSellingManagerProductAsync(\DTS\eBaySDK\Trading\Types\AddSellingManagerProductRequestType $request)
+    public function addSellingManagerProductAsync(\cbdesk\eBaySDK\Trading\Types\AddSellingManagerProductRequestType $request)
     {
         return $this->callOperationAsync(
             'AddSellingManagerProduct',
             $request,
-            '\DTS\eBaySDK\Trading\Types\AddSellingManagerProductResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\AddSellingManagerProductResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddSellingManagerTemplateRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddSellingManagerTemplateResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\AddSellingManagerTemplateRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\AddSellingManagerTemplateResponseType
      */
-    public function addSellingManagerTemplate(\DTS\eBaySDK\Trading\Types\AddSellingManagerTemplateRequestType $request)
+    public function addSellingManagerTemplate(\cbdesk\eBaySDK\Trading\Types\AddSellingManagerTemplateRequestType $request)
     {
         return $this->addSellingManagerTemplateAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddSellingManagerTemplateRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\AddSellingManagerTemplateRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function addSellingManagerTemplateAsync(\DTS\eBaySDK\Trading\Types\AddSellingManagerTemplateRequestType $request)
+    public function addSellingManagerTemplateAsync(\cbdesk\eBaySDK\Trading\Types\AddSellingManagerTemplateRequestType $request)
     {
         return $this->callOperationAsync(
             'AddSellingManagerTemplate',
             $request,
-            '\DTS\eBaySDK\Trading\Types\AddSellingManagerTemplateResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\AddSellingManagerTemplateResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddToItemDescriptionRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddToItemDescriptionResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\AddToItemDescriptionRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\AddToItemDescriptionResponseType
      */
-    public function addToItemDescription(\DTS\eBaySDK\Trading\Types\AddToItemDescriptionRequestType $request)
+    public function addToItemDescription(\cbdesk\eBaySDK\Trading\Types\AddToItemDescriptionRequestType $request)
     {
         return $this->addToItemDescriptionAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddToItemDescriptionRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\AddToItemDescriptionRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function addToItemDescriptionAsync(\DTS\eBaySDK\Trading\Types\AddToItemDescriptionRequestType $request)
+    public function addToItemDescriptionAsync(\cbdesk\eBaySDK\Trading\Types\AddToItemDescriptionRequestType $request)
     {
         return $this->callOperationAsync(
             'AddToItemDescription',
             $request,
-            '\DTS\eBaySDK\Trading\Types\AddToItemDescriptionResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\AddToItemDescriptionResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddToWatchListRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddToWatchListResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\AddToWatchListRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\AddToWatchListResponseType
      */
-    public function addToWatchList(\DTS\eBaySDK\Trading\Types\AddToWatchListRequestType $request)
+    public function addToWatchList(\cbdesk\eBaySDK\Trading\Types\AddToWatchListRequestType $request)
     {
         return $this->addToWatchListAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddToWatchListRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\AddToWatchListRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function addToWatchListAsync(\DTS\eBaySDK\Trading\Types\AddToWatchListRequestType $request)
+    public function addToWatchListAsync(\cbdesk\eBaySDK\Trading\Types\AddToWatchListRequestType $request)
     {
         return $this->callOperationAsync(
             'AddToWatchList',
             $request,
-            '\DTS\eBaySDK\Trading\Types\AddToWatchListResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\AddToWatchListResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddTransactionConfirmationItemRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\AddTransactionConfirmationItemResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\AddTransactionConfirmationItemRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\AddTransactionConfirmationItemResponseType
      */
-    public function addTransactionConfirmationItem(\DTS\eBaySDK\Trading\Types\AddTransactionConfirmationItemRequestType $request)
+    public function addTransactionConfirmationItem(\cbdesk\eBaySDK\Trading\Types\AddTransactionConfirmationItemRequestType $request)
     {
         return $this->addTransactionConfirmationItemAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\AddTransactionConfirmationItemRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\AddTransactionConfirmationItemRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function addTransactionConfirmationItemAsync(\DTS\eBaySDK\Trading\Types\AddTransactionConfirmationItemRequestType $request)
+    public function addTransactionConfirmationItemAsync(\cbdesk\eBaySDK\Trading\Types\AddTransactionConfirmationItemRequestType $request)
     {
         return $this->callOperationAsync(
             'AddTransactionConfirmationItem',
             $request,
-            '\DTS\eBaySDK\Trading\Types\AddTransactionConfirmationItemResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\AddTransactionConfirmationItemResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\CompleteSaleRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\CompleteSaleResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\CompleteSaleRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\CompleteSaleResponseType
      */
-    public function completeSale(\DTS\eBaySDK\Trading\Types\CompleteSaleRequestType $request)
+    public function completeSale(\cbdesk\eBaySDK\Trading\Types\CompleteSaleRequestType $request)
     {
         return $this->completeSaleAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\CompleteSaleRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\CompleteSaleRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function completeSaleAsync(\DTS\eBaySDK\Trading\Types\CompleteSaleRequestType $request)
+    public function completeSaleAsync(\cbdesk\eBaySDK\Trading\Types\CompleteSaleRequestType $request)
     {
         return $this->callOperationAsync(
             'CompleteSale',
             $request,
-            '\DTS\eBaySDK\Trading\Types\CompleteSaleResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\CompleteSaleResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ConfirmIdentityRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\ConfirmIdentityResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\ConfirmIdentityRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\ConfirmIdentityResponseType
      */
-    public function confirmIdentity(\DTS\eBaySDK\Trading\Types\ConfirmIdentityRequestType $request)
+    public function confirmIdentity(\cbdesk\eBaySDK\Trading\Types\ConfirmIdentityRequestType $request)
     {
         return $this->confirmIdentityAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ConfirmIdentityRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\ConfirmIdentityRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function confirmIdentityAsync(\DTS\eBaySDK\Trading\Types\ConfirmIdentityRequestType $request)
+    public function confirmIdentityAsync(\cbdesk\eBaySDK\Trading\Types\ConfirmIdentityRequestType $request)
     {
         return $this->callOperationAsync(
             'ConfirmIdentity',
             $request,
-            '\DTS\eBaySDK\Trading\Types\ConfirmIdentityResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\ConfirmIdentityResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteMyMessagesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\DeleteMyMessagesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\DeleteMyMessagesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\DeleteMyMessagesResponseType
      */
-    public function deleteMyMessages(\DTS\eBaySDK\Trading\Types\DeleteMyMessagesRequestType $request)
+    public function deleteMyMessages(\cbdesk\eBaySDK\Trading\Types\DeleteMyMessagesRequestType $request)
     {
         return $this->deleteMyMessagesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteMyMessagesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\DeleteMyMessagesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function deleteMyMessagesAsync(\DTS\eBaySDK\Trading\Types\DeleteMyMessagesRequestType $request)
+    public function deleteMyMessagesAsync(\cbdesk\eBaySDK\Trading\Types\DeleteMyMessagesRequestType $request)
     {
         return $this->callOperationAsync(
             'DeleteMyMessages',
             $request,
-            '\DTS\eBaySDK\Trading\Types\DeleteMyMessagesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\DeleteMyMessagesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerInventoryFolderRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\DeleteSellingManagerInventoryFolderResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerInventoryFolderRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerInventoryFolderResponseType
      */
-    public function deleteSellingManagerInventoryFolder(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerInventoryFolderRequestType $request)
+    public function deleteSellingManagerInventoryFolder(\cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerInventoryFolderRequestType $request)
     {
         return $this->deleteSellingManagerInventoryFolderAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerInventoryFolderRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerInventoryFolderRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function deleteSellingManagerInventoryFolderAsync(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerInventoryFolderRequestType $request)
+    public function deleteSellingManagerInventoryFolderAsync(\cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerInventoryFolderRequestType $request)
     {
         return $this->callOperationAsync(
             'DeleteSellingManagerInventoryFolder',
             $request,
-            '\DTS\eBaySDK\Trading\Types\DeleteSellingManagerInventoryFolderResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerInventoryFolderResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerItemAutomationRuleRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\DeleteSellingManagerItemAutomationRuleResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerItemAutomationRuleRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerItemAutomationRuleResponseType
      */
-    public function deleteSellingManagerItemAutomationRule(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerItemAutomationRuleRequestType $request)
+    public function deleteSellingManagerItemAutomationRule(\cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerItemAutomationRuleRequestType $request)
     {
         return $this->deleteSellingManagerItemAutomationRuleAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerItemAutomationRuleRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerItemAutomationRuleRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function deleteSellingManagerItemAutomationRuleAsync(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerItemAutomationRuleRequestType $request)
+    public function deleteSellingManagerItemAutomationRuleAsync(\cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerItemAutomationRuleRequestType $request)
     {
         return $this->callOperationAsync(
             'DeleteSellingManagerItemAutomationRule',
             $request,
-            '\DTS\eBaySDK\Trading\Types\DeleteSellingManagerItemAutomationRuleResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerItemAutomationRuleResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerProductRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\DeleteSellingManagerProductResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerProductRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerProductResponseType
      */
-    public function deleteSellingManagerProduct(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerProductRequestType $request)
+    public function deleteSellingManagerProduct(\cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerProductRequestType $request)
     {
         return $this->deleteSellingManagerProductAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerProductRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerProductRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function deleteSellingManagerProductAsync(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerProductRequestType $request)
+    public function deleteSellingManagerProductAsync(\cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerProductRequestType $request)
     {
         return $this->callOperationAsync(
             'DeleteSellingManagerProduct',
             $request,
-            '\DTS\eBaySDK\Trading\Types\DeleteSellingManagerProductResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerProductResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerTemplateRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerTemplateResponseType
      */
-    public function deleteSellingManagerTemplate(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateRequestType $request)
+    public function deleteSellingManagerTemplate(\cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerTemplateRequestType $request)
     {
         return $this->deleteSellingManagerTemplateAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerTemplateRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function deleteSellingManagerTemplateAsync(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateRequestType $request)
+    public function deleteSellingManagerTemplateAsync(\cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerTemplateRequestType $request)
     {
         return $this->callOperationAsync(
             'DeleteSellingManagerTemplate',
             $request,
-            '\DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerTemplateResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateAutomationRuleRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateAutomationRuleResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerTemplateAutomationRuleRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerTemplateAutomationRuleResponseType
      */
-    public function deleteSellingManagerTemplateAutomationRule(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateAutomationRuleRequestType $request)
+    public function deleteSellingManagerTemplateAutomationRule(\cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerTemplateAutomationRuleRequestType $request)
     {
         return $this->deleteSellingManagerTemplateAutomationRuleAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateAutomationRuleRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerTemplateAutomationRuleRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function deleteSellingManagerTemplateAutomationRuleAsync(\DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateAutomationRuleRequestType $request)
+    public function deleteSellingManagerTemplateAutomationRuleAsync(\cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerTemplateAutomationRuleRequestType $request)
     {
         return $this->callOperationAsync(
             'DeleteSellingManagerTemplateAutomationRule',
             $request,
-            '\DTS\eBaySDK\Trading\Types\DeleteSellingManagerTemplateAutomationRuleResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\DeleteSellingManagerTemplateAutomationRuleResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\DisableUnpaidItemAssistanceRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\DisableUnpaidItemAssistanceResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\DisableUnpaidItemAssistanceRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\DisableUnpaidItemAssistanceResponseType
      */
-    public function disableUnpaidItemAssistance(\DTS\eBaySDK\Trading\Types\DisableUnpaidItemAssistanceRequestType $request)
+    public function disableUnpaidItemAssistance(\cbdesk\eBaySDK\Trading\Types\DisableUnpaidItemAssistanceRequestType $request)
     {
         return $this->disableUnpaidItemAssistanceAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\DisableUnpaidItemAssistanceRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\DisableUnpaidItemAssistanceRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function disableUnpaidItemAssistanceAsync(\DTS\eBaySDK\Trading\Types\DisableUnpaidItemAssistanceRequestType $request)
+    public function disableUnpaidItemAssistanceAsync(\cbdesk\eBaySDK\Trading\Types\DisableUnpaidItemAssistanceRequestType $request)
     {
         return $this->callOperationAsync(
             'DisableUnpaidItemAssistance',
             $request,
-            '\DTS\eBaySDK\Trading\Types\DisableUnpaidItemAssistanceResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\DisableUnpaidItemAssistanceResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\EndFixedPriceItemRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\EndFixedPriceItemResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\EndFixedPriceItemRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\EndFixedPriceItemResponseType
      */
-    public function endFixedPriceItem(\DTS\eBaySDK\Trading\Types\EndFixedPriceItemRequestType $request)
+    public function endFixedPriceItem(\cbdesk\eBaySDK\Trading\Types\EndFixedPriceItemRequestType $request)
     {
         return $this->endFixedPriceItemAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\EndFixedPriceItemRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\EndFixedPriceItemRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function endFixedPriceItemAsync(\DTS\eBaySDK\Trading\Types\EndFixedPriceItemRequestType $request)
+    public function endFixedPriceItemAsync(\cbdesk\eBaySDK\Trading\Types\EndFixedPriceItemRequestType $request)
     {
         return $this->callOperationAsync(
             'EndFixedPriceItem',
             $request,
-            '\DTS\eBaySDK\Trading\Types\EndFixedPriceItemResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\EndFixedPriceItemResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\EndItemRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\EndItemResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\EndItemRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\EndItemResponseType
      */
-    public function endItem(\DTS\eBaySDK\Trading\Types\EndItemRequestType $request)
+    public function endItem(\cbdesk\eBaySDK\Trading\Types\EndItemRequestType $request)
     {
         return $this->endItemAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\EndItemRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\EndItemRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function endItemAsync(\DTS\eBaySDK\Trading\Types\EndItemRequestType $request)
+    public function endItemAsync(\cbdesk\eBaySDK\Trading\Types\EndItemRequestType $request)
     {
         return $this->callOperationAsync(
             'EndItem',
             $request,
-            '\DTS\eBaySDK\Trading\Types\EndItemResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\EndItemResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\EndItemsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\EndItemsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\EndItemsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\EndItemsResponseType
      */
-    public function endItems(\DTS\eBaySDK\Trading\Types\EndItemsRequestType $request)
+    public function endItems(\cbdesk\eBaySDK\Trading\Types\EndItemsRequestType $request)
     {
         return $this->endItemsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\EndItemsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\EndItemsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function endItemsAsync(\DTS\eBaySDK\Trading\Types\EndItemsRequestType $request)
+    public function endItemsAsync(\cbdesk\eBaySDK\Trading\Types\EndItemsRequestType $request)
     {
         return $this->callOperationAsync(
             'EndItems',
             $request,
-            '\DTS\eBaySDK\Trading\Types\EndItemsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\EndItemsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ExtendSiteHostedPicturesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\ExtendSiteHostedPicturesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\ExtendSiteHostedPicturesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\ExtendSiteHostedPicturesResponseType
      */
-    public function extendSiteHostedPictures(\DTS\eBaySDK\Trading\Types\ExtendSiteHostedPicturesRequestType $request)
+    public function extendSiteHostedPictures(\cbdesk\eBaySDK\Trading\Types\ExtendSiteHostedPicturesRequestType $request)
     {
         return $this->extendSiteHostedPicturesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ExtendSiteHostedPicturesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\ExtendSiteHostedPicturesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function extendSiteHostedPicturesAsync(\DTS\eBaySDK\Trading\Types\ExtendSiteHostedPicturesRequestType $request)
+    public function extendSiteHostedPicturesAsync(\cbdesk\eBaySDK\Trading\Types\ExtendSiteHostedPicturesRequestType $request)
     {
         return $this->callOperationAsync(
             'ExtendSiteHostedPictures',
             $request,
-            '\DTS\eBaySDK\Trading\Types\ExtendSiteHostedPicturesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\ExtendSiteHostedPicturesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\FetchTokenRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\FetchTokenResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\FetchTokenRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\FetchTokenResponseType
      */
-    public function fetchToken(\DTS\eBaySDK\Trading\Types\FetchTokenRequestType $request)
+    public function fetchToken(\cbdesk\eBaySDK\Trading\Types\FetchTokenRequestType $request)
     {
         return $this->fetchTokenAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\FetchTokenRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\FetchTokenRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function fetchTokenAsync(\DTS\eBaySDK\Trading\Types\FetchTokenRequestType $request)
+    public function fetchTokenAsync(\cbdesk\eBaySDK\Trading\Types\FetchTokenRequestType $request)
     {
         return $this->callOperationAsync(
             'FetchToken',
             $request,
-            '\DTS\eBaySDK\Trading\Types\FetchTokenResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\FetchTokenResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetAccountRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetAccountResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetAccountRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetAccountResponseType
      */
-    public function getAccount(\DTS\eBaySDK\Trading\Types\GetAccountRequestType $request)
+    public function getAccount(\cbdesk\eBaySDK\Trading\Types\GetAccountRequestType $request)
     {
         return $this->getAccountAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetAccountRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetAccountRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getAccountAsync(\DTS\eBaySDK\Trading\Types\GetAccountRequestType $request)
+    public function getAccountAsync(\cbdesk\eBaySDK\Trading\Types\GetAccountRequestType $request)
     {
         return $this->callOperationAsync(
             'GetAccount',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetAccountResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetAccountResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetAdFormatLeadsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetAdFormatLeadsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetAdFormatLeadsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetAdFormatLeadsResponseType
      */
-    public function getAdFormatLeads(\DTS\eBaySDK\Trading\Types\GetAdFormatLeadsRequestType $request)
+    public function getAdFormatLeads(\cbdesk\eBaySDK\Trading\Types\GetAdFormatLeadsRequestType $request)
     {
         return $this->getAdFormatLeadsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetAdFormatLeadsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetAdFormatLeadsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getAdFormatLeadsAsync(\DTS\eBaySDK\Trading\Types\GetAdFormatLeadsRequestType $request)
+    public function getAdFormatLeadsAsync(\cbdesk\eBaySDK\Trading\Types\GetAdFormatLeadsRequestType $request)
     {
         return $this->callOperationAsync(
             'GetAdFormatLeads',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetAdFormatLeadsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetAdFormatLeadsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetAllBiddersRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetAllBiddersResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetAllBiddersRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetAllBiddersResponseType
      */
-    public function getAllBidders(\DTS\eBaySDK\Trading\Types\GetAllBiddersRequestType $request)
+    public function getAllBidders(\cbdesk\eBaySDK\Trading\Types\GetAllBiddersRequestType $request)
     {
         return $this->getAllBiddersAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetAllBiddersRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetAllBiddersRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getAllBiddersAsync(\DTS\eBaySDK\Trading\Types\GetAllBiddersRequestType $request)
+    public function getAllBiddersAsync(\cbdesk\eBaySDK\Trading\Types\GetAllBiddersRequestType $request)
     {
         return $this->callOperationAsync(
             'GetAllBidders',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetAllBiddersResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetAllBiddersResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetApiAccessRulesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetApiAccessRulesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetApiAccessRulesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetApiAccessRulesResponseType
      */
-    public function getApiAccessRules(\DTS\eBaySDK\Trading\Types\GetApiAccessRulesRequestType $request)
+    public function getApiAccessRules(\cbdesk\eBaySDK\Trading\Types\GetApiAccessRulesRequestType $request)
     {
         return $this->getApiAccessRulesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetApiAccessRulesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetApiAccessRulesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getApiAccessRulesAsync(\DTS\eBaySDK\Trading\Types\GetApiAccessRulesRequestType $request)
+    public function getApiAccessRulesAsync(\cbdesk\eBaySDK\Trading\Types\GetApiAccessRulesRequestType $request)
     {
         return $this->callOperationAsync(
             'GetApiAccessRules',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetApiAccessRulesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetApiAccessRulesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetBestOffersRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetBestOffersResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetBestOffersRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetBestOffersResponseType
      */
-    public function getBestOffers(\DTS\eBaySDK\Trading\Types\GetBestOffersRequestType $request)
+    public function getBestOffers(\cbdesk\eBaySDK\Trading\Types\GetBestOffersRequestType $request)
     {
         return $this->getBestOffersAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetBestOffersRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetBestOffersRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getBestOffersAsync(\DTS\eBaySDK\Trading\Types\GetBestOffersRequestType $request)
+    public function getBestOffersAsync(\cbdesk\eBaySDK\Trading\Types\GetBestOffersRequestType $request)
     {
         return $this->callOperationAsync(
             'GetBestOffers',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetBestOffersResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetBestOffersResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetBidderListRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetBidderListResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetBidderListRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetBidderListResponseType
      */
-    public function getBidderList(\DTS\eBaySDK\Trading\Types\GetBidderListRequestType $request)
+    public function getBidderList(\cbdesk\eBaySDK\Trading\Types\GetBidderListRequestType $request)
     {
         return $this->getBidderListAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetBidderListRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetBidderListRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getBidderListAsync(\DTS\eBaySDK\Trading\Types\GetBidderListRequestType $request)
+    public function getBidderListAsync(\cbdesk\eBaySDK\Trading\Types\GetBidderListRequestType $request)
     {
         return $this->callOperationAsync(
             'GetBidderList',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetBidderListResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetBidderListResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetCategoriesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetCategoriesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetCategoriesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetCategoriesResponseType
      */
-    public function getCategories(\DTS\eBaySDK\Trading\Types\GetCategoriesRequestType $request)
+    public function getCategories(\cbdesk\eBaySDK\Trading\Types\GetCategoriesRequestType $request)
     {
         return $this->getCategoriesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetCategoriesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetCategoriesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getCategoriesAsync(\DTS\eBaySDK\Trading\Types\GetCategoriesRequestType $request)
+    public function getCategoriesAsync(\cbdesk\eBaySDK\Trading\Types\GetCategoriesRequestType $request)
     {
         return $this->callOperationAsync(
             'GetCategories',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetCategoriesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetCategoriesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetCategoryFeaturesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetCategoryFeaturesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetCategoryFeaturesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetCategoryFeaturesResponseType
      */
-    public function getCategoryFeatures(\DTS\eBaySDK\Trading\Types\GetCategoryFeaturesRequestType $request)
+    public function getCategoryFeatures(\cbdesk\eBaySDK\Trading\Types\GetCategoryFeaturesRequestType $request)
     {
         return $this->getCategoryFeaturesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetCategoryFeaturesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetCategoryFeaturesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getCategoryFeaturesAsync(\DTS\eBaySDK\Trading\Types\GetCategoryFeaturesRequestType $request)
+    public function getCategoryFeaturesAsync(\cbdesk\eBaySDK\Trading\Types\GetCategoryFeaturesRequestType $request)
     {
         return $this->callOperationAsync(
             'GetCategoryFeatures',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetCategoryFeaturesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetCategoryFeaturesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetCategoryMappingsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetCategoryMappingsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetCategoryMappingsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetCategoryMappingsResponseType
      */
-    public function getCategoryMappings(\DTS\eBaySDK\Trading\Types\GetCategoryMappingsRequestType $request)
+    public function getCategoryMappings(\cbdesk\eBaySDK\Trading\Types\GetCategoryMappingsRequestType $request)
     {
         return $this->getCategoryMappingsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetCategoryMappingsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetCategoryMappingsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getCategoryMappingsAsync(\DTS\eBaySDK\Trading\Types\GetCategoryMappingsRequestType $request)
+    public function getCategoryMappingsAsync(\cbdesk\eBaySDK\Trading\Types\GetCategoryMappingsRequestType $request)
     {
         return $this->callOperationAsync(
             'GetCategoryMappings',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetCategoryMappingsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetCategoryMappingsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetCategorySpecificsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetCategorySpecificsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetCategorySpecificsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetCategorySpecificsResponseType
      */
-    public function getCategorySpecifics(\DTS\eBaySDK\Trading\Types\GetCategorySpecificsRequestType $request)
+    public function getCategorySpecifics(\cbdesk\eBaySDK\Trading\Types\GetCategorySpecificsRequestType $request)
     {
         return $this->getCategorySpecificsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetCategorySpecificsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetCategorySpecificsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getCategorySpecificsAsync(\DTS\eBaySDK\Trading\Types\GetCategorySpecificsRequestType $request)
+    public function getCategorySpecificsAsync(\cbdesk\eBaySDK\Trading\Types\GetCategorySpecificsRequestType $request)
     {
         return $this->callOperationAsync(
             'GetCategorySpecifics',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetCategorySpecificsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetCategorySpecificsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetChallengeTokenRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetChallengeTokenResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetChallengeTokenRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetChallengeTokenResponseType
      */
-    public function getChallengeToken(\DTS\eBaySDK\Trading\Types\GetChallengeTokenRequestType $request)
+    public function getChallengeToken(\cbdesk\eBaySDK\Trading\Types\GetChallengeTokenRequestType $request)
     {
         return $this->getChallengeTokenAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetChallengeTokenRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetChallengeTokenRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getChallengeTokenAsync(\DTS\eBaySDK\Trading\Types\GetChallengeTokenRequestType $request)
+    public function getChallengeTokenAsync(\cbdesk\eBaySDK\Trading\Types\GetChallengeTokenRequestType $request)
     {
         return $this->callOperationAsync(
             'GetChallengeToken',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetChallengeTokenResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetChallengeTokenResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetCharitiesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetCharitiesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetCharitiesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetCharitiesResponseType
      */
-    public function getCharities(\DTS\eBaySDK\Trading\Types\GetCharitiesRequestType $request)
+    public function getCharities(\cbdesk\eBaySDK\Trading\Types\GetCharitiesRequestType $request)
     {
         return $this->getCharitiesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetCharitiesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetCharitiesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getCharitiesAsync(\DTS\eBaySDK\Trading\Types\GetCharitiesRequestType $request)
+    public function getCharitiesAsync(\cbdesk\eBaySDK\Trading\Types\GetCharitiesRequestType $request)
     {
         return $this->callOperationAsync(
             'GetCharities',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetCharitiesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetCharitiesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetClientAlertsAuthTokenRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetClientAlertsAuthTokenResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetClientAlertsAuthTokenRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetClientAlertsAuthTokenResponseType
      */
-    public function getClientAlertsAuthToken(\DTS\eBaySDK\Trading\Types\GetClientAlertsAuthTokenRequestType $request)
+    public function getClientAlertsAuthToken(\cbdesk\eBaySDK\Trading\Types\GetClientAlertsAuthTokenRequestType $request)
     {
         return $this->getClientAlertsAuthTokenAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetClientAlertsAuthTokenRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetClientAlertsAuthTokenRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getClientAlertsAuthTokenAsync(\DTS\eBaySDK\Trading\Types\GetClientAlertsAuthTokenRequestType $request)
+    public function getClientAlertsAuthTokenAsync(\cbdesk\eBaySDK\Trading\Types\GetClientAlertsAuthTokenRequestType $request)
     {
         return $this->callOperationAsync(
             'GetClientAlertsAuthToken',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetClientAlertsAuthTokenResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetClientAlertsAuthTokenResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetContextualKeywordsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetContextualKeywordsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetContextualKeywordsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetContextualKeywordsResponseType
      */
-    public function getContextualKeywords(\DTS\eBaySDK\Trading\Types\GetContextualKeywordsRequestType $request)
+    public function getContextualKeywords(\cbdesk\eBaySDK\Trading\Types\GetContextualKeywordsRequestType $request)
     {
         return $this->getContextualKeywordsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetContextualKeywordsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetContextualKeywordsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getContextualKeywordsAsync(\DTS\eBaySDK\Trading\Types\GetContextualKeywordsRequestType $request)
+    public function getContextualKeywordsAsync(\cbdesk\eBaySDK\Trading\Types\GetContextualKeywordsRequestType $request)
     {
         return $this->callOperationAsync(
             'GetContextualKeywords',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetContextualKeywordsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetContextualKeywordsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetDescriptionTemplatesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetDescriptionTemplatesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetDescriptionTemplatesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetDescriptionTemplatesResponseType
      */
-    public function getDescriptionTemplates(\DTS\eBaySDK\Trading\Types\GetDescriptionTemplatesRequestType $request)
+    public function getDescriptionTemplates(\cbdesk\eBaySDK\Trading\Types\GetDescriptionTemplatesRequestType $request)
     {
         return $this->getDescriptionTemplatesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetDescriptionTemplatesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetDescriptionTemplatesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getDescriptionTemplatesAsync(\DTS\eBaySDK\Trading\Types\GetDescriptionTemplatesRequestType $request)
+    public function getDescriptionTemplatesAsync(\cbdesk\eBaySDK\Trading\Types\GetDescriptionTemplatesRequestType $request)
     {
         return $this->callOperationAsync(
             'GetDescriptionTemplates',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetDescriptionTemplatesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetDescriptionTemplatesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetDisputeRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetDisputeResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetDisputeRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetDisputeResponseType
      */
-    public function getDispute(\DTS\eBaySDK\Trading\Types\GetDisputeRequestType $request)
+    public function getDispute(\cbdesk\eBaySDK\Trading\Types\GetDisputeRequestType $request)
     {
         return $this->getDisputeAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetDisputeRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetDisputeRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getDisputeAsync(\DTS\eBaySDK\Trading\Types\GetDisputeRequestType $request)
+    public function getDisputeAsync(\cbdesk\eBaySDK\Trading\Types\GetDisputeRequestType $request)
     {
         return $this->callOperationAsync(
             'GetDispute',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetDisputeResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetDisputeResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetFeedbackRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetFeedbackResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetFeedbackRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetFeedbackResponseType
      */
-    public function getFeedback(\DTS\eBaySDK\Trading\Types\GetFeedbackRequestType $request)
+    public function getFeedback(\cbdesk\eBaySDK\Trading\Types\GetFeedbackRequestType $request)
     {
         return $this->getFeedbackAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetFeedbackRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetFeedbackRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getFeedbackAsync(\DTS\eBaySDK\Trading\Types\GetFeedbackRequestType $request)
+    public function getFeedbackAsync(\cbdesk\eBaySDK\Trading\Types\GetFeedbackRequestType $request)
     {
         return $this->callOperationAsync(
             'GetFeedback',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetFeedbackResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetFeedbackResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetItemRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetItemResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetItemRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetItemResponseType
      */
-    public function getItem(\DTS\eBaySDK\Trading\Types\GetItemRequestType $request)
+    public function getItem(\cbdesk\eBaySDK\Trading\Types\GetItemRequestType $request)
     {
         return $this->getItemAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetItemRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetItemRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getItemAsync(\DTS\eBaySDK\Trading\Types\GetItemRequestType $request)
+    public function getItemAsync(\cbdesk\eBaySDK\Trading\Types\GetItemRequestType $request)
     {
         return $this->callOperationAsync(
             'GetItem',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetItemResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetItemResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetItemShippingRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetItemShippingResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetItemShippingRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetItemShippingResponseType
      */
-    public function getItemShipping(\DTS\eBaySDK\Trading\Types\GetItemShippingRequestType $request)
+    public function getItemShipping(\cbdesk\eBaySDK\Trading\Types\GetItemShippingRequestType $request)
     {
         return $this->getItemShippingAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetItemShippingRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetItemShippingRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getItemShippingAsync(\DTS\eBaySDK\Trading\Types\GetItemShippingRequestType $request)
+    public function getItemShippingAsync(\cbdesk\eBaySDK\Trading\Types\GetItemShippingRequestType $request)
     {
         return $this->callOperationAsync(
             'GetItemShipping',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetItemShippingResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetItemShippingResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetItemTransactionsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetItemTransactionsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetItemTransactionsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetItemTransactionsResponseType
      */
-    public function getItemTransactions(\DTS\eBaySDK\Trading\Types\GetItemTransactionsRequestType $request)
+    public function getItemTransactions(\cbdesk\eBaySDK\Trading\Types\GetItemTransactionsRequestType $request)
     {
         return $this->getItemTransactionsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetItemTransactionsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetItemTransactionsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getItemTransactionsAsync(\DTS\eBaySDK\Trading\Types\GetItemTransactionsRequestType $request)
+    public function getItemTransactionsAsync(\cbdesk\eBaySDK\Trading\Types\GetItemTransactionsRequestType $request)
     {
         return $this->callOperationAsync(
             'GetItemTransactions',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetItemTransactionsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetItemTransactionsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetItemsAwaitingFeedbackRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetItemsAwaitingFeedbackResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetItemsAwaitingFeedbackRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetItemsAwaitingFeedbackResponseType
      */
-    public function getItemsAwaitingFeedback(\DTS\eBaySDK\Trading\Types\GetItemsAwaitingFeedbackRequestType $request)
+    public function getItemsAwaitingFeedback(\cbdesk\eBaySDK\Trading\Types\GetItemsAwaitingFeedbackRequestType $request)
     {
         return $this->getItemsAwaitingFeedbackAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetItemsAwaitingFeedbackRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetItemsAwaitingFeedbackRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getItemsAwaitingFeedbackAsync(\DTS\eBaySDK\Trading\Types\GetItemsAwaitingFeedbackRequestType $request)
+    public function getItemsAwaitingFeedbackAsync(\cbdesk\eBaySDK\Trading\Types\GetItemsAwaitingFeedbackRequestType $request)
     {
         return $this->callOperationAsync(
             'GetItemsAwaitingFeedback',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetItemsAwaitingFeedbackResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetItemsAwaitingFeedbackResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetMemberMessagesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetMemberMessagesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetMemberMessagesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetMemberMessagesResponseType
      */
-    public function getMemberMessages(\DTS\eBaySDK\Trading\Types\GetMemberMessagesRequestType $request)
+    public function getMemberMessages(\cbdesk\eBaySDK\Trading\Types\GetMemberMessagesRequestType $request)
     {
         return $this->getMemberMessagesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetMemberMessagesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetMemberMessagesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getMemberMessagesAsync(\DTS\eBaySDK\Trading\Types\GetMemberMessagesRequestType $request)
+    public function getMemberMessagesAsync(\cbdesk\eBaySDK\Trading\Types\GetMemberMessagesRequestType $request)
     {
         return $this->callOperationAsync(
             'GetMemberMessages',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetMemberMessagesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetMemberMessagesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetMessagePreferencesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetMessagePreferencesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetMessagePreferencesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetMessagePreferencesResponseType
      */
-    public function getMessagePreferences(\DTS\eBaySDK\Trading\Types\GetMessagePreferencesRequestType $request)
+    public function getMessagePreferences(\cbdesk\eBaySDK\Trading\Types\GetMessagePreferencesRequestType $request)
     {
         return $this->getMessagePreferencesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetMessagePreferencesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetMessagePreferencesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getMessagePreferencesAsync(\DTS\eBaySDK\Trading\Types\GetMessagePreferencesRequestType $request)
+    public function getMessagePreferencesAsync(\cbdesk\eBaySDK\Trading\Types\GetMessagePreferencesRequestType $request)
     {
         return $this->callOperationAsync(
             'GetMessagePreferences',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetMessagePreferencesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetMessagePreferencesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetMyMessagesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetMyMessagesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetMyMessagesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetMyMessagesResponseType
      */
-    public function getMyMessages(\DTS\eBaySDK\Trading\Types\GetMyMessagesRequestType $request)
+    public function getMyMessages(\cbdesk\eBaySDK\Trading\Types\GetMyMessagesRequestType $request)
     {
         return $this->getMyMessagesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetMyMessagesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetMyMessagesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getMyMessagesAsync(\DTS\eBaySDK\Trading\Types\GetMyMessagesRequestType $request)
+    public function getMyMessagesAsync(\cbdesk\eBaySDK\Trading\Types\GetMyMessagesRequestType $request)
     {
         return $this->callOperationAsync(
             'GetMyMessages',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetMyMessagesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetMyMessagesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetMyeBayBuyingRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetMyeBayBuyingResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetMyeBayBuyingRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetMyeBayBuyingResponseType
      */
-    public function getMyeBayBuying(\DTS\eBaySDK\Trading\Types\GetMyeBayBuyingRequestType $request)
+    public function getMyeBayBuying(\cbdesk\eBaySDK\Trading\Types\GetMyeBayBuyingRequestType $request)
     {
         return $this->getMyeBayBuyingAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetMyeBayBuyingRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetMyeBayBuyingRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getMyeBayBuyingAsync(\DTS\eBaySDK\Trading\Types\GetMyeBayBuyingRequestType $request)
+    public function getMyeBayBuyingAsync(\cbdesk\eBaySDK\Trading\Types\GetMyeBayBuyingRequestType $request)
     {
         return $this->callOperationAsync(
             'GetMyeBayBuying',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetMyeBayBuyingResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetMyeBayBuyingResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetMyeBayRemindersRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetMyeBayRemindersResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetMyeBayRemindersRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetMyeBayRemindersResponseType
      */
-    public function getMyeBayReminders(\DTS\eBaySDK\Trading\Types\GetMyeBayRemindersRequestType $request)
+    public function getMyeBayReminders(\cbdesk\eBaySDK\Trading\Types\GetMyeBayRemindersRequestType $request)
     {
         return $this->getMyeBayRemindersAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetMyeBayRemindersRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetMyeBayRemindersRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getMyeBayRemindersAsync(\DTS\eBaySDK\Trading\Types\GetMyeBayRemindersRequestType $request)
+    public function getMyeBayRemindersAsync(\cbdesk\eBaySDK\Trading\Types\GetMyeBayRemindersRequestType $request)
     {
         return $this->callOperationAsync(
             'GetMyeBayReminders',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetMyeBayRemindersResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetMyeBayRemindersResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetMyeBaySellingRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetMyeBaySellingResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetMyeBaySellingRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetMyeBaySellingResponseType
      */
-    public function getMyeBaySelling(\DTS\eBaySDK\Trading\Types\GetMyeBaySellingRequestType $request)
+    public function getMyeBaySelling(\cbdesk\eBaySDK\Trading\Types\GetMyeBaySellingRequestType $request)
     {
         return $this->getMyeBaySellingAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetMyeBaySellingRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetMyeBaySellingRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getMyeBaySellingAsync(\DTS\eBaySDK\Trading\Types\GetMyeBaySellingRequestType $request)
+    public function getMyeBaySellingAsync(\cbdesk\eBaySDK\Trading\Types\GetMyeBaySellingRequestType $request)
     {
         return $this->callOperationAsync(
             'GetMyeBaySelling',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetMyeBaySellingResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetMyeBaySellingResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetNotificationPreferencesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetNotificationPreferencesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetNotificationPreferencesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetNotificationPreferencesResponseType
      */
-    public function getNotificationPreferences(\DTS\eBaySDK\Trading\Types\GetNotificationPreferencesRequestType $request)
+    public function getNotificationPreferences(\cbdesk\eBaySDK\Trading\Types\GetNotificationPreferencesRequestType $request)
     {
         return $this->getNotificationPreferencesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetNotificationPreferencesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetNotificationPreferencesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getNotificationPreferencesAsync(\DTS\eBaySDK\Trading\Types\GetNotificationPreferencesRequestType $request)
+    public function getNotificationPreferencesAsync(\cbdesk\eBaySDK\Trading\Types\GetNotificationPreferencesRequestType $request)
     {
         return $this->callOperationAsync(
             'GetNotificationPreferences',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetNotificationPreferencesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetNotificationPreferencesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetNotificationsUsageRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetNotificationsUsageResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetNotificationsUsageRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetNotificationsUsageResponseType
      */
-    public function getNotificationsUsage(\DTS\eBaySDK\Trading\Types\GetNotificationsUsageRequestType $request)
+    public function getNotificationsUsage(\cbdesk\eBaySDK\Trading\Types\GetNotificationsUsageRequestType $request)
     {
         return $this->getNotificationsUsageAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetNotificationsUsageRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetNotificationsUsageRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getNotificationsUsageAsync(\DTS\eBaySDK\Trading\Types\GetNotificationsUsageRequestType $request)
+    public function getNotificationsUsageAsync(\cbdesk\eBaySDK\Trading\Types\GetNotificationsUsageRequestType $request)
     {
         return $this->callOperationAsync(
             'GetNotificationsUsage',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetNotificationsUsageResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetNotificationsUsageResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetOrderTransactionsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetOrderTransactionsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetOrderTransactionsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetOrderTransactionsResponseType
      */
-    public function getOrderTransactions(\DTS\eBaySDK\Trading\Types\GetOrderTransactionsRequestType $request)
+    public function getOrderTransactions(\cbdesk\eBaySDK\Trading\Types\GetOrderTransactionsRequestType $request)
     {
         return $this->getOrderTransactionsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetOrderTransactionsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetOrderTransactionsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getOrderTransactionsAsync(\DTS\eBaySDK\Trading\Types\GetOrderTransactionsRequestType $request)
+    public function getOrderTransactionsAsync(\cbdesk\eBaySDK\Trading\Types\GetOrderTransactionsRequestType $request)
     {
         return $this->callOperationAsync(
             'GetOrderTransactions',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetOrderTransactionsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetOrderTransactionsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetOrdersRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetOrdersResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetOrdersRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetOrdersResponseType
      */
-    public function getOrders(\DTS\eBaySDK\Trading\Types\GetOrdersRequestType $request)
+    public function getOrders(\cbdesk\eBaySDK\Trading\Types\GetOrdersRequestType $request)
     {
         return $this->getOrdersAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetOrdersRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetOrdersRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getOrdersAsync(\DTS\eBaySDK\Trading\Types\GetOrdersRequestType $request)
+    public function getOrdersAsync(\cbdesk\eBaySDK\Trading\Types\GetOrdersRequestType $request)
     {
         return $this->callOperationAsync(
             'GetOrders',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetOrdersResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetOrdersResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetPromotionalSaleDetailsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetPromotionalSaleDetailsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetPromotionalSaleDetailsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetPromotionalSaleDetailsResponseType
      */
-    public function getPromotionalSaleDetails(\DTS\eBaySDK\Trading\Types\GetPromotionalSaleDetailsRequestType $request)
+    public function getPromotionalSaleDetails(\cbdesk\eBaySDK\Trading\Types\GetPromotionalSaleDetailsRequestType $request)
     {
         return $this->getPromotionalSaleDetailsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetPromotionalSaleDetailsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetPromotionalSaleDetailsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getPromotionalSaleDetailsAsync(\DTS\eBaySDK\Trading\Types\GetPromotionalSaleDetailsRequestType $request)
+    public function getPromotionalSaleDetailsAsync(\cbdesk\eBaySDK\Trading\Types\GetPromotionalSaleDetailsRequestType $request)
     {
         return $this->callOperationAsync(
             'GetPromotionalSaleDetails',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetPromotionalSaleDetailsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetPromotionalSaleDetailsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellerDashboardRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellerDashboardResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellerDashboardRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetSellerDashboardResponseType
      */
-    public function getSellerDashboard(\DTS\eBaySDK\Trading\Types\GetSellerDashboardRequestType $request)
+    public function getSellerDashboard(\cbdesk\eBaySDK\Trading\Types\GetSellerDashboardRequestType $request)
     {
         return $this->getSellerDashboardAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellerDashboardRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellerDashboardRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getSellerDashboardAsync(\DTS\eBaySDK\Trading\Types\GetSellerDashboardRequestType $request)
+    public function getSellerDashboardAsync(\cbdesk\eBaySDK\Trading\Types\GetSellerDashboardRequestType $request)
     {
         return $this->callOperationAsync(
             'GetSellerDashboard',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellerDashboardResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetSellerDashboardResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellerEventsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellerEventsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellerEventsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetSellerEventsResponseType
      */
-    public function getSellerEvents(\DTS\eBaySDK\Trading\Types\GetSellerEventsRequestType $request)
+    public function getSellerEvents(\cbdesk\eBaySDK\Trading\Types\GetSellerEventsRequestType $request)
     {
         return $this->getSellerEventsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellerEventsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellerEventsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getSellerEventsAsync(\DTS\eBaySDK\Trading\Types\GetSellerEventsRequestType $request)
+    public function getSellerEventsAsync(\cbdesk\eBaySDK\Trading\Types\GetSellerEventsRequestType $request)
     {
         return $this->callOperationAsync(
             'GetSellerEvents',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellerEventsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetSellerEventsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellerListRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellerListResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellerListRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetSellerListResponseType
      */
-    public function getSellerList(\DTS\eBaySDK\Trading\Types\GetSellerListRequestType $request)
+    public function getSellerList(\cbdesk\eBaySDK\Trading\Types\GetSellerListRequestType $request)
     {
         return $this->getSellerListAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellerListRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellerListRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getSellerListAsync(\DTS\eBaySDK\Trading\Types\GetSellerListRequestType $request)
+    public function getSellerListAsync(\cbdesk\eBaySDK\Trading\Types\GetSellerListRequestType $request)
     {
         return $this->callOperationAsync(
             'GetSellerList',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellerListResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetSellerListResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellerTransactionsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellerTransactionsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellerTransactionsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetSellerTransactionsResponseType
      */
-    public function getSellerTransactions(\DTS\eBaySDK\Trading\Types\GetSellerTransactionsRequestType $request)
+    public function getSellerTransactions(\cbdesk\eBaySDK\Trading\Types\GetSellerTransactionsRequestType $request)
     {
         return $this->getSellerTransactionsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellerTransactionsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellerTransactionsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getSellerTransactionsAsync(\DTS\eBaySDK\Trading\Types\GetSellerTransactionsRequestType $request)
+    public function getSellerTransactionsAsync(\cbdesk\eBaySDK\Trading\Types\GetSellerTransactionsRequestType $request)
     {
         return $this->callOperationAsync(
             'GetSellerTransactions',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellerTransactionsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetSellerTransactionsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerAlertsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellingManagerAlertsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellingManagerAlertsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetSellingManagerAlertsResponseType
      */
-    public function getSellingManagerAlerts(\DTS\eBaySDK\Trading\Types\GetSellingManagerAlertsRequestType $request)
+    public function getSellingManagerAlerts(\cbdesk\eBaySDK\Trading\Types\GetSellingManagerAlertsRequestType $request)
     {
         return $this->getSellingManagerAlertsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerAlertsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellingManagerAlertsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getSellingManagerAlertsAsync(\DTS\eBaySDK\Trading\Types\GetSellingManagerAlertsRequestType $request)
+    public function getSellingManagerAlertsAsync(\cbdesk\eBaySDK\Trading\Types\GetSellingManagerAlertsRequestType $request)
     {
         return $this->callOperationAsync(
             'GetSellingManagerAlerts',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellingManagerAlertsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetSellingManagerAlertsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerEmailLogRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellingManagerEmailLogResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellingManagerEmailLogRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetSellingManagerEmailLogResponseType
      */
-    public function getSellingManagerEmailLog(\DTS\eBaySDK\Trading\Types\GetSellingManagerEmailLogRequestType $request)
+    public function getSellingManagerEmailLog(\cbdesk\eBaySDK\Trading\Types\GetSellingManagerEmailLogRequestType $request)
     {
         return $this->getSellingManagerEmailLogAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerEmailLogRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellingManagerEmailLogRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getSellingManagerEmailLogAsync(\DTS\eBaySDK\Trading\Types\GetSellingManagerEmailLogRequestType $request)
+    public function getSellingManagerEmailLogAsync(\cbdesk\eBaySDK\Trading\Types\GetSellingManagerEmailLogRequestType $request)
     {
         return $this->callOperationAsync(
             'GetSellingManagerEmailLog',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellingManagerEmailLogResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetSellingManagerEmailLogResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellingManagerInventoryRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetSellingManagerInventoryResponseType
      */
-    public function getSellingManagerInventory(\DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryRequestType $request)
+    public function getSellingManagerInventory(\cbdesk\eBaySDK\Trading\Types\GetSellingManagerInventoryRequestType $request)
     {
         return $this->getSellingManagerInventoryAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellingManagerInventoryRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getSellingManagerInventoryAsync(\DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryRequestType $request)
+    public function getSellingManagerInventoryAsync(\cbdesk\eBaySDK\Trading\Types\GetSellingManagerInventoryRequestType $request)
     {
         return $this->callOperationAsync(
             'GetSellingManagerInventory',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetSellingManagerInventoryResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryFolderRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryFolderResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellingManagerInventoryFolderRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetSellingManagerInventoryFolderResponseType
      */
-    public function getSellingManagerInventoryFolder(\DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryFolderRequestType $request)
+    public function getSellingManagerInventoryFolder(\cbdesk\eBaySDK\Trading\Types\GetSellingManagerInventoryFolderRequestType $request)
     {
         return $this->getSellingManagerInventoryFolderAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryFolderRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellingManagerInventoryFolderRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getSellingManagerInventoryFolderAsync(\DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryFolderRequestType $request)
+    public function getSellingManagerInventoryFolderAsync(\cbdesk\eBaySDK\Trading\Types\GetSellingManagerInventoryFolderRequestType $request)
     {
         return $this->callOperationAsync(
             'GetSellingManagerInventoryFolder',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellingManagerInventoryFolderResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetSellingManagerInventoryFolderResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerItemAutomationRuleRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellingManagerItemAutomationRuleResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellingManagerItemAutomationRuleRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetSellingManagerItemAutomationRuleResponseType
      */
-    public function getSellingManagerItemAutomationRule(\DTS\eBaySDK\Trading\Types\GetSellingManagerItemAutomationRuleRequestType $request)
+    public function getSellingManagerItemAutomationRule(\cbdesk\eBaySDK\Trading\Types\GetSellingManagerItemAutomationRuleRequestType $request)
     {
         return $this->getSellingManagerItemAutomationRuleAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerItemAutomationRuleRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellingManagerItemAutomationRuleRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getSellingManagerItemAutomationRuleAsync(\DTS\eBaySDK\Trading\Types\GetSellingManagerItemAutomationRuleRequestType $request)
+    public function getSellingManagerItemAutomationRuleAsync(\cbdesk\eBaySDK\Trading\Types\GetSellingManagerItemAutomationRuleRequestType $request)
     {
         return $this->callOperationAsync(
             'GetSellingManagerItemAutomationRule',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellingManagerItemAutomationRuleResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetSellingManagerItemAutomationRuleResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerSaleRecordRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellingManagerSaleRecordResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellingManagerSaleRecordRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetSellingManagerSaleRecordResponseType
      */
-    public function getSellingManagerSaleRecord(\DTS\eBaySDK\Trading\Types\GetSellingManagerSaleRecordRequestType $request)
+    public function getSellingManagerSaleRecord(\cbdesk\eBaySDK\Trading\Types\GetSellingManagerSaleRecordRequestType $request)
     {
         return $this->getSellingManagerSaleRecordAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerSaleRecordRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellingManagerSaleRecordRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getSellingManagerSaleRecordAsync(\DTS\eBaySDK\Trading\Types\GetSellingManagerSaleRecordRequestType $request)
+    public function getSellingManagerSaleRecordAsync(\cbdesk\eBaySDK\Trading\Types\GetSellingManagerSaleRecordRequestType $request)
     {
         return $this->callOperationAsync(
             'GetSellingManagerSaleRecord',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellingManagerSaleRecordResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetSellingManagerSaleRecordResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerSoldListingsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellingManagerSoldListingsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellingManagerSoldListingsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetSellingManagerSoldListingsResponseType
      */
-    public function getSellingManagerSoldListings(\DTS\eBaySDK\Trading\Types\GetSellingManagerSoldListingsRequestType $request)
+    public function getSellingManagerSoldListings(\cbdesk\eBaySDK\Trading\Types\GetSellingManagerSoldListingsRequestType $request)
     {
         return $this->getSellingManagerSoldListingsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerSoldListingsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellingManagerSoldListingsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getSellingManagerSoldListingsAsync(\DTS\eBaySDK\Trading\Types\GetSellingManagerSoldListingsRequestType $request)
+    public function getSellingManagerSoldListingsAsync(\cbdesk\eBaySDK\Trading\Types\GetSellingManagerSoldListingsRequestType $request)
     {
         return $this->callOperationAsync(
             'GetSellingManagerSoldListings',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellingManagerSoldListingsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetSellingManagerSoldListingsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerTemplateAutomationRuleRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellingManagerTemplateAutomationRuleResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellingManagerTemplateAutomationRuleRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetSellingManagerTemplateAutomationRuleResponseType
      */
-    public function getSellingManagerTemplateAutomationRule(\DTS\eBaySDK\Trading\Types\GetSellingManagerTemplateAutomationRuleRequestType $request)
+    public function getSellingManagerTemplateAutomationRule(\cbdesk\eBaySDK\Trading\Types\GetSellingManagerTemplateAutomationRuleRequestType $request)
     {
         return $this->getSellingManagerTemplateAutomationRuleAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerTemplateAutomationRuleRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellingManagerTemplateAutomationRuleRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getSellingManagerTemplateAutomationRuleAsync(\DTS\eBaySDK\Trading\Types\GetSellingManagerTemplateAutomationRuleRequestType $request)
+    public function getSellingManagerTemplateAutomationRuleAsync(\cbdesk\eBaySDK\Trading\Types\GetSellingManagerTemplateAutomationRuleRequestType $request)
     {
         return $this->callOperationAsync(
             'GetSellingManagerTemplateAutomationRule',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellingManagerTemplateAutomationRuleResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetSellingManagerTemplateAutomationRuleResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerTemplatesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSellingManagerTemplatesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellingManagerTemplatesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetSellingManagerTemplatesResponseType
      */
-    public function getSellingManagerTemplates(\DTS\eBaySDK\Trading\Types\GetSellingManagerTemplatesRequestType $request)
+    public function getSellingManagerTemplates(\cbdesk\eBaySDK\Trading\Types\GetSellingManagerTemplatesRequestType $request)
     {
         return $this->getSellingManagerTemplatesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSellingManagerTemplatesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSellingManagerTemplatesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getSellingManagerTemplatesAsync(\DTS\eBaySDK\Trading\Types\GetSellingManagerTemplatesRequestType $request)
+    public function getSellingManagerTemplatesAsync(\cbdesk\eBaySDK\Trading\Types\GetSellingManagerTemplatesRequestType $request)
     {
         return $this->callOperationAsync(
             'GetSellingManagerTemplates',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetSellingManagerTemplatesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetSellingManagerTemplatesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSessionIDRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSessionIDResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSessionIDRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetSessionIDResponseType
      */
-    public function getSessionID(\DTS\eBaySDK\Trading\Types\GetSessionIDRequestType $request)
+    public function getSessionID(\cbdesk\eBaySDK\Trading\Types\GetSessionIDRequestType $request)
     {
         return $this->getSessionIDAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSessionIDRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSessionIDRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getSessionIDAsync(\DTS\eBaySDK\Trading\Types\GetSessionIDRequestType $request)
+    public function getSessionIDAsync(\cbdesk\eBaySDK\Trading\Types\GetSessionIDRequestType $request)
     {
         return $this->callOperationAsync(
             'GetSessionID',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetSessionIDResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetSessionIDResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetShippingDiscountProfilesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetShippingDiscountProfilesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetShippingDiscountProfilesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetShippingDiscountProfilesResponseType
      */
-    public function getShippingDiscountProfiles(\DTS\eBaySDK\Trading\Types\GetShippingDiscountProfilesRequestType $request)
+    public function getShippingDiscountProfiles(\cbdesk\eBaySDK\Trading\Types\GetShippingDiscountProfilesRequestType $request)
     {
         return $this->getShippingDiscountProfilesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetShippingDiscountProfilesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetShippingDiscountProfilesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getShippingDiscountProfilesAsync(\DTS\eBaySDK\Trading\Types\GetShippingDiscountProfilesRequestType $request)
+    public function getShippingDiscountProfilesAsync(\cbdesk\eBaySDK\Trading\Types\GetShippingDiscountProfilesRequestType $request)
     {
         return $this->callOperationAsync(
             'GetShippingDiscountProfiles',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetShippingDiscountProfilesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetShippingDiscountProfilesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetStoreRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetStoreResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetStoreRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetStoreResponseType
      */
-    public function getStore(\DTS\eBaySDK\Trading\Types\GetStoreRequestType $request)
+    public function getStore(\cbdesk\eBaySDK\Trading\Types\GetStoreRequestType $request)
     {
         return $this->getStoreAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetStoreRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetStoreRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getStoreAsync(\DTS\eBaySDK\Trading\Types\GetStoreRequestType $request)
+    public function getStoreAsync(\cbdesk\eBaySDK\Trading\Types\GetStoreRequestType $request)
     {
         return $this->callOperationAsync(
             'GetStore',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetStoreResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetStoreResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetStoreCategoryUpdateStatusRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetStoreCategoryUpdateStatusResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetStoreCategoryUpdateStatusRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetStoreCategoryUpdateStatusResponseType
      */
-    public function getStoreCategoryUpdateStatus(\DTS\eBaySDK\Trading\Types\GetStoreCategoryUpdateStatusRequestType $request)
+    public function getStoreCategoryUpdateStatus(\cbdesk\eBaySDK\Trading\Types\GetStoreCategoryUpdateStatusRequestType $request)
     {
         return $this->getStoreCategoryUpdateStatusAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetStoreCategoryUpdateStatusRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetStoreCategoryUpdateStatusRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getStoreCategoryUpdateStatusAsync(\DTS\eBaySDK\Trading\Types\GetStoreCategoryUpdateStatusRequestType $request)
+    public function getStoreCategoryUpdateStatusAsync(\cbdesk\eBaySDK\Trading\Types\GetStoreCategoryUpdateStatusRequestType $request)
     {
         return $this->callOperationAsync(
             'GetStoreCategoryUpdateStatus',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetStoreCategoryUpdateStatusResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetStoreCategoryUpdateStatusResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetStoreCustomPageRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetStoreCustomPageResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetStoreCustomPageRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetStoreCustomPageResponseType
      */
-    public function getStoreCustomPage(\DTS\eBaySDK\Trading\Types\GetStoreCustomPageRequestType $request)
+    public function getStoreCustomPage(\cbdesk\eBaySDK\Trading\Types\GetStoreCustomPageRequestType $request)
     {
         return $this->getStoreCustomPageAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetStoreCustomPageRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetStoreCustomPageRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getStoreCustomPageAsync(\DTS\eBaySDK\Trading\Types\GetStoreCustomPageRequestType $request)
+    public function getStoreCustomPageAsync(\cbdesk\eBaySDK\Trading\Types\GetStoreCustomPageRequestType $request)
     {
         return $this->callOperationAsync(
             'GetStoreCustomPage',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetStoreCustomPageResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetStoreCustomPageResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetStoreOptionsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetStoreOptionsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetStoreOptionsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetStoreOptionsResponseType
      */
-    public function getStoreOptions(\DTS\eBaySDK\Trading\Types\GetStoreOptionsRequestType $request)
+    public function getStoreOptions(\cbdesk\eBaySDK\Trading\Types\GetStoreOptionsRequestType $request)
     {
         return $this->getStoreOptionsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetStoreOptionsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetStoreOptionsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getStoreOptionsAsync(\DTS\eBaySDK\Trading\Types\GetStoreOptionsRequestType $request)
+    public function getStoreOptionsAsync(\cbdesk\eBaySDK\Trading\Types\GetStoreOptionsRequestType $request)
     {
         return $this->callOperationAsync(
             'GetStoreOptions',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetStoreOptionsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetStoreOptionsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetStorePreferencesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetStorePreferencesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetStorePreferencesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetStorePreferencesResponseType
      */
-    public function getStorePreferences(\DTS\eBaySDK\Trading\Types\GetStorePreferencesRequestType $request)
+    public function getStorePreferences(\cbdesk\eBaySDK\Trading\Types\GetStorePreferencesRequestType $request)
     {
         return $this->getStorePreferencesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetStorePreferencesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetStorePreferencesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getStorePreferencesAsync(\DTS\eBaySDK\Trading\Types\GetStorePreferencesRequestType $request)
+    public function getStorePreferencesAsync(\cbdesk\eBaySDK\Trading\Types\GetStorePreferencesRequestType $request)
     {
         return $this->callOperationAsync(
             'GetStorePreferences',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetStorePreferencesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetStorePreferencesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSuggestedCategoriesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetSuggestedCategoriesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSuggestedCategoriesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetSuggestedCategoriesResponseType
      */
-    public function getSuggestedCategories(\DTS\eBaySDK\Trading\Types\GetSuggestedCategoriesRequestType $request)
+    public function getSuggestedCategories(\cbdesk\eBaySDK\Trading\Types\GetSuggestedCategoriesRequestType $request)
     {
         return $this->getSuggestedCategoriesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetSuggestedCategoriesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetSuggestedCategoriesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getSuggestedCategoriesAsync(\DTS\eBaySDK\Trading\Types\GetSuggestedCategoriesRequestType $request)
+    public function getSuggestedCategoriesAsync(\cbdesk\eBaySDK\Trading\Types\GetSuggestedCategoriesRequestType $request)
     {
         return $this->callOperationAsync(
             'GetSuggestedCategories',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetSuggestedCategoriesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetSuggestedCategoriesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetTaxTableRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetTaxTableResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetTaxTableRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetTaxTableResponseType
      */
-    public function getTaxTable(\DTS\eBaySDK\Trading\Types\GetTaxTableRequestType $request)
+    public function getTaxTable(\cbdesk\eBaySDK\Trading\Types\GetTaxTableRequestType $request)
     {
         return $this->getTaxTableAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetTaxTableRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetTaxTableRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getTaxTableAsync(\DTS\eBaySDK\Trading\Types\GetTaxTableRequestType $request)
+    public function getTaxTableAsync(\cbdesk\eBaySDK\Trading\Types\GetTaxTableRequestType $request)
     {
         return $this->callOperationAsync(
             'GetTaxTable',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetTaxTableResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetTaxTableResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetTokenStatusRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetTokenStatusResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetTokenStatusRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetTokenStatusResponseType
      */
-    public function getTokenStatus(\DTS\eBaySDK\Trading\Types\GetTokenStatusRequestType $request)
+    public function getTokenStatus(\cbdesk\eBaySDK\Trading\Types\GetTokenStatusRequestType $request)
     {
         return $this->getTokenStatusAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetTokenStatusRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetTokenStatusRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getTokenStatusAsync(\DTS\eBaySDK\Trading\Types\GetTokenStatusRequestType $request)
+    public function getTokenStatusAsync(\cbdesk\eBaySDK\Trading\Types\GetTokenStatusRequestType $request)
     {
         return $this->callOperationAsync(
             'GetTokenStatus',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetTokenStatusResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetTokenStatusResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetUserRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetUserResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetUserRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetUserResponseType
      */
-    public function getUser(\DTS\eBaySDK\Trading\Types\GetUserRequestType $request)
+    public function getUser(\cbdesk\eBaySDK\Trading\Types\GetUserRequestType $request)
     {
         return $this->getUserAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetUserRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetUserRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getUserAsync(\DTS\eBaySDK\Trading\Types\GetUserRequestType $request)
+    public function getUserAsync(\cbdesk\eBaySDK\Trading\Types\GetUserRequestType $request)
     {
         return $this->callOperationAsync(
             'GetUser',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetUserResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetUserResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetUserContactDetailsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetUserContactDetailsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetUserContactDetailsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetUserContactDetailsResponseType
      */
-    public function getUserContactDetails(\DTS\eBaySDK\Trading\Types\GetUserContactDetailsRequestType $request)
+    public function getUserContactDetails(\cbdesk\eBaySDK\Trading\Types\GetUserContactDetailsRequestType $request)
     {
         return $this->getUserContactDetailsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetUserContactDetailsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetUserContactDetailsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getUserContactDetailsAsync(\DTS\eBaySDK\Trading\Types\GetUserContactDetailsRequestType $request)
+    public function getUserContactDetailsAsync(\cbdesk\eBaySDK\Trading\Types\GetUserContactDetailsRequestType $request)
     {
         return $this->callOperationAsync(
             'GetUserContactDetails',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetUserContactDetailsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetUserContactDetailsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetUserDisputesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetUserDisputesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetUserDisputesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetUserDisputesResponseType
      */
-    public function getUserDisputes(\DTS\eBaySDK\Trading\Types\GetUserDisputesRequestType $request)
+    public function getUserDisputes(\cbdesk\eBaySDK\Trading\Types\GetUserDisputesRequestType $request)
     {
         return $this->getUserDisputesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetUserDisputesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetUserDisputesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getUserDisputesAsync(\DTS\eBaySDK\Trading\Types\GetUserDisputesRequestType $request)
+    public function getUserDisputesAsync(\cbdesk\eBaySDK\Trading\Types\GetUserDisputesRequestType $request)
     {
         return $this->callOperationAsync(
             'GetUserDisputes',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetUserDisputesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetUserDisputesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetUserPreferencesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetUserPreferencesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetUserPreferencesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetUserPreferencesResponseType
      */
-    public function getUserPreferences(\DTS\eBaySDK\Trading\Types\GetUserPreferencesRequestType $request)
+    public function getUserPreferences(\cbdesk\eBaySDK\Trading\Types\GetUserPreferencesRequestType $request)
     {
         return $this->getUserPreferencesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetUserPreferencesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetUserPreferencesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getUserPreferencesAsync(\DTS\eBaySDK\Trading\Types\GetUserPreferencesRequestType $request)
+    public function getUserPreferencesAsync(\cbdesk\eBaySDK\Trading\Types\GetUserPreferencesRequestType $request)
     {
         return $this->callOperationAsync(
             'GetUserPreferences',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetUserPreferencesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetUserPreferencesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetVeROReasonCodeDetailsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetVeROReasonCodeDetailsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetVeROReasonCodeDetailsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetVeROReasonCodeDetailsResponseType
      */
-    public function getVeROReasonCodeDetails(\DTS\eBaySDK\Trading\Types\GetVeROReasonCodeDetailsRequestType $request)
+    public function getVeROReasonCodeDetails(\cbdesk\eBaySDK\Trading\Types\GetVeROReasonCodeDetailsRequestType $request)
     {
         return $this->getVeROReasonCodeDetailsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetVeROReasonCodeDetailsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetVeROReasonCodeDetailsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getVeROReasonCodeDetailsAsync(\DTS\eBaySDK\Trading\Types\GetVeROReasonCodeDetailsRequestType $request)
+    public function getVeROReasonCodeDetailsAsync(\cbdesk\eBaySDK\Trading\Types\GetVeROReasonCodeDetailsRequestType $request)
     {
         return $this->callOperationAsync(
             'GetVeROReasonCodeDetails',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetVeROReasonCodeDetailsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetVeROReasonCodeDetailsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetVeROReportStatusRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GetVeROReportStatusResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GetVeROReportStatusRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GetVeROReportStatusResponseType
      */
-    public function getVeROReportStatus(\DTS\eBaySDK\Trading\Types\GetVeROReportStatusRequestType $request)
+    public function getVeROReportStatus(\cbdesk\eBaySDK\Trading\Types\GetVeROReportStatusRequestType $request)
     {
         return $this->getVeROReportStatusAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GetVeROReportStatusRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GetVeROReportStatusRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getVeROReportStatusAsync(\DTS\eBaySDK\Trading\Types\GetVeROReportStatusRequestType $request)
+    public function getVeROReportStatusAsync(\cbdesk\eBaySDK\Trading\Types\GetVeROReportStatusRequestType $request)
     {
         return $this->callOperationAsync(
             'GetVeROReportStatus',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GetVeROReportStatusResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GetVeROReportStatusResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GeteBayDetailsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GeteBayDetailsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GeteBayDetailsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GeteBayDetailsResponseType
      */
-    public function geteBayDetails(\DTS\eBaySDK\Trading\Types\GeteBayDetailsRequestType $request)
+    public function geteBayDetails(\cbdesk\eBaySDK\Trading\Types\GeteBayDetailsRequestType $request)
     {
         return $this->geteBayDetailsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GeteBayDetailsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GeteBayDetailsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function geteBayDetailsAsync(\DTS\eBaySDK\Trading\Types\GeteBayDetailsRequestType $request)
+    public function geteBayDetailsAsync(\cbdesk\eBaySDK\Trading\Types\GeteBayDetailsRequestType $request)
     {
         return $this->callOperationAsync(
             'GeteBayDetails',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GeteBayDetailsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GeteBayDetailsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GeteBayOfficialTimeRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\GeteBayOfficialTimeResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\GeteBayOfficialTimeRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\GeteBayOfficialTimeResponseType
      */
-    public function geteBayOfficialTime(\DTS\eBaySDK\Trading\Types\GeteBayOfficialTimeRequestType $request)
+    public function geteBayOfficialTime(\cbdesk\eBaySDK\Trading\Types\GeteBayOfficialTimeRequestType $request)
     {
         return $this->geteBayOfficialTimeAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\GeteBayOfficialTimeRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\GeteBayOfficialTimeRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function geteBayOfficialTimeAsync(\DTS\eBaySDK\Trading\Types\GeteBayOfficialTimeRequestType $request)
+    public function geteBayOfficialTimeAsync(\cbdesk\eBaySDK\Trading\Types\GeteBayOfficialTimeRequestType $request)
     {
         return $this->callOperationAsync(
             'GeteBayOfficialTime',
             $request,
-            '\DTS\eBaySDK\Trading\Types\GeteBayOfficialTimeResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\GeteBayOfficialTimeResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\LeaveFeedbackRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\LeaveFeedbackResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\LeaveFeedbackRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\LeaveFeedbackResponseType
      */
-    public function leaveFeedback(\DTS\eBaySDK\Trading\Types\LeaveFeedbackRequestType $request)
+    public function leaveFeedback(\cbdesk\eBaySDK\Trading\Types\LeaveFeedbackRequestType $request)
     {
         return $this->leaveFeedbackAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\LeaveFeedbackRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\LeaveFeedbackRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function leaveFeedbackAsync(\DTS\eBaySDK\Trading\Types\LeaveFeedbackRequestType $request)
+    public function leaveFeedbackAsync(\cbdesk\eBaySDK\Trading\Types\LeaveFeedbackRequestType $request)
     {
         return $this->callOperationAsync(
             'LeaveFeedback',
             $request,
-            '\DTS\eBaySDK\Trading\Types\LeaveFeedbackResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\LeaveFeedbackResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\MoveSellingManagerInventoryFolderRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\MoveSellingManagerInventoryFolderResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\MoveSellingManagerInventoryFolderRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\MoveSellingManagerInventoryFolderResponseType
      */
-    public function moveSellingManagerInventoryFolder(\DTS\eBaySDK\Trading\Types\MoveSellingManagerInventoryFolderRequestType $request)
+    public function moveSellingManagerInventoryFolder(\cbdesk\eBaySDK\Trading\Types\MoveSellingManagerInventoryFolderRequestType $request)
     {
         return $this->moveSellingManagerInventoryFolderAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\MoveSellingManagerInventoryFolderRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\MoveSellingManagerInventoryFolderRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function moveSellingManagerInventoryFolderAsync(\DTS\eBaySDK\Trading\Types\MoveSellingManagerInventoryFolderRequestType $request)
+    public function moveSellingManagerInventoryFolderAsync(\cbdesk\eBaySDK\Trading\Types\MoveSellingManagerInventoryFolderRequestType $request)
     {
         return $this->callOperationAsync(
             'MoveSellingManagerInventoryFolder',
             $request,
-            '\DTS\eBaySDK\Trading\Types\MoveSellingManagerInventoryFolderResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\MoveSellingManagerInventoryFolderResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\PlaceOfferRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\PlaceOfferResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\PlaceOfferRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\PlaceOfferResponseType
      */
-    public function placeOffer(\DTS\eBaySDK\Trading\Types\PlaceOfferRequestType $request)
+    public function placeOffer(\cbdesk\eBaySDK\Trading\Types\PlaceOfferRequestType $request)
     {
         return $this->placeOfferAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\PlaceOfferRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\PlaceOfferRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function placeOfferAsync(\DTS\eBaySDK\Trading\Types\PlaceOfferRequestType $request)
+    public function placeOfferAsync(\cbdesk\eBaySDK\Trading\Types\PlaceOfferRequestType $request)
     {
         return $this->callOperationAsync(
             'PlaceOffer',
             $request,
-            '\DTS\eBaySDK\Trading\Types\PlaceOfferResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\PlaceOfferResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\RelistFixedPriceItemRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\RelistFixedPriceItemResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\RelistFixedPriceItemRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\RelistFixedPriceItemResponseType
      */
-    public function relistFixedPriceItem(\DTS\eBaySDK\Trading\Types\RelistFixedPriceItemRequestType $request)
+    public function relistFixedPriceItem(\cbdesk\eBaySDK\Trading\Types\RelistFixedPriceItemRequestType $request)
     {
         return $this->relistFixedPriceItemAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\RelistFixedPriceItemRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\RelistFixedPriceItemRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function relistFixedPriceItemAsync(\DTS\eBaySDK\Trading\Types\RelistFixedPriceItemRequestType $request)
+    public function relistFixedPriceItemAsync(\cbdesk\eBaySDK\Trading\Types\RelistFixedPriceItemRequestType $request)
     {
         return $this->callOperationAsync(
             'RelistFixedPriceItem',
             $request,
-            '\DTS\eBaySDK\Trading\Types\RelistFixedPriceItemResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\RelistFixedPriceItemResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\RelistItemRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\RelistItemResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\RelistItemRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\RelistItemResponseType
      */
-    public function relistItem(\DTS\eBaySDK\Trading\Types\RelistItemRequestType $request)
+    public function relistItem(\cbdesk\eBaySDK\Trading\Types\RelistItemRequestType $request)
     {
         return $this->relistItemAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\RelistItemRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\RelistItemRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function relistItemAsync(\DTS\eBaySDK\Trading\Types\RelistItemRequestType $request)
+    public function relistItemAsync(\cbdesk\eBaySDK\Trading\Types\RelistItemRequestType $request)
     {
         return $this->callOperationAsync(
             'RelistItem',
             $request,
-            '\DTS\eBaySDK\Trading\Types\RelistItemResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\RelistItemResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\RemoveFromWatchListRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\RemoveFromWatchListResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\RemoveFromWatchListRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\RemoveFromWatchListResponseType
      */
-    public function removeFromWatchList(\DTS\eBaySDK\Trading\Types\RemoveFromWatchListRequestType $request)
+    public function removeFromWatchList(\cbdesk\eBaySDK\Trading\Types\RemoveFromWatchListRequestType $request)
     {
         return $this->removeFromWatchListAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\RemoveFromWatchListRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\RemoveFromWatchListRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function removeFromWatchListAsync(\DTS\eBaySDK\Trading\Types\RemoveFromWatchListRequestType $request)
+    public function removeFromWatchListAsync(\cbdesk\eBaySDK\Trading\Types\RemoveFromWatchListRequestType $request)
     {
         return $this->callOperationAsync(
             'RemoveFromWatchList',
             $request,
-            '\DTS\eBaySDK\Trading\Types\RemoveFromWatchListResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\RemoveFromWatchListResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\RespondToBestOfferRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\RespondToBestOfferResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\RespondToBestOfferRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\RespondToBestOfferResponseType
      */
-    public function respondToBestOffer(\DTS\eBaySDK\Trading\Types\RespondToBestOfferRequestType $request)
+    public function respondToBestOffer(\cbdesk\eBaySDK\Trading\Types\RespondToBestOfferRequestType $request)
     {
         return $this->respondToBestOfferAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\RespondToBestOfferRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\RespondToBestOfferRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function respondToBestOfferAsync(\DTS\eBaySDK\Trading\Types\RespondToBestOfferRequestType $request)
+    public function respondToBestOfferAsync(\cbdesk\eBaySDK\Trading\Types\RespondToBestOfferRequestType $request)
     {
         return $this->callOperationAsync(
             'RespondToBestOffer',
             $request,
-            '\DTS\eBaySDK\Trading\Types\RespondToBestOfferResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\RespondToBestOfferResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\RespondToFeedbackRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\RespondToFeedbackResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\RespondToFeedbackRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\RespondToFeedbackResponseType
      */
-    public function respondToFeedback(\DTS\eBaySDK\Trading\Types\RespondToFeedbackRequestType $request)
+    public function respondToFeedback(\cbdesk\eBaySDK\Trading\Types\RespondToFeedbackRequestType $request)
     {
         return $this->respondToFeedbackAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\RespondToFeedbackRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\RespondToFeedbackRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function respondToFeedbackAsync(\DTS\eBaySDK\Trading\Types\RespondToFeedbackRequestType $request)
+    public function respondToFeedbackAsync(\cbdesk\eBaySDK\Trading\Types\RespondToFeedbackRequestType $request)
     {
         return $this->callOperationAsync(
             'RespondToFeedback',
             $request,
-            '\DTS\eBaySDK\Trading\Types\RespondToFeedbackResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\RespondToFeedbackResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseCheckoutStatusRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\ReviseCheckoutStatusResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseCheckoutStatusRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\ReviseCheckoutStatusResponseType
      */
-    public function reviseCheckoutStatus(\DTS\eBaySDK\Trading\Types\ReviseCheckoutStatusRequestType $request)
+    public function reviseCheckoutStatus(\cbdesk\eBaySDK\Trading\Types\ReviseCheckoutStatusRequestType $request)
     {
         return $this->reviseCheckoutStatusAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseCheckoutStatusRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseCheckoutStatusRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function reviseCheckoutStatusAsync(\DTS\eBaySDK\Trading\Types\ReviseCheckoutStatusRequestType $request)
+    public function reviseCheckoutStatusAsync(\cbdesk\eBaySDK\Trading\Types\ReviseCheckoutStatusRequestType $request)
     {
         return $this->callOperationAsync(
             'ReviseCheckoutStatus',
             $request,
-            '\DTS\eBaySDK\Trading\Types\ReviseCheckoutStatusResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\ReviseCheckoutStatusResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseFixedPriceItemRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\ReviseFixedPriceItemResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseFixedPriceItemRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\ReviseFixedPriceItemResponseType
      */
-    public function reviseFixedPriceItem(\DTS\eBaySDK\Trading\Types\ReviseFixedPriceItemRequestType $request)
+    public function reviseFixedPriceItem(\cbdesk\eBaySDK\Trading\Types\ReviseFixedPriceItemRequestType $request)
     {
         return $this->reviseFixedPriceItemAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseFixedPriceItemRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseFixedPriceItemRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function reviseFixedPriceItemAsync(\DTS\eBaySDK\Trading\Types\ReviseFixedPriceItemRequestType $request)
+    public function reviseFixedPriceItemAsync(\cbdesk\eBaySDK\Trading\Types\ReviseFixedPriceItemRequestType $request)
     {
         return $this->callOperationAsync(
             'ReviseFixedPriceItem',
             $request,
-            '\DTS\eBaySDK\Trading\Types\ReviseFixedPriceItemResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\ReviseFixedPriceItemResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseInventoryStatusRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\ReviseInventoryStatusResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseInventoryStatusRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\ReviseInventoryStatusResponseType
      */
-    public function reviseInventoryStatus(\DTS\eBaySDK\Trading\Types\ReviseInventoryStatusRequestType $request)
+    public function reviseInventoryStatus(\cbdesk\eBaySDK\Trading\Types\ReviseInventoryStatusRequestType $request)
     {
         return $this->reviseInventoryStatusAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseInventoryStatusRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseInventoryStatusRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function reviseInventoryStatusAsync(\DTS\eBaySDK\Trading\Types\ReviseInventoryStatusRequestType $request)
+    public function reviseInventoryStatusAsync(\cbdesk\eBaySDK\Trading\Types\ReviseInventoryStatusRequestType $request)
     {
         return $this->callOperationAsync(
             'ReviseInventoryStatus',
             $request,
-            '\DTS\eBaySDK\Trading\Types\ReviseInventoryStatusResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\ReviseInventoryStatusResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseItemRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\ReviseItemResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseItemRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\ReviseItemResponseType
      */
-    public function reviseItem(\DTS\eBaySDK\Trading\Types\ReviseItemRequestType $request)
+    public function reviseItem(\cbdesk\eBaySDK\Trading\Types\ReviseItemRequestType $request)
     {
         return $this->reviseItemAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseItemRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseItemRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function reviseItemAsync(\DTS\eBaySDK\Trading\Types\ReviseItemRequestType $request)
+    public function reviseItemAsync(\cbdesk\eBaySDK\Trading\Types\ReviseItemRequestType $request)
     {
         return $this->callOperationAsync(
             'ReviseItem',
             $request,
-            '\DTS\eBaySDK\Trading\Types\ReviseItemResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\ReviseItemResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseMyMessagesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\ReviseMyMessagesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseMyMessagesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\ReviseMyMessagesResponseType
      */
-    public function reviseMyMessages(\DTS\eBaySDK\Trading\Types\ReviseMyMessagesRequestType $request)
+    public function reviseMyMessages(\cbdesk\eBaySDK\Trading\Types\ReviseMyMessagesRequestType $request)
     {
         return $this->reviseMyMessagesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseMyMessagesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseMyMessagesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function reviseMyMessagesAsync(\DTS\eBaySDK\Trading\Types\ReviseMyMessagesRequestType $request)
+    public function reviseMyMessagesAsync(\cbdesk\eBaySDK\Trading\Types\ReviseMyMessagesRequestType $request)
     {
         return $this->callOperationAsync(
             'ReviseMyMessages',
             $request,
-            '\DTS\eBaySDK\Trading\Types\ReviseMyMessagesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\ReviseMyMessagesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseMyMessagesFoldersRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\ReviseMyMessagesFoldersResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseMyMessagesFoldersRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\ReviseMyMessagesFoldersResponseType
      */
-    public function reviseMyMessagesFolders(\DTS\eBaySDK\Trading\Types\ReviseMyMessagesFoldersRequestType $request)
+    public function reviseMyMessagesFolders(\cbdesk\eBaySDK\Trading\Types\ReviseMyMessagesFoldersRequestType $request)
     {
         return $this->reviseMyMessagesFoldersAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseMyMessagesFoldersRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseMyMessagesFoldersRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function reviseMyMessagesFoldersAsync(\DTS\eBaySDK\Trading\Types\ReviseMyMessagesFoldersRequestType $request)
+    public function reviseMyMessagesFoldersAsync(\cbdesk\eBaySDK\Trading\Types\ReviseMyMessagesFoldersRequestType $request)
     {
         return $this->callOperationAsync(
             'ReviseMyMessagesFolders',
             $request,
-            '\DTS\eBaySDK\Trading\Types\ReviseMyMessagesFoldersResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\ReviseMyMessagesFoldersResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseSellingManagerInventoryFolderRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\ReviseSellingManagerInventoryFolderResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerInventoryFolderRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerInventoryFolderResponseType
      */
-    public function reviseSellingManagerInventoryFolder(\DTS\eBaySDK\Trading\Types\ReviseSellingManagerInventoryFolderRequestType $request)
+    public function reviseSellingManagerInventoryFolder(\cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerInventoryFolderRequestType $request)
     {
         return $this->reviseSellingManagerInventoryFolderAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseSellingManagerInventoryFolderRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerInventoryFolderRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function reviseSellingManagerInventoryFolderAsync(\DTS\eBaySDK\Trading\Types\ReviseSellingManagerInventoryFolderRequestType $request)
+    public function reviseSellingManagerInventoryFolderAsync(\cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerInventoryFolderRequestType $request)
     {
         return $this->callOperationAsync(
             'ReviseSellingManagerInventoryFolder',
             $request,
-            '\DTS\eBaySDK\Trading\Types\ReviseSellingManagerInventoryFolderResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerInventoryFolderResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseSellingManagerProductRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\ReviseSellingManagerProductResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerProductRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerProductResponseType
      */
-    public function reviseSellingManagerProduct(\DTS\eBaySDK\Trading\Types\ReviseSellingManagerProductRequestType $request)
+    public function reviseSellingManagerProduct(\cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerProductRequestType $request)
     {
         return $this->reviseSellingManagerProductAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseSellingManagerProductRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerProductRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function reviseSellingManagerProductAsync(\DTS\eBaySDK\Trading\Types\ReviseSellingManagerProductRequestType $request)
+    public function reviseSellingManagerProductAsync(\cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerProductRequestType $request)
     {
         return $this->callOperationAsync(
             'ReviseSellingManagerProduct',
             $request,
-            '\DTS\eBaySDK\Trading\Types\ReviseSellingManagerProductResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerProductResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseSellingManagerSaleRecordRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\ReviseSellingManagerSaleRecordResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerSaleRecordRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerSaleRecordResponseType
      */
-    public function reviseSellingManagerSaleRecord(\DTS\eBaySDK\Trading\Types\ReviseSellingManagerSaleRecordRequestType $request)
+    public function reviseSellingManagerSaleRecord(\cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerSaleRecordRequestType $request)
     {
         return $this->reviseSellingManagerSaleRecordAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseSellingManagerSaleRecordRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerSaleRecordRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function reviseSellingManagerSaleRecordAsync(\DTS\eBaySDK\Trading\Types\ReviseSellingManagerSaleRecordRequestType $request)
+    public function reviseSellingManagerSaleRecordAsync(\cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerSaleRecordRequestType $request)
     {
         return $this->callOperationAsync(
             'ReviseSellingManagerSaleRecord',
             $request,
-            '\DTS\eBaySDK\Trading\Types\ReviseSellingManagerSaleRecordResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerSaleRecordResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseSellingManagerTemplateRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\ReviseSellingManagerTemplateResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerTemplateRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerTemplateResponseType
      */
-    public function reviseSellingManagerTemplate(\DTS\eBaySDK\Trading\Types\ReviseSellingManagerTemplateRequestType $request)
+    public function reviseSellingManagerTemplate(\cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerTemplateRequestType $request)
     {
         return $this->reviseSellingManagerTemplateAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ReviseSellingManagerTemplateRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerTemplateRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function reviseSellingManagerTemplateAsync(\DTS\eBaySDK\Trading\Types\ReviseSellingManagerTemplateRequestType $request)
+    public function reviseSellingManagerTemplateAsync(\cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerTemplateRequestType $request)
     {
         return $this->callOperationAsync(
             'ReviseSellingManagerTemplate',
             $request,
-            '\DTS\eBaySDK\Trading\Types\ReviseSellingManagerTemplateResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\ReviseSellingManagerTemplateResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\RevokeTokenRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\RevokeTokenResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\RevokeTokenRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\RevokeTokenResponseType
      */
-    public function revokeToken(\DTS\eBaySDK\Trading\Types\RevokeTokenRequestType $request)
+    public function revokeToken(\cbdesk\eBaySDK\Trading\Types\RevokeTokenRequestType $request)
     {
         return $this->revokeTokenAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\RevokeTokenRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\RevokeTokenRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function revokeTokenAsync(\DTS\eBaySDK\Trading\Types\RevokeTokenRequestType $request)
+    public function revokeTokenAsync(\cbdesk\eBaySDK\Trading\Types\RevokeTokenRequestType $request)
     {
         return $this->callOperationAsync(
             'RevokeToken',
             $request,
-            '\DTS\eBaySDK\Trading\Types\RevokeTokenResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\RevokeTokenResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateResponseType
      */
-    public function saveItemToSellingManagerTemplate(\DTS\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateRequestType $request)
+    public function saveItemToSellingManagerTemplate(\cbdesk\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateRequestType $request)
     {
         return $this->saveItemToSellingManagerTemplateAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function saveItemToSellingManagerTemplateAsync(\DTS\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateRequestType $request)
+    public function saveItemToSellingManagerTemplateAsync(\cbdesk\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateRequestType $request)
     {
         return $this->callOperationAsync(
             'SaveItemToSellingManagerTemplate',
             $request,
-            '\DTS\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SellerReverseDisputeRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SellerReverseDisputeResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\SellerReverseDisputeRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\SellerReverseDisputeResponseType
      */
-    public function sellerReverseDispute(\DTS\eBaySDK\Trading\Types\SellerReverseDisputeRequestType $request)
+    public function sellerReverseDispute(\cbdesk\eBaySDK\Trading\Types\SellerReverseDisputeRequestType $request)
     {
         return $this->sellerReverseDisputeAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SellerReverseDisputeRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\SellerReverseDisputeRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function sellerReverseDisputeAsync(\DTS\eBaySDK\Trading\Types\SellerReverseDisputeRequestType $request)
+    public function sellerReverseDisputeAsync(\cbdesk\eBaySDK\Trading\Types\SellerReverseDisputeRequestType $request)
     {
         return $this->callOperationAsync(
             'SellerReverseDispute',
             $request,
-            '\DTS\eBaySDK\Trading\Types\SellerReverseDisputeResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\SellerReverseDisputeResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SendInvoiceRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SendInvoiceResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\SendInvoiceRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\SendInvoiceResponseType
      */
-    public function sendInvoice(\DTS\eBaySDK\Trading\Types\SendInvoiceRequestType $request)
+    public function sendInvoice(\cbdesk\eBaySDK\Trading\Types\SendInvoiceRequestType $request)
     {
         return $this->sendInvoiceAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SendInvoiceRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\SendInvoiceRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function sendInvoiceAsync(\DTS\eBaySDK\Trading\Types\SendInvoiceRequestType $request)
+    public function sendInvoiceAsync(\cbdesk\eBaySDK\Trading\Types\SendInvoiceRequestType $request)
     {
         return $this->callOperationAsync(
             'SendInvoice',
             $request,
-            '\DTS\eBaySDK\Trading\Types\SendInvoiceResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\SendInvoiceResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetMessagePreferencesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetMessagePreferencesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\SetMessagePreferencesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\SetMessagePreferencesResponseType
      */
-    public function setMessagePreferences(\DTS\eBaySDK\Trading\Types\SetMessagePreferencesRequestType $request)
+    public function setMessagePreferences(\cbdesk\eBaySDK\Trading\Types\SetMessagePreferencesRequestType $request)
     {
         return $this->setMessagePreferencesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetMessagePreferencesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\SetMessagePreferencesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function setMessagePreferencesAsync(\DTS\eBaySDK\Trading\Types\SetMessagePreferencesRequestType $request)
+    public function setMessagePreferencesAsync(\cbdesk\eBaySDK\Trading\Types\SetMessagePreferencesRequestType $request)
     {
         return $this->callOperationAsync(
             'SetMessagePreferences',
             $request,
-            '\DTS\eBaySDK\Trading\Types\SetMessagePreferencesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\SetMessagePreferencesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetNotificationPreferencesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetNotificationPreferencesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\SetNotificationPreferencesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\SetNotificationPreferencesResponseType
      */
-    public function setNotificationPreferences(\DTS\eBaySDK\Trading\Types\SetNotificationPreferencesRequestType $request)
+    public function setNotificationPreferences(\cbdesk\eBaySDK\Trading\Types\SetNotificationPreferencesRequestType $request)
     {
         return $this->setNotificationPreferencesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetNotificationPreferencesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\SetNotificationPreferencesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function setNotificationPreferencesAsync(\DTS\eBaySDK\Trading\Types\SetNotificationPreferencesRequestType $request)
+    public function setNotificationPreferencesAsync(\cbdesk\eBaySDK\Trading\Types\SetNotificationPreferencesRequestType $request)
     {
         return $this->callOperationAsync(
             'SetNotificationPreferences',
             $request,
-            '\DTS\eBaySDK\Trading\Types\SetNotificationPreferencesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\SetNotificationPreferencesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetPromotionalSaleRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetPromotionalSaleResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\SetPromotionalSaleRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\SetPromotionalSaleResponseType
      */
-    public function setPromotionalSale(\DTS\eBaySDK\Trading\Types\SetPromotionalSaleRequestType $request)
+    public function setPromotionalSale(\cbdesk\eBaySDK\Trading\Types\SetPromotionalSaleRequestType $request)
     {
         return $this->setPromotionalSaleAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetPromotionalSaleRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\SetPromotionalSaleRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function setPromotionalSaleAsync(\DTS\eBaySDK\Trading\Types\SetPromotionalSaleRequestType $request)
+    public function setPromotionalSaleAsync(\cbdesk\eBaySDK\Trading\Types\SetPromotionalSaleRequestType $request)
     {
         return $this->callOperationAsync(
             'SetPromotionalSale',
             $request,
-            '\DTS\eBaySDK\Trading\Types\SetPromotionalSaleResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\SetPromotionalSaleResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetPromotionalSaleListingsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetPromotionalSaleListingsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\SetPromotionalSaleListingsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\SetPromotionalSaleListingsResponseType
      */
-    public function setPromotionalSaleListings(\DTS\eBaySDK\Trading\Types\SetPromotionalSaleListingsRequestType $request)
+    public function setPromotionalSaleListings(\cbdesk\eBaySDK\Trading\Types\SetPromotionalSaleListingsRequestType $request)
     {
         return $this->setPromotionalSaleListingsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetPromotionalSaleListingsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\SetPromotionalSaleListingsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function setPromotionalSaleListingsAsync(\DTS\eBaySDK\Trading\Types\SetPromotionalSaleListingsRequestType $request)
+    public function setPromotionalSaleListingsAsync(\cbdesk\eBaySDK\Trading\Types\SetPromotionalSaleListingsRequestType $request)
     {
         return $this->callOperationAsync(
             'SetPromotionalSaleListings',
             $request,
-            '\DTS\eBaySDK\Trading\Types\SetPromotionalSaleListingsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\SetPromotionalSaleListingsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetSellingManagerFeedbackOptionsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetSellingManagerFeedbackOptionsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\SetSellingManagerFeedbackOptionsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\SetSellingManagerFeedbackOptionsResponseType
      */
-    public function setSellingManagerFeedbackOptions(\DTS\eBaySDK\Trading\Types\SetSellingManagerFeedbackOptionsRequestType $request)
+    public function setSellingManagerFeedbackOptions(\cbdesk\eBaySDK\Trading\Types\SetSellingManagerFeedbackOptionsRequestType $request)
     {
         return $this->setSellingManagerFeedbackOptionsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetSellingManagerFeedbackOptionsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\SetSellingManagerFeedbackOptionsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function setSellingManagerFeedbackOptionsAsync(\DTS\eBaySDK\Trading\Types\SetSellingManagerFeedbackOptionsRequestType $request)
+    public function setSellingManagerFeedbackOptionsAsync(\cbdesk\eBaySDK\Trading\Types\SetSellingManagerFeedbackOptionsRequestType $request)
     {
         return $this->callOperationAsync(
             'SetSellingManagerFeedbackOptions',
             $request,
-            '\DTS\eBaySDK\Trading\Types\SetSellingManagerFeedbackOptionsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\SetSellingManagerFeedbackOptionsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleResponseType
      */
-    public function setSellingManagerItemAutomationRule(\DTS\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleRequestType $request)
+    public function setSellingManagerItemAutomationRule(\cbdesk\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleRequestType $request)
     {
         return $this->setSellingManagerItemAutomationRuleAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function setSellingManagerItemAutomationRuleAsync(\DTS\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleRequestType $request)
+    public function setSellingManagerItemAutomationRuleAsync(\cbdesk\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleRequestType $request)
     {
         return $this->callOperationAsync(
             'SetSellingManagerItemAutomationRule',
             $request,
-            '\DTS\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetSellingManagerTemplateAutomationRuleRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetSellingManagerTemplateAutomationRuleResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\SetSellingManagerTemplateAutomationRuleRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\SetSellingManagerTemplateAutomationRuleResponseType
      */
-    public function setSellingManagerTemplateAutomationRule(\DTS\eBaySDK\Trading\Types\SetSellingManagerTemplateAutomationRuleRequestType $request)
+    public function setSellingManagerTemplateAutomationRule(\cbdesk\eBaySDK\Trading\Types\SetSellingManagerTemplateAutomationRuleRequestType $request)
     {
         return $this->setSellingManagerTemplateAutomationRuleAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetSellingManagerTemplateAutomationRuleRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\SetSellingManagerTemplateAutomationRuleRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function setSellingManagerTemplateAutomationRuleAsync(\DTS\eBaySDK\Trading\Types\SetSellingManagerTemplateAutomationRuleRequestType $request)
+    public function setSellingManagerTemplateAutomationRuleAsync(\cbdesk\eBaySDK\Trading\Types\SetSellingManagerTemplateAutomationRuleRequestType $request)
     {
         return $this->callOperationAsync(
             'SetSellingManagerTemplateAutomationRule',
             $request,
-            '\DTS\eBaySDK\Trading\Types\SetSellingManagerTemplateAutomationRuleResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\SetSellingManagerTemplateAutomationRuleResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetShippingDiscountProfilesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetShippingDiscountProfilesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\SetShippingDiscountProfilesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\SetShippingDiscountProfilesResponseType
      */
-    public function setShippingDiscountProfiles(\DTS\eBaySDK\Trading\Types\SetShippingDiscountProfilesRequestType $request)
+    public function setShippingDiscountProfiles(\cbdesk\eBaySDK\Trading\Types\SetShippingDiscountProfilesRequestType $request)
     {
         return $this->setShippingDiscountProfilesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetShippingDiscountProfilesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\SetShippingDiscountProfilesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function setShippingDiscountProfilesAsync(\DTS\eBaySDK\Trading\Types\SetShippingDiscountProfilesRequestType $request)
+    public function setShippingDiscountProfilesAsync(\cbdesk\eBaySDK\Trading\Types\SetShippingDiscountProfilesRequestType $request)
     {
         return $this->callOperationAsync(
             'SetShippingDiscountProfiles',
             $request,
-            '\DTS\eBaySDK\Trading\Types\SetShippingDiscountProfilesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\SetShippingDiscountProfilesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetStoreRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetStoreResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\SetStoreRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\SetStoreResponseType
      */
-    public function setStore(\DTS\eBaySDK\Trading\Types\SetStoreRequestType $request)
+    public function setStore(\cbdesk\eBaySDK\Trading\Types\SetStoreRequestType $request)
     {
         return $this->setStoreAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetStoreRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\SetStoreRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function setStoreAsync(\DTS\eBaySDK\Trading\Types\SetStoreRequestType $request)
+    public function setStoreAsync(\cbdesk\eBaySDK\Trading\Types\SetStoreRequestType $request)
     {
         return $this->callOperationAsync(
             'SetStore',
             $request,
-            '\DTS\eBaySDK\Trading\Types\SetStoreResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\SetStoreResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetStoreCategoriesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetStoreCategoriesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\SetStoreCategoriesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\SetStoreCategoriesResponseType
      */
-    public function setStoreCategories(\DTS\eBaySDK\Trading\Types\SetStoreCategoriesRequestType $request)
+    public function setStoreCategories(\cbdesk\eBaySDK\Trading\Types\SetStoreCategoriesRequestType $request)
     {
         return $this->setStoreCategoriesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetStoreCategoriesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\SetStoreCategoriesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function setStoreCategoriesAsync(\DTS\eBaySDK\Trading\Types\SetStoreCategoriesRequestType $request)
+    public function setStoreCategoriesAsync(\cbdesk\eBaySDK\Trading\Types\SetStoreCategoriesRequestType $request)
     {
         return $this->callOperationAsync(
             'SetStoreCategories',
             $request,
-            '\DTS\eBaySDK\Trading\Types\SetStoreCategoriesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\SetStoreCategoriesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetStoreCustomPageRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetStoreCustomPageResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\SetStoreCustomPageRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\SetStoreCustomPageResponseType
      */
-    public function setStoreCustomPage(\DTS\eBaySDK\Trading\Types\SetStoreCustomPageRequestType $request)
+    public function setStoreCustomPage(\cbdesk\eBaySDK\Trading\Types\SetStoreCustomPageRequestType $request)
     {
         return $this->setStoreCustomPageAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetStoreCustomPageRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\SetStoreCustomPageRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function setStoreCustomPageAsync(\DTS\eBaySDK\Trading\Types\SetStoreCustomPageRequestType $request)
+    public function setStoreCustomPageAsync(\cbdesk\eBaySDK\Trading\Types\SetStoreCustomPageRequestType $request)
     {
         return $this->callOperationAsync(
             'SetStoreCustomPage',
             $request,
-            '\DTS\eBaySDK\Trading\Types\SetStoreCustomPageResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\SetStoreCustomPageResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetStorePreferencesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetStorePreferencesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\SetStorePreferencesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\SetStorePreferencesResponseType
      */
-    public function setStorePreferences(\DTS\eBaySDK\Trading\Types\SetStorePreferencesRequestType $request)
+    public function setStorePreferences(\cbdesk\eBaySDK\Trading\Types\SetStorePreferencesRequestType $request)
     {
         return $this->setStorePreferencesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetStorePreferencesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\SetStorePreferencesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function setStorePreferencesAsync(\DTS\eBaySDK\Trading\Types\SetStorePreferencesRequestType $request)
+    public function setStorePreferencesAsync(\cbdesk\eBaySDK\Trading\Types\SetStorePreferencesRequestType $request)
     {
         return $this->callOperationAsync(
             'SetStorePreferences',
             $request,
-            '\DTS\eBaySDK\Trading\Types\SetStorePreferencesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\SetStorePreferencesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetTaxTableRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetTaxTableResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\SetTaxTableRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\SetTaxTableResponseType
      */
-    public function setTaxTable(\DTS\eBaySDK\Trading\Types\SetTaxTableRequestType $request)
+    public function setTaxTable(\cbdesk\eBaySDK\Trading\Types\SetTaxTableRequestType $request)
     {
         return $this->setTaxTableAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetTaxTableRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\SetTaxTableRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function setTaxTableAsync(\DTS\eBaySDK\Trading\Types\SetTaxTableRequestType $request)
+    public function setTaxTableAsync(\cbdesk\eBaySDK\Trading\Types\SetTaxTableRequestType $request)
     {
         return $this->callOperationAsync(
             'SetTaxTable',
             $request,
-            '\DTS\eBaySDK\Trading\Types\SetTaxTableResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\SetTaxTableResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetUserNotesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetUserNotesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\SetUserNotesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\SetUserNotesResponseType
      */
-    public function setUserNotes(\DTS\eBaySDK\Trading\Types\SetUserNotesRequestType $request)
+    public function setUserNotes(\cbdesk\eBaySDK\Trading\Types\SetUserNotesRequestType $request)
     {
         return $this->setUserNotesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetUserNotesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\SetUserNotesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function setUserNotesAsync(\DTS\eBaySDK\Trading\Types\SetUserNotesRequestType $request)
+    public function setUserNotesAsync(\cbdesk\eBaySDK\Trading\Types\SetUserNotesRequestType $request)
     {
         return $this->callOperationAsync(
             'SetUserNotes',
             $request,
-            '\DTS\eBaySDK\Trading\Types\SetUserNotesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\SetUserNotesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetUserPreferencesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\SetUserPreferencesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\SetUserPreferencesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\SetUserPreferencesResponseType
      */
-    public function setUserPreferences(\DTS\eBaySDK\Trading\Types\SetUserPreferencesRequestType $request)
+    public function setUserPreferences(\cbdesk\eBaySDK\Trading\Types\SetUserPreferencesRequestType $request)
     {
         return $this->setUserPreferencesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\SetUserPreferencesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\SetUserPreferencesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function setUserPreferencesAsync(\DTS\eBaySDK\Trading\Types\SetUserPreferencesRequestType $request)
+    public function setUserPreferencesAsync(\cbdesk\eBaySDK\Trading\Types\SetUserPreferencesRequestType $request)
     {
         return $this->callOperationAsync(
             'SetUserPreferences',
             $request,
-            '\DTS\eBaySDK\Trading\Types\SetUserPreferencesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\SetUserPreferencesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\UploadSiteHostedPicturesRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\UploadSiteHostedPicturesResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\UploadSiteHostedPicturesRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\UploadSiteHostedPicturesResponseType
      */
-    public function uploadSiteHostedPictures(\DTS\eBaySDK\Trading\Types\UploadSiteHostedPicturesRequestType $request)
+    public function uploadSiteHostedPictures(\cbdesk\eBaySDK\Trading\Types\UploadSiteHostedPicturesRequestType $request)
     {
         return $this->uploadSiteHostedPicturesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\UploadSiteHostedPicturesRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\UploadSiteHostedPicturesRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function uploadSiteHostedPicturesAsync(\DTS\eBaySDK\Trading\Types\UploadSiteHostedPicturesRequestType $request)
+    public function uploadSiteHostedPicturesAsync(\cbdesk\eBaySDK\Trading\Types\UploadSiteHostedPicturesRequestType $request)
     {
         return $this->callOperationAsync(
             'UploadSiteHostedPictures',
             $request,
-            '\DTS\eBaySDK\Trading\Types\UploadSiteHostedPicturesResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\UploadSiteHostedPicturesResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ValidateChallengeInputRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\ValidateChallengeInputResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\ValidateChallengeInputRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\ValidateChallengeInputResponseType
      */
-    public function validateChallengeInput(\DTS\eBaySDK\Trading\Types\ValidateChallengeInputRequestType $request)
+    public function validateChallengeInput(\cbdesk\eBaySDK\Trading\Types\ValidateChallengeInputRequestType $request)
     {
         return $this->validateChallengeInputAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ValidateChallengeInputRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\ValidateChallengeInputRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function validateChallengeInputAsync(\DTS\eBaySDK\Trading\Types\ValidateChallengeInputRequestType $request)
+    public function validateChallengeInputAsync(\cbdesk\eBaySDK\Trading\Types\ValidateChallengeInputRequestType $request)
     {
         return $this->callOperationAsync(
             'ValidateChallengeInput',
             $request,
-            '\DTS\eBaySDK\Trading\Types\ValidateChallengeInputResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\ValidateChallengeInputResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ValidateTestUserRegistrationRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\ValidateTestUserRegistrationResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\ValidateTestUserRegistrationRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\ValidateTestUserRegistrationResponseType
      */
-    public function validateTestUserRegistration(\DTS\eBaySDK\Trading\Types\ValidateTestUserRegistrationRequestType $request)
+    public function validateTestUserRegistration(\cbdesk\eBaySDK\Trading\Types\ValidateTestUserRegistrationRequestType $request)
     {
         return $this->validateTestUserRegistrationAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\ValidateTestUserRegistrationRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\ValidateTestUserRegistrationRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function validateTestUserRegistrationAsync(\DTS\eBaySDK\Trading\Types\ValidateTestUserRegistrationRequestType $request)
+    public function validateTestUserRegistrationAsync(\cbdesk\eBaySDK\Trading\Types\ValidateTestUserRegistrationRequestType $request)
     {
         return $this->callOperationAsync(
             'ValidateTestUserRegistration',
             $request,
-            '\DTS\eBaySDK\Trading\Types\ValidateTestUserRegistrationResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\ValidateTestUserRegistrationResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\VeROReportItemsRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\VeROReportItemsResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\VeROReportItemsRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\VeROReportItemsResponseType
      */
-    public function veROReportItems(\DTS\eBaySDK\Trading\Types\VeROReportItemsRequestType $request)
+    public function veROReportItems(\cbdesk\eBaySDK\Trading\Types\VeROReportItemsRequestType $request)
     {
         return $this->veROReportItemsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\VeROReportItemsRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\VeROReportItemsRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function veROReportItemsAsync(\DTS\eBaySDK\Trading\Types\VeROReportItemsRequestType $request)
+    public function veROReportItemsAsync(\cbdesk\eBaySDK\Trading\Types\VeROReportItemsRequestType $request)
     {
         return $this->callOperationAsync(
             'VeROReportItems',
             $request,
-            '\DTS\eBaySDK\Trading\Types\VeROReportItemsResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\VeROReportItemsResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\VerifyAddFixedPriceItemRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\VerifyAddFixedPriceItemResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\VerifyAddFixedPriceItemRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\VerifyAddFixedPriceItemResponseType
      */
-    public function verifyAddFixedPriceItem(\DTS\eBaySDK\Trading\Types\VerifyAddFixedPriceItemRequestType $request)
+    public function verifyAddFixedPriceItem(\cbdesk\eBaySDK\Trading\Types\VerifyAddFixedPriceItemRequestType $request)
     {
         return $this->verifyAddFixedPriceItemAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\VerifyAddFixedPriceItemRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\VerifyAddFixedPriceItemRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function verifyAddFixedPriceItemAsync(\DTS\eBaySDK\Trading\Types\VerifyAddFixedPriceItemRequestType $request)
+    public function verifyAddFixedPriceItemAsync(\cbdesk\eBaySDK\Trading\Types\VerifyAddFixedPriceItemRequestType $request)
     {
         return $this->callOperationAsync(
             'VerifyAddFixedPriceItem',
             $request,
-            '\DTS\eBaySDK\Trading\Types\VerifyAddFixedPriceItemResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\VerifyAddFixedPriceItemResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\VerifyAddItemRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\VerifyAddItemResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\VerifyAddItemRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\VerifyAddItemResponseType
      */
-    public function verifyAddItem(\DTS\eBaySDK\Trading\Types\VerifyAddItemRequestType $request)
+    public function verifyAddItem(\cbdesk\eBaySDK\Trading\Types\VerifyAddItemRequestType $request)
     {
         return $this->verifyAddItemAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\VerifyAddItemRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\VerifyAddItemRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function verifyAddItemAsync(\DTS\eBaySDK\Trading\Types\VerifyAddItemRequestType $request)
+    public function verifyAddItemAsync(\cbdesk\eBaySDK\Trading\Types\VerifyAddItemRequestType $request)
     {
         return $this->callOperationAsync(
             'VerifyAddItem',
             $request,
-            '\DTS\eBaySDK\Trading\Types\VerifyAddItemResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\VerifyAddItemResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\VerifyAddSecondChanceItemRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\VerifyAddSecondChanceItemResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\VerifyAddSecondChanceItemRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\VerifyAddSecondChanceItemResponseType
      */
-    public function verifyAddSecondChanceItem(\DTS\eBaySDK\Trading\Types\VerifyAddSecondChanceItemRequestType $request)
+    public function verifyAddSecondChanceItem(\cbdesk\eBaySDK\Trading\Types\VerifyAddSecondChanceItemRequestType $request)
     {
         return $this->verifyAddSecondChanceItemAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\VerifyAddSecondChanceItemRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\VerifyAddSecondChanceItemRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function verifyAddSecondChanceItemAsync(\DTS\eBaySDK\Trading\Types\VerifyAddSecondChanceItemRequestType $request)
+    public function verifyAddSecondChanceItemAsync(\cbdesk\eBaySDK\Trading\Types\VerifyAddSecondChanceItemRequestType $request)
     {
         return $this->callOperationAsync(
             'VerifyAddSecondChanceItem',
             $request,
-            '\DTS\eBaySDK\Trading\Types\VerifyAddSecondChanceItemResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\VerifyAddSecondChanceItemResponseType'
         );
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\VerifyRelistItemRequestType $request
-     * @return \DTS\eBaySDK\Trading\Types\VerifyRelistItemResponseType
+     * @param \cbdesk\eBaySDK\Trading\Types\VerifyRelistItemRequestType $request
+     * @return \cbdesk\eBaySDK\Trading\Types\VerifyRelistItemResponseType
      */
-    public function verifyRelistItem(\DTS\eBaySDK\Trading\Types\VerifyRelistItemRequestType $request)
+    public function verifyRelistItem(\cbdesk\eBaySDK\Trading\Types\VerifyRelistItemRequestType $request)
     {
         return $this->verifyRelistItemAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Trading\Types\VerifyRelistItemRequestType $request
+     * @param \cbdesk\eBaySDK\Trading\Types\VerifyRelistItemRequestType $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function verifyRelistItemAsync(\DTS\eBaySDK\Trading\Types\VerifyRelistItemRequestType $request)
+    public function verifyRelistItemAsync(\cbdesk\eBaySDK\Trading\Types\VerifyRelistItemRequestType $request)
     {
         return $this->callOperationAsync(
             'VerifyRelistItem',
             $request,
-            '\DTS\eBaySDK\Trading\Types\VerifyRelistItemResponseType'
+            '\cbdesk\eBaySDK\Trading\Types\VerifyRelistItemResponseType'
         );
     }
 }

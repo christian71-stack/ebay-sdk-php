@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\HalfFinding\Enums;
+namespace cbdesk\eBaySDK\HalfFinding\Enums;
 
 class RentalDurationType
 {

@@ -8,25 +8,25 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Feedback\Types;
+namespace cbdesk\eBaySDK\Feedback\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Feedback\Types\DateRange $dateRange
+ * @property \cbdesk\eBaySDK\Feedback\Types\DateRange $dateRange
  * @property string $dateRangeEventType
  * @property string $shippingCostType
  * @property string $shippingDestinationType
  * @property string[] $shipToCountry
  * @property string[] $shippingService
  */
-class CreateDSRSummaryByShippingDetailRequest extends \DTS\eBaySDK\Feedback\Types\BaseServiceRequest
+class CreateDSRSummaryByShippingDetailRequest extends \cbdesk\eBaySDK\Feedback\Types\BaseServiceRequest
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'dateRange' => [
-            'type' => 'DTS\eBaySDK\Feedback\Types\DateRange',
+            'type' => 'cbdesk\eBaySDK\Feedback\Types\DateRange',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'dateRange'

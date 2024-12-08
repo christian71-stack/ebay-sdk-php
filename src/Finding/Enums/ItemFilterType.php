@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Finding\Enums;
+namespace cbdesk\eBaySDK\Finding\Enums;
 
 class ItemFilterType
 {

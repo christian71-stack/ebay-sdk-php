@@ -8,21 +8,21 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $ItemID
  * @property string $TransactionID
- * @property \DTS\eBaySDK\Trading\Types\FeedbackInfoType $FeedbackInfo
+ * @property \cbdesk\eBaySDK\Trading\Types\FeedbackInfoType $FeedbackInfo
  * @property boolean $Shipped
  * @property boolean $Paid
- * @property \DTS\eBaySDK\Trading\Enums\ListingTypeCodeType $ListingType
- * @property \DTS\eBaySDK\Trading\Types\ShipmentType $Shipment
+ * @property \cbdesk\eBaySDK\Trading\Enums\ListingTypeCodeType $ListingType
+ * @property \cbdesk\eBaySDK\Trading\Types\ShipmentType $Shipment
  * @property string $OrderID
  * @property string $OrderLineItemID
  */
-class CompleteSaleRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class CompleteSaleRequestType extends \cbdesk\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -41,7 +41,7 @@ class CompleteSaleRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequest
             'elementName' => 'TransactionID'
         ],
         'FeedbackInfo' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\FeedbackInfoType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\FeedbackInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FeedbackInfo'
@@ -65,7 +65,7 @@ class CompleteSaleRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequest
             'elementName' => 'ListingType'
         ],
         'Shipment' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ShipmentType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\ShipmentType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Shipment'

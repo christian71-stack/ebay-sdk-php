@@ -1,10 +1,10 @@
 <?php
-namespace DTS\eBaySDK\Metadata\Services;
+namespace cbdesk\eBaySDK\Metadata\Services;
 
 /**
  * Base class for the Metadata service.
  */
-class MetadataBaseService extends \DTS\eBaySDK\Services\BaseRestService
+class MetadataBaseService extends \cbdesk\eBaySDK\Services\BaseRestService
 {
     /**
      * @var array $endPoints The API endpoints.
@@ -44,7 +44,7 @@ class MetadataBaseService extends \DTS\eBaySDK\Services\BaseRestService
         return $definitions + [
             'apiVersion' => [
                 'valid' => ['string'],
-                'default' => \DTS\eBaySDK\Metadata\Services\MetadataService::API_VERSION,
+                'default' => \cbdesk\eBaySDK\Metadata\Services\MetadataService::API_VERSION,
                 'required' => true
             ],
             'authorization' => [

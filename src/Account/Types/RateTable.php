@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Account\Types;
+namespace cbdesk\eBaySDK\Account\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Account\Enums\CountryCodeEnum $countryCode
- * @property \DTS\eBaySDK\Account\Enums\ShippingOptionTypeEnum $locality
+ * @property \cbdesk\eBaySDK\Account\Enums\CountryCodeEnum $countryCode
+ * @property \cbdesk\eBaySDK\Account\Enums\ShippingOptionTypeEnum $locality
  * @property string $name
  * @property string $rateTableId
  */
-class RateTable extends \DTS\eBaySDK\Types\BaseType
+class RateTable extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

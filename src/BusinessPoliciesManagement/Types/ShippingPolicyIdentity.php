@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
+namespace cbdesk\eBaySDK\BusinessPoliciesManagement\Types;
 
 /**
  *
  * @property integer $shippingPolicyVersionId
  */
-class ShippingPolicyIdentity extends \DTS\eBaySDK\Types\BaseType
+class ShippingPolicyIdentity extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

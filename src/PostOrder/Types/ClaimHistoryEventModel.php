@@ -8,17 +8,17 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace cbdesk\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property string $action
- * @property \DTS\eBaySDK\PostOrder\Enums\UserPartyEnum $actor
- * @property \DTS\eBaySDK\PostOrder\Types\DateTime $date
+ * @property \cbdesk\eBaySDK\PostOrder\Enums\UserPartyEnum $actor
+ * @property \cbdesk\eBaySDK\PostOrder\Types\DateTime $date
  * @property string $description
- * @property \DTS\eBaySDK\PostOrder\Types\MoneyMovementEntries $moneyMovement
+ * @property \cbdesk\eBaySDK\PostOrder\Types\MoneyMovementEntries $moneyMovement
  */
-class ClaimHistoryEventModel extends \DTS\eBaySDK\Types\BaseType
+class ClaimHistoryEventModel extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -37,7 +37,7 @@ class ClaimHistoryEventModel extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'actor'
         ],
         'date' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'date'
@@ -49,7 +49,7 @@ class ClaimHistoryEventModel extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'description'
         ],
         'moneyMovement' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\MoneyMovementEntries',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\MoneyMovementEntries',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'moneyMovement'

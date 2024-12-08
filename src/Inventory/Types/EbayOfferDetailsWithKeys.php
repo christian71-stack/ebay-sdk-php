@@ -8,24 +8,24 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace cbdesk\eBaySDK\Inventory\Types;
 
 /**
  *
  * @property integer $availableQuantity
  * @property string $categoryId
- * @property \DTS\eBaySDK\Inventory\Enums\FormatTypeEnum $format
+ * @property \cbdesk\eBaySDK\Inventory\Enums\FormatTypeEnum $format
  * @property string $listingDescription
- * @property \DTS\eBaySDK\Inventory\Types\ListingPolicies $listingPolicies
- * @property \DTS\eBaySDK\Inventory\Enums\MarketplaceEnum $marketplaceId
+ * @property \cbdesk\eBaySDK\Inventory\Types\ListingPolicies $listingPolicies
+ * @property \cbdesk\eBaySDK\Inventory\Enums\MarketplaceEnum $marketplaceId
  * @property string $merchantLocationKey
- * @property \DTS\eBaySDK\Inventory\Types\PricingSummary $pricingSummary
+ * @property \cbdesk\eBaySDK\Inventory\Types\PricingSummary $pricingSummary
  * @property integer $quantityLimitPerBuyer
  * @property string $sku
  * @property string[] $storeCategoryNames
- * @property \DTS\eBaySDK\Inventory\Types\Tax $tax
+ * @property \cbdesk\eBaySDK\Inventory\Types\Tax $tax
  */
-class EbayOfferDetailsWithKeys extends \DTS\eBaySDK\Types\BaseType
+class EbayOfferDetailsWithKeys extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -56,7 +56,7 @@ class EbayOfferDetailsWithKeys extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'listingDescription'
         ],
         'listingPolicies' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\ListingPolicies',
+            'type' => 'cbdesk\eBaySDK\Inventory\Types\ListingPolicies',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'listingPolicies'
@@ -74,7 +74,7 @@ class EbayOfferDetailsWithKeys extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'merchantLocationKey'
         ],
         'pricingSummary' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\PricingSummary',
+            'type' => 'cbdesk\eBaySDK\Inventory\Types\PricingSummary',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'pricingSummary'
@@ -98,7 +98,7 @@ class EbayOfferDetailsWithKeys extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'storeCategoryNames'
         ],
         'tax' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\Tax',
+            'type' => 'cbdesk\eBaySDK\Inventory\Types\Tax',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'tax'

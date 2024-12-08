@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Order\Types;
+namespace cbdesk\eBaySDK\Order\Types;
 
 /**
  *
  * @property string $lineItemId
  * @property string $shippingOptionId
  */
-class UpdateShippingOption extends \DTS\eBaySDK\Types\BaseType
+class UpdateShippingOption extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

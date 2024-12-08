@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
@@ -22,28 +22,28 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property string $GlobalCategoryDescription
  * @property string $SiteDescription
  * @property integer $QuantitySold
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $SalePrice
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $TaxAmount
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $ShippingCost
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $TotalCost
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $SalePrice
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $TaxAmount
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $ShippingCost
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $TotalCost
  * @property \DateTime $PaymentClearedTime
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $InsuranceCost
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $InsuranceCost
  * @property integer $ListingSiteID
  * @property \DateTime $SaleTime
  * @property string $Memo
  * @property string $SecondDescription
  * @property string $FeeDescription
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $FeeAmount
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $FeeAmount
  * @property integer $SellingManagerSaleRecordID
  * @property string $BuyerPaymentTransactionNumber
- * @property \DTS\eBaySDK\MerchantData\Types\MerchantDataVariationType $Variation
+ * @property \cbdesk\eBaySDK\MerchantData\Types\MerchantDataVariationType $Variation
  * @property string $TaxCategory
- * @property \DTS\eBaySDK\MerchantData\Types\TaxesType $Taxes
- * @property \DTS\eBaySDK\MerchantData\Types\TransactionStatusType $Status
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $ActualShippingCost
- * @property \DTS\eBaySDK\MerchantData\Types\UnpaidItemType $UnpaidItem
+ * @property \cbdesk\eBaySDK\MerchantData\Types\TaxesType $Taxes
+ * @property \cbdesk\eBaySDK\MerchantData\Types\TransactionStatusType $Status
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $ActualShippingCost
+ * @property \cbdesk\eBaySDK\MerchantData\Types\UnpaidItemType $UnpaidItem
  */
-class OrderLineItemType extends \DTS\eBaySDK\Types\BaseType
+class OrderLineItemType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -110,25 +110,25 @@ class OrderLineItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'QuantitySold'
         ],
         'SalePrice' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SalePrice'
         ],
         'TaxAmount' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TaxAmount'
         ],
         'ShippingCost' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingCost'
         ],
         'TotalCost' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TotalCost'
@@ -140,7 +140,7 @@ class OrderLineItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'PaymentClearedTime'
         ],
         'InsuranceCost' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'InsuranceCost'
@@ -176,7 +176,7 @@ class OrderLineItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'FeeDescription'
         ],
         'FeeAmount' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FeeAmount'
@@ -194,7 +194,7 @@ class OrderLineItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'BuyerPaymentTransactionNumber'
         ],
         'Variation' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\MerchantDataVariationType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\MerchantDataVariationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Variation'
@@ -206,25 +206,25 @@ class OrderLineItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'TaxCategory'
         ],
         'Taxes' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\TaxesType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\TaxesType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Taxes'
         ],
         'Status' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\TransactionStatusType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\TransactionStatusType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Status'
         ],
         'ActualShippingCost' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ActualShippingCost'
         ],
         'UnpaidItem' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\UnpaidItemType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\UnpaidItemType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'UnpaidItem'

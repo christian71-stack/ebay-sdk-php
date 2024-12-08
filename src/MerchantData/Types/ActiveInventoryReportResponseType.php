@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\MerchantData\Types\SKUDetailsType[] $SKUDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Types\SKUDetailsType[] $SKUDetails
  */
-class ActiveInventoryReportResponseType extends \DTS\eBaySDK\MerchantData\Types\AbstractResponseType
+class ActiveInventoryReportResponseType extends \cbdesk\eBaySDK\MerchantData\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'SKUDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\SKUDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\SKUDetailsType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'SKUDetails'

@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $ItemID
- * @property \DTS\eBaySDK\Trading\Types\MemberMessageType $MemberMessage
+ * @property \cbdesk\eBaySDK\Trading\Types\MemberMessageType $MemberMessage
  */
-class AddMemberMessageRTQRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class AddMemberMessageRTQRequestType extends \cbdesk\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -28,7 +28,7 @@ class AddMemberMessageRTQRequestType extends \DTS\eBaySDK\Trading\Types\Abstract
             'elementName' => 'ItemID'
         ],
         'MemberMessage' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\MemberMessageType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\MemberMessageType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'MemberMessage'

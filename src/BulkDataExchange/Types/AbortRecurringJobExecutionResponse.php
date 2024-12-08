@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BulkDataExchange\Types;
+namespace cbdesk\eBaySDK\BulkDataExchange\Types;
 
 /**
  *
  */
-class AbortRecurringJobExecutionResponse extends \DTS\eBaySDK\BulkDataExchange\Types\BaseServiceResponse
+class AbortRecurringJobExecutionResponse extends \cbdesk\eBaySDK\BulkDataExchange\Types\BaseServiceResponse
 {
     /**
      * @var array Properties belonging to objects of this class.

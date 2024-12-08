@@ -8,21 +8,21 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Finding\Types;
+namespace cbdesk\eBaySDK\Finding\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Finding\Types\SearchItem[] $item
+ * @property \cbdesk\eBaySDK\Finding\Types\SearchItem[] $item
  * @property integer $count
  */
-class SearchResult extends \DTS\eBaySDK\Types\BaseType
+class SearchResult extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'item' => [
-            'type' => 'DTS\eBaySDK\Finding\Types\SearchItem',
+            'type' => 'cbdesk\eBaySDK\Finding\Types\SearchItem',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'item'

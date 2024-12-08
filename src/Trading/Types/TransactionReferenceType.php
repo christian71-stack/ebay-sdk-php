@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\TransactionReferenceCodeType $type
+ * @property \cbdesk\eBaySDK\Trading\Enums\TransactionReferenceCodeType $type
  */
-class TransactionReferenceType extends \DTS\eBaySDK\Types\StringType
+class TransactionReferenceType extends \cbdesk\eBaySDK\Types\StringType
 {
     /**
      * @var array Properties belonging to objects of this class.

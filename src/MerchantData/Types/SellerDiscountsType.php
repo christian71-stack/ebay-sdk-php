@@ -8,29 +8,29 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $OriginalItemPrice
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $OriginalItemShippingCost
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $OriginalItemPrice
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $OriginalItemShippingCost
  * @property string $OriginalShippingService
- * @property \DTS\eBaySDK\MerchantData\Types\SellerDiscountType[] $SellerDiscount
+ * @property \cbdesk\eBaySDK\MerchantData\Types\SellerDiscountType[] $SellerDiscount
  */
-class SellerDiscountsType extends \DTS\eBaySDK\Types\BaseType
+class SellerDiscountsType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'OriginalItemPrice' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'OriginalItemPrice'
         ],
         'OriginalItemShippingCost' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'OriginalItemShippingCost'
@@ -42,7 +42,7 @@ class SellerDiscountsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'OriginalShippingService'
         ],
         'SellerDiscount' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\SellerDiscountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\SellerDiscountType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'SellerDiscount'

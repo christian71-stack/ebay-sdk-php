@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\OrderTransactionType[] $OrderTransaction
+ * @property \cbdesk\eBaySDK\Trading\Types\OrderTransactionType[] $OrderTransaction
  */
-class OrderTransactionArrayType extends \DTS\eBaySDK\Types\BaseType
+class OrderTransactionArrayType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'OrderTransaction' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\OrderTransactionType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\OrderTransactionType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'OrderTransaction'

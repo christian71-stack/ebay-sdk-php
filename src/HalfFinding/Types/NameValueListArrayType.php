@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\HalfFinding\Types;
+namespace cbdesk\eBaySDK\HalfFinding\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\HalfFinding\Types\NameValueListType[] $nameValueList
+ * @property \cbdesk\eBaySDK\HalfFinding\Types\NameValueListType[] $nameValueList
  */
-class NameValueListArrayType extends \DTS\eBaySDK\Types\BaseType
+class NameValueListArrayType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'nameValueList' => [
-            'type' => 'DTS\eBaySDK\HalfFinding\Types\NameValueListType',
+            'type' => 'cbdesk\eBaySDK\HalfFinding\Types\NameValueListType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'nameValueList'

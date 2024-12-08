@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace cbdesk\eBaySDK\Inventory\Types;
 
 /**
  *
  * @property string $notes
- * @property \DTS\eBaySDK\Inventory\Types\ProductFamilyProperties $productFamilyProperties
- * @property \DTS\eBaySDK\Inventory\Types\ProductIdentifier $productIdentifier
+ * @property \cbdesk\eBaySDK\Inventory\Types\ProductFamilyProperties $productFamilyProperties
+ * @property \cbdesk\eBaySDK\Inventory\Types\ProductIdentifier $productIdentifier
  */
-class CompatibleProduct extends \DTS\eBaySDK\Types\BaseType
+class CompatibleProduct extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -29,13 +29,13 @@ class CompatibleProduct extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'notes'
         ],
         'productFamilyProperties' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\ProductFamilyProperties',
+            'type' => 'cbdesk\eBaySDK\Inventory\Types\ProductFamilyProperties',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'productFamilyProperties'
         ],
         'productIdentifier' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\ProductIdentifier',
+            'type' => 'cbdesk\eBaySDK\Inventory\Types\ProductIdentifier',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'productIdentifier'

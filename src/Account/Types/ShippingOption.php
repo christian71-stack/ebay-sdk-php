@@ -8,19 +8,19 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Account\Types;
+namespace cbdesk\eBaySDK\Account\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Account\Enums\ShippingCostTypeEnum $costType
- * @property \DTS\eBaySDK\Account\Types\Amount $insuranceFee
+ * @property \cbdesk\eBaySDK\Account\Enums\ShippingCostTypeEnum $costType
+ * @property \cbdesk\eBaySDK\Account\Types\Amount $insuranceFee
  * @property boolean $insuranceOffered
- * @property \DTS\eBaySDK\Account\Enums\ShippingOptionTypeEnum $optionType
- * @property \DTS\eBaySDK\Account\Types\Amount $packageHandlingCost
+ * @property \cbdesk\eBaySDK\Account\Enums\ShippingOptionTypeEnum $optionType
+ * @property \cbdesk\eBaySDK\Account\Types\Amount $packageHandlingCost
  * @property string $rateTableId
- * @property \DTS\eBaySDK\Account\Types\ShippingService[] $shippingServices
+ * @property \cbdesk\eBaySDK\Account\Types\ShippingService[] $shippingServices
  */
-class ShippingOption extends \DTS\eBaySDK\Types\BaseType
+class ShippingOption extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -33,7 +33,7 @@ class ShippingOption extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'costType'
         ],
         'insuranceFee' => [
-            'type' => 'DTS\eBaySDK\Account\Types\Amount',
+            'type' => 'cbdesk\eBaySDK\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'insuranceFee'
@@ -51,7 +51,7 @@ class ShippingOption extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'optionType'
         ],
         'packageHandlingCost' => [
-            'type' => 'DTS\eBaySDK\Account\Types\Amount',
+            'type' => 'cbdesk\eBaySDK\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'packageHandlingCost'
@@ -63,7 +63,7 @@ class ShippingOption extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'rateTableId'
         ],
         'shippingServices' => [
-            'type' => 'DTS\eBaySDK\Account\Types\ShippingService',
+            'type' => 'cbdesk\eBaySDK\Account\Types\ShippingService',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'shippingServices'

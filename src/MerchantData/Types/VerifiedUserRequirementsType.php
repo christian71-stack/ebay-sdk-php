@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property boolean $VerifiedUser
  * @property integer $MinimumFeedbackScore
  */
-class VerifiedUserRequirementsType extends \DTS\eBaySDK\Types\BaseType
+class VerifiedUserRequirementsType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

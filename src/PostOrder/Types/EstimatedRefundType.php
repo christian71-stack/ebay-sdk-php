@@ -8,36 +8,36 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace cbdesk\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Types\Amount $estimatedAmount
- * @property \DTS\eBaySDK\PostOrder\Types\Amount $maxAmount
- * @property \DTS\eBaySDK\PostOrder\Types\Amount $minAmount
- * @property \DTS\eBaySDK\PostOrder\Enums\RefundFeeTypeEnum $refundFeeType
+ * @property \cbdesk\eBaySDK\PostOrder\Types\Amount $estimatedAmount
+ * @property \cbdesk\eBaySDK\PostOrder\Types\Amount $maxAmount
+ * @property \cbdesk\eBaySDK\PostOrder\Types\Amount $minAmount
+ * @property \cbdesk\eBaySDK\PostOrder\Enums\RefundFeeTypeEnum $refundFeeType
  * @property string $restockingFeePercentage
  */
-class EstimatedRefundType extends \DTS\eBaySDK\Types\BaseType
+class EstimatedRefundType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'estimatedAmount' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'estimatedAmount'
         ],
         'maxAmount' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'maxAmount'
         ],
         'minAmount' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'minAmount'

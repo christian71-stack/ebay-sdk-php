@@ -8,22 +8,22 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ReturnManagement\Types;
+namespace cbdesk\eBaySDK\ReturnManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\ReturnManagement\Types\RefundDetailType $actualRefund
- * @property \DTS\eBaySDK\ReturnManagement\Enums\RefundStatusType $refundStatus
+ * @property \cbdesk\eBaySDK\ReturnManagement\Types\RefundDetailType $actualRefund
+ * @property \cbdesk\eBaySDK\ReturnManagement\Enums\RefundStatusType $refundStatus
  * @property \DateTime $refundDate
  */
-class ActualRefundDetailType extends \DTS\eBaySDK\Types\BaseType
+class ActualRefundDetailType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'actualRefund' => [
-            'type' => 'DTS\eBaySDK\ReturnManagement\Types\RefundDetailType',
+            'type' => 'cbdesk\eBaySDK\ReturnManagement\Types\RefundDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'actualRefund'

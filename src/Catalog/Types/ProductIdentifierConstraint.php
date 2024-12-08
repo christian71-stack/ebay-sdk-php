@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Catalog\Types;
+namespace cbdesk\eBaySDK\Catalog\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Catalog\Enums\AspectModeEnum[] $mode
+ * @property \cbdesk\eBaySDK\Catalog\Enums\AspectModeEnum[] $mode
  * @property boolean $required
  */
-class ProductIdentifierConstraint extends \DTS\eBaySDK\Types\BaseType
+class ProductIdentifierConstraint extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

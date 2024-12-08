@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace cbdesk\eBaySDK\PostOrder\Types;
 
 /**
  *
  */
-class GetReturnEstimateRestRequest extends \DTS\eBaySDK\PostOrder\Types\GetEstimateRequest
+class GetReturnEstimateRestRequest extends \cbdesk\eBaySDK\PostOrder\Types\GetEstimateRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

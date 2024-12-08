@@ -8,30 +8,30 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property integer $BidCount
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $BidIncrement
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $ConvertedCurrentPrice
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $CurrentPrice
- * @property \DTS\eBaySDK\MerchantData\Types\UserType $HighBidder
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $BidIncrement
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $ConvertedCurrentPrice
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $CurrentPrice
+ * @property \cbdesk\eBaySDK\MerchantData\Types\UserType $HighBidder
  * @property integer $LeadCount
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $MinimumToBid
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $MinimumToBid
  * @property integer $QuantitySold
  * @property boolean $ReserveMet
  * @property boolean $SecondChanceEligible
  * @property integer $BidderCount
- * @property \DTS\eBaySDK\MerchantData\Enums\ListingStatusCodeType $ListingStatus
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $FinalValueFee
- * @property \DTS\eBaySDK\MerchantData\Types\PromotionalSaleDetailsType $PromotionalSaleDetails
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\ListingStatusCodeType $ListingStatus
+ * @property \cbdesk\eBaySDK\MerchantData\Types\AmountType $FinalValueFee
+ * @property \cbdesk\eBaySDK\MerchantData\Types\PromotionalSaleDetailsType $PromotionalSaleDetails
  * @property boolean $AdminEnded
  * @property boolean $SoldAsBin
  * @property integer $QuantitySoldByPickupInStore
- * @property \DTS\eBaySDK\MerchantData\Types\SuggestedBidValueType $SuggestedBidValues
+ * @property \cbdesk\eBaySDK\MerchantData\Types\SuggestedBidValueType $SuggestedBidValues
  */
-class SellingStatusType extends \DTS\eBaySDK\Types\BaseType
+class SellingStatusType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -44,25 +44,25 @@ class SellingStatusType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'BidCount'
         ],
         'BidIncrement' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BidIncrement'
         ],
         'ConvertedCurrentPrice' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ConvertedCurrentPrice'
         ],
         'CurrentPrice' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'CurrentPrice'
         ],
         'HighBidder' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\UserType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\UserType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'HighBidder'
@@ -74,7 +74,7 @@ class SellingStatusType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'LeadCount'
         ],
         'MinimumToBid' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'MinimumToBid'
@@ -110,13 +110,13 @@ class SellingStatusType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ListingStatus'
         ],
         'FinalValueFee' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FinalValueFee'
         ],
         'PromotionalSaleDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\PromotionalSaleDetailsType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\PromotionalSaleDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PromotionalSaleDetails'
@@ -140,7 +140,7 @@ class SellingStatusType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'QuantitySoldByPickupInStore'
         ],
         'SuggestedBidValues' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\SuggestedBidValueType',
+            'type' => 'cbdesk\eBaySDK\MerchantData\Types\SuggestedBidValueType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SuggestedBidValues'

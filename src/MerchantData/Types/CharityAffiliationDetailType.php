@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property string $CharityID
- * @property \DTS\eBaySDK\MerchantData\Enums\CharityAffiliationTypeCodeType $AffiliationType
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\CharityAffiliationTypeCodeType $AffiliationType
  * @property \DateTime $LastUsedTime
  */
-class CharityAffiliationDetailType extends \DTS\eBaySDK\Types\BaseType
+class CharityAffiliationDetailType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

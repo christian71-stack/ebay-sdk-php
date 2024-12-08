@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $VendorName
  * @property string $VendorContactInfo
  */
-class SellingManagerVendorDetailsType extends \DTS\eBaySDK\Types\BaseType
+class SellingManagerVendorDetailsType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

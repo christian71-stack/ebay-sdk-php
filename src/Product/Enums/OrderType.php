@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Product\Enums;
+namespace cbdesk\eBaySDK\Product\Enums;
 
 class OrderType
 {

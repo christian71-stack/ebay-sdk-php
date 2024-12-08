@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace cbdesk\eBaySDK\Marketing\Types;
 
 /**
  *
@@ -16,7 +16,7 @@ namespace DTS\eBaySDK\Marketing\Types;
  * @property string $offset
  * @property string $report_task_statuses
  */
-class GetReportTasksRestRequest extends \DTS\eBaySDK\Types\BaseType
+class GetReportTasksRestRequest extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

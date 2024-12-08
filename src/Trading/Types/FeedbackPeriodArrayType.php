@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\FeedbackPeriodType[] $FeedbackPeriod
+ * @property \cbdesk\eBaySDK\Trading\Types\FeedbackPeriodType[] $FeedbackPeriod
  */
-class FeedbackPeriodArrayType extends \DTS\eBaySDK\Types\BaseType
+class FeedbackPeriodArrayType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'FeedbackPeriod' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\FeedbackPeriodType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\FeedbackPeriodType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'FeedbackPeriod'

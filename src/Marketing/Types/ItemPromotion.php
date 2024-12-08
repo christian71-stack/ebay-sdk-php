@@ -8,22 +8,22 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace cbdesk\eBaySDK\Marketing\Types;
 
 /**
  *
  * @property string $description
- * @property \DTS\eBaySDK\Marketing\Types\DiscountRule[] $discountRules
+ * @property \cbdesk\eBaySDK\Marketing\Types\DiscountRule[] $discountRules
  * @property string $endDate
- * @property \DTS\eBaySDK\Marketing\Types\InventoryCriterion $inventoryCriterion
- * @property \DTS\eBaySDK\Marketing\Enums\MarketplaceIdEnum $marketplaceId
+ * @property \cbdesk\eBaySDK\Marketing\Types\InventoryCriterion $inventoryCriterion
+ * @property \cbdesk\eBaySDK\Marketing\Enums\MarketplaceIdEnum $marketplaceId
  * @property string $name
- * @property \DTS\eBaySDK\Marketing\Enums\PromotionPriorityEnum $priority
+ * @property \cbdesk\eBaySDK\Marketing\Enums\PromotionPriorityEnum $priority
  * @property string $promotionImageUrl
- * @property \DTS\eBaySDK\Marketing\Enums\PromotionStatusEnum $promotionStatus
+ * @property \cbdesk\eBaySDK\Marketing\Enums\PromotionStatusEnum $promotionStatus
  * @property string $startDate
  */
-class ItemPromotion extends \DTS\eBaySDK\Types\BaseType
+class ItemPromotion extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -36,7 +36,7 @@ class ItemPromotion extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'description'
         ],
         'discountRules' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\DiscountRule',
+            'type' => 'cbdesk\eBaySDK\Marketing\Types\DiscountRule',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'discountRules'
@@ -48,7 +48,7 @@ class ItemPromotion extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'endDate'
         ],
         'inventoryCriterion' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\InventoryCriterion',
+            'type' => 'cbdesk\eBaySDK\Marketing\Types\InventoryCriterion',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'inventoryCriterion'

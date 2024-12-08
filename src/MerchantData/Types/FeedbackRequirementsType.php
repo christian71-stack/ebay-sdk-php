@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
  */
-class FeedbackRequirementsType extends \DTS\eBaySDK\Types\BooleanType
+class FeedbackRequirementsType extends \cbdesk\eBaySDK\Types\BooleanType
 {
     /**
      * @var array Properties belonging to objects of this class.

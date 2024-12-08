@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace cbdesk\eBaySDK\Marketing\Types;
 
 /**
  *
  * @property string $adId
- * @property \DTS\eBaySDK\Marketing\Types\ErrorDetailV3[] $errors
+ * @property \cbdesk\eBaySDK\Marketing\Types\ErrorDetailV3[] $errors
  * @property string $listingId
  * @property integer $statusCode
  */
-class DeleteAdResponse extends \DTS\eBaySDK\Types\BaseType
+class DeleteAdResponse extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -30,7 +30,7 @@ class DeleteAdResponse extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'adId'
         ],
         'errors' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\ErrorDetailV3',
+            'type' => 'cbdesk\eBaySDK\Marketing\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'

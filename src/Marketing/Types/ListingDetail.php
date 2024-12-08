@@ -8,11 +8,11 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace cbdesk\eBaySDK\Marketing\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Marketing\Types\Amount $currentPrice
+ * @property \cbdesk\eBaySDK\Marketing\Types\Amount $currentPrice
  * @property boolean $freeShipping
  * @property string $inventoryReferenceId
  * @property string $inventoryReferenceType
@@ -24,14 +24,14 @@ namespace DTS\eBaySDK\Marketing\Types;
  * @property string $storeCategoryId
  * @property string $title
  */
-class ListingDetail extends \DTS\eBaySDK\Types\BaseType
+class ListingDetail extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'currentPrice' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\Amount',
+            'type' => 'cbdesk\eBaySDK\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'currentPrice'

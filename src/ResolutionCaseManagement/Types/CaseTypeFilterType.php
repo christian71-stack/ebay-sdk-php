@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ResolutionCaseManagement\Types;
+namespace cbdesk\eBaySDK\ResolutionCaseManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Enums\CaseType[] $caseType
+ * @property \cbdesk\eBaySDK\ResolutionCaseManagement\Enums\CaseType[] $caseType
  */
-class CaseTypeFilterType extends \DTS\eBaySDK\Types\BaseType
+class CaseTypeFilterType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

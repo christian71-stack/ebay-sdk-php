@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\AutomatedLeaveFeedbackEventCodeType $AutomatedLeaveFeedbackEvent
- * @property \DTS\eBaySDK\Trading\Types\FeedbackCommentArrayType $StoredComments
+ * @property \cbdesk\eBaySDK\Trading\Enums\AutomatedLeaveFeedbackEventCodeType $AutomatedLeaveFeedbackEvent
+ * @property \cbdesk\eBaySDK\Trading\Types\FeedbackCommentArrayType $StoredComments
  */
-class SetSellingManagerFeedbackOptionsRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class SetSellingManagerFeedbackOptionsRequestType extends \cbdesk\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -28,7 +28,7 @@ class SetSellingManagerFeedbackOptionsRequestType extends \DTS\eBaySDK\Trading\T
             'elementName' => 'AutomatedLeaveFeedbackEvent'
         ],
         'StoredComments' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\FeedbackCommentArrayType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\FeedbackCommentArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'StoredComments'

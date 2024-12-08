@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
+namespace cbdesk\eBaySDK\BusinessPoliciesManagement\Types;
 
 /**
  *
  * @property string $name
  */
-class ErrorParameter extends \DTS\eBaySDK\Types\StringType
+class ErrorParameter extends \cbdesk\eBaySDK\Types\StringType
 {
     /**
      * @var array Properties belonging to objects of this class.

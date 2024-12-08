@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace cbdesk\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property integer $Count
- * @property \DTS\eBaySDK\MerchantData\Enums\PeriodCodeType $Period
+ * @property \cbdesk\eBaySDK\MerchantData\Enums\PeriodCodeType $Period
  */
-class MaximumUnpaidItemStrikesInfoType extends \DTS\eBaySDK\Types\BaseType
+class MaximumUnpaidItemStrikesInfoType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

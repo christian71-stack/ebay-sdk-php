@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BulkDataExchange\Types;
+namespace cbdesk\eBaySDK\BulkDataExchange\Types;
 
 /**
  *
@@ -16,12 +16,12 @@ namespace DTS\eBaySDK\BulkDataExchange\Types;
  * @property \DateTime $creationTime
  * @property integer $frequencyInMinutes
  * @property string $downloadJobType
- * @property \DTS\eBaySDK\BulkDataExchange\Enums\RecurringJobStatus $jobStatus
- * @property \DTS\eBaySDK\BulkDataExchange\Types\MonthlyRecurrence $monthlyRecurrence
- * @property \DTS\eBaySDK\BulkDataExchange\Types\WeeklyRecurrence $weeklyRecurrence
- * @property \DTS\eBaySDK\BulkDataExchange\Types\DailyRecurrence $dailyRecurrence
+ * @property \cbdesk\eBaySDK\BulkDataExchange\Enums\RecurringJobStatus $jobStatus
+ * @property \cbdesk\eBaySDK\BulkDataExchange\Types\MonthlyRecurrence $monthlyRecurrence
+ * @property \cbdesk\eBaySDK\BulkDataExchange\Types\WeeklyRecurrence $weeklyRecurrence
+ * @property \cbdesk\eBaySDK\BulkDataExchange\Types\DailyRecurrence $dailyRecurrence
  */
-class RecurringJobDetail extends \DTS\eBaySDK\Types\BaseType
+class RecurringJobDetail extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -58,19 +58,19 @@ class RecurringJobDetail extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'jobStatus'
         ],
         'monthlyRecurrence' => [
-            'type' => 'DTS\eBaySDK\BulkDataExchange\Types\MonthlyRecurrence',
+            'type' => 'cbdesk\eBaySDK\BulkDataExchange\Types\MonthlyRecurrence',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'monthlyRecurrence'
         ],
         'weeklyRecurrence' => [
-            'type' => 'DTS\eBaySDK\BulkDataExchange\Types\WeeklyRecurrence',
+            'type' => 'cbdesk\eBaySDK\BulkDataExchange\Types\WeeklyRecurrence',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'weeklyRecurrence'
         ],
         'dailyRecurrence' => [
-            'type' => 'DTS\eBaySDK\BulkDataExchange\Types\DailyRecurrence',
+            'type' => 'cbdesk\eBaySDK\BulkDataExchange\Types\DailyRecurrence',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'dailyRecurrence'

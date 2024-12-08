@@ -8,29 +8,29 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ResolutionCaseManagement\Types;
+namespace cbdesk\eBaySDK\ResolutionCaseManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\CaseIdType $caseId
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\Address $returnAddress
+ * @property \cbdesk\eBaySDK\ResolutionCaseManagement\Types\CaseIdType $caseId
+ * @property \cbdesk\eBaySDK\ResolutionCaseManagement\Types\Address $returnAddress
  * @property string $returnMerchandiseAuthorization
  * @property string $additionalReturnInstructions
  */
-class OfferRefundUponReturnRequest extends \DTS\eBaySDK\ResolutionCaseManagement\Types\BaseRequest
+class OfferRefundUponReturnRequest extends \cbdesk\eBaySDK\ResolutionCaseManagement\Types\BaseRequest
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'caseId' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\CaseIdType',
+            'type' => 'cbdesk\eBaySDK\ResolutionCaseManagement\Types\CaseIdType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'caseId'
         ],
         'returnAddress' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\Address',
+            'type' => 'cbdesk\eBaySDK\ResolutionCaseManagement\Types\Address',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnAddress'

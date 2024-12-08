@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Enums;
+namespace cbdesk\eBaySDK\Marketing\Enums;
 
 class InventoryReferenceTypeEnum
 {

@@ -8,27 +8,27 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ResolutionCaseManagement\Types;
+namespace cbdesk\eBaySDK\ResolutionCaseManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\CaseArrayType $cases
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\PaginationOutput $paginationOutput
+ * @property \cbdesk\eBaySDK\ResolutionCaseManagement\Types\CaseArrayType $cases
+ * @property \cbdesk\eBaySDK\ResolutionCaseManagement\Types\PaginationOutput $paginationOutput
  */
-class GetUserCasesResponse extends \DTS\eBaySDK\ResolutionCaseManagement\Types\BaseResponse
+class GetUserCasesResponse extends \cbdesk\eBaySDK\ResolutionCaseManagement\Types\BaseResponse
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'cases' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\CaseArrayType',
+            'type' => 'cbdesk\eBaySDK\ResolutionCaseManagement\Types\CaseArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'cases'
         ],
         'paginationOutput' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\PaginationOutput',
+            'type' => 'cbdesk\eBaySDK\ResolutionCaseManagement\Types\PaginationOutput',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'paginationOutput'

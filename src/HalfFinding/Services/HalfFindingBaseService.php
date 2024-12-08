@@ -1,10 +1,10 @@
 <?php
-namespace DTS\eBaySDK\HalfFinding\Services;
+namespace cbdesk\eBaySDK\HalfFinding\Services;
 
 /**
  * Base class for the HalfFinding service.
  */
-class HalfFindingBaseService extends \DTS\eBaySDK\Services\BaseService
+class HalfFindingBaseService extends \cbdesk\eBaySDK\Services\BaseService
 {
     /**
      * HTTP header constant. The API version your application supports.
@@ -46,7 +46,7 @@ class HalfFindingBaseService extends \DTS\eBaySDK\Services\BaseService
         return $definitions + [
             'apiVersion' => [
                 'valid' => ['string'],
-                'default' => \DTS\eBaySDK\HalfFinding\Services\HalfFindingService::API_VERSION
+                'default' => \cbdesk\eBaySDK\HalfFinding\Services\HalfFindingService::API_VERSION
             ],
             'globalId' => [
                 'valid' => ['string']

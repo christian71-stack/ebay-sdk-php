@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
  */
-class CrossBorderTradeAustraliaEnabledDefinitionType extends \DTS\eBaySDK\Types\BaseType
+class CrossBorderTradeAustraliaEnabledDefinitionType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

@@ -8,27 +8,27 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace cbdesk\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Types\RuleActionDataDetailType[] $actionData
- * @property \DTS\eBaySDK\PostOrder\Types\RuleActionDataType $actionDataType
+ * @property \cbdesk\eBaySDK\PostOrder\Types\RuleActionDataDetailType[] $actionData
+ * @property \cbdesk\eBaySDK\PostOrder\Types\RuleActionDataType $actionDataType
  */
-class RuleActionInputType extends \DTS\eBaySDK\Types\BaseType
+class RuleActionInputType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'actionData' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\RuleActionDataDetailType',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\RuleActionDataDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'actionData'
         ],
         'actionDataType' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\RuleActionDataType',
+            'type' => 'cbdesk\eBaySDK\PostOrder\Types\RuleActionDataType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'actionDataType'

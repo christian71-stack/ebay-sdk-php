@@ -8,17 +8,17 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\RelatedItemsManagement\Types;
+namespace cbdesk\eBaySDK\RelatedItemsManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\RelatedItemsManagement\Enums\AckValue $ack
- * @property \DTS\eBaySDK\RelatedItemsManagement\Types\ErrorMessage $errorMessage
+ * @property \cbdesk\eBaySDK\RelatedItemsManagement\Enums\AckValue $ack
+ * @property \cbdesk\eBaySDK\RelatedItemsManagement\Types\ErrorMessage $errorMessage
  * @property string $version
  * @property \DateTime $timestamp
- * @property \DTS\eBaySDK\RelatedItemsManagement\Types\ExtensionType[] $extension
+ * @property \cbdesk\eBaySDK\RelatedItemsManagement\Types\ExtensionType[] $extension
  */
-class BaseResponse extends \DTS\eBaySDK\Types\BaseType
+class BaseResponse extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -31,7 +31,7 @@ class BaseResponse extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ack'
         ],
         'errorMessage' => [
-            'type' => 'DTS\eBaySDK\RelatedItemsManagement\Types\ErrorMessage',
+            'type' => 'cbdesk\eBaySDK\RelatedItemsManagement\Types\ErrorMessage',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'errorMessage'
@@ -49,7 +49,7 @@ class BaseResponse extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'timestamp'
         ],
         'extension' => [
-            'type' => 'DTS\eBaySDK\RelatedItemsManagement\Types\ExtensionType',
+            'type' => 'cbdesk\eBaySDK\RelatedItemsManagement\Types\ExtensionType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'extension'

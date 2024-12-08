@@ -8,19 +8,19 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\TaxTypeCodeType $Imposition
- * @property \DTS\eBaySDK\Trading\Enums\TaxDescriptionCodeType $TaxDescription
- * @property \DTS\eBaySDK\Trading\Types\AmountType $TaxAmount
- * @property \DTS\eBaySDK\Trading\Types\AmountType $TaxOnSubtotalAmount
- * @property \DTS\eBaySDK\Trading\Types\AmountType $TaxOnShippingAmount
- * @property \DTS\eBaySDK\Trading\Types\AmountType $TaxOnHandlingAmount
+ * @property \cbdesk\eBaySDK\Trading\Enums\TaxTypeCodeType $Imposition
+ * @property \cbdesk\eBaySDK\Trading\Enums\TaxDescriptionCodeType $TaxDescription
+ * @property \cbdesk\eBaySDK\Trading\Types\AmountType $TaxAmount
+ * @property \cbdesk\eBaySDK\Trading\Types\AmountType $TaxOnSubtotalAmount
+ * @property \cbdesk\eBaySDK\Trading\Types\AmountType $TaxOnShippingAmount
+ * @property \cbdesk\eBaySDK\Trading\Types\AmountType $TaxOnHandlingAmount
  * @property string $TaxCode
  */
-class TaxDetailsType extends \DTS\eBaySDK\Types\BaseType
+class TaxDetailsType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -39,25 +39,25 @@ class TaxDetailsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'TaxDescription'
         ],
         'TaxAmount' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TaxAmount'
         ],
         'TaxOnSubtotalAmount' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TaxOnSubtotalAmount'
         ],
         'TaxOnShippingAmount' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TaxOnShippingAmount'
         ],
         'TaxOnHandlingAmount' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TaxOnHandlingAmount'

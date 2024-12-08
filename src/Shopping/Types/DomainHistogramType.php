@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Shopping\Types;
+namespace cbdesk\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Shopping\Types\HistogramEntryType[] $Domain
+ * @property \cbdesk\eBaySDK\Shopping\Types\HistogramEntryType[] $Domain
  */
-class DomainHistogramType extends \DTS\eBaySDK\Types\BaseType
+class DomainHistogramType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'Domain' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\HistogramEntryType',
+            'type' => 'cbdesk\eBaySDK\Shopping\Types\HistogramEntryType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'Domain'

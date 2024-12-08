@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
+namespace cbdesk\eBaySDK\BusinessPoliciesManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\BusinessPoliciesManagement\Types\ShippingPolicyInfo $shippingPolicyInfo
+ * @property \cbdesk\eBaySDK\BusinessPoliciesManagement\Types\ShippingPolicyInfo $shippingPolicyInfo
  */
-class ShippingPolicyProfile extends \DTS\eBaySDK\BusinessPoliciesManagement\Types\SellerProfile
+class ShippingPolicyProfile extends \cbdesk\eBaySDK\BusinessPoliciesManagement\Types\SellerProfile
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'shippingPolicyInfo' => [
-            'type' => 'DTS\eBaySDK\BusinessPoliciesManagement\Types\ShippingPolicyInfo',
+            'type' => 'cbdesk\eBaySDK\BusinessPoliciesManagement\Types\ShippingPolicyInfo',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingPolicyInfo'

@@ -8,26 +8,26 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\FeedbackDetailArrayType $FeedbackDetailArray
+ * @property \cbdesk\eBaySDK\Trading\Types\FeedbackDetailArrayType $FeedbackDetailArray
  * @property integer $FeedbackDetailItemTotal
- * @property \DTS\eBaySDK\Trading\Types\FeedbackSummaryType $FeedbackSummary
+ * @property \cbdesk\eBaySDK\Trading\Types\FeedbackSummaryType $FeedbackSummary
  * @property integer $FeedbackScore
- * @property \DTS\eBaySDK\Trading\Types\PaginationResultType $PaginationResult
+ * @property \cbdesk\eBaySDK\Trading\Types\PaginationResultType $PaginationResult
  * @property integer $EntriesPerPage
  * @property integer $PageNumber
  */
-class GetFeedbackResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
+class GetFeedbackResponseType extends \cbdesk\eBaySDK\Trading\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'FeedbackDetailArray' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\FeedbackDetailArrayType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\FeedbackDetailArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FeedbackDetailArray'
@@ -39,7 +39,7 @@ class GetFeedbackResponseType extends \DTS\eBaySDK\Trading\Types\AbstractRespons
             'elementName' => 'FeedbackDetailItemTotal'
         ],
         'FeedbackSummary' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\FeedbackSummaryType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\FeedbackSummaryType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FeedbackSummary'
@@ -51,7 +51,7 @@ class GetFeedbackResponseType extends \DTS\eBaySDK\Trading\Types\AbstractRespons
             'elementName' => 'FeedbackScore'
         ],
         'PaginationResult' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\PaginationResultType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\PaginationResultType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PaginationResult'

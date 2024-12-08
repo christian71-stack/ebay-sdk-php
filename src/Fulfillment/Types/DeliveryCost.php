@@ -8,41 +8,41 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Fulfillment\Types;
+namespace cbdesk\eBaySDK\Fulfillment\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Fulfillment\Types\Amount $importCharges
- * @property \DTS\eBaySDK\Fulfillment\Types\Amount $shippingCost
- * @property \DTS\eBaySDK\Fulfillment\Types\Amount $shippingIntermediationFee
- * @property \DTS\eBaySDK\Fulfillment\Types\Amount $discountAmount
+ * @property \cbdesk\eBaySDK\Fulfillment\Types\Amount $importCharges
+ * @property \cbdesk\eBaySDK\Fulfillment\Types\Amount $shippingCost
+ * @property \cbdesk\eBaySDK\Fulfillment\Types\Amount $shippingIntermediationFee
+ * @property \cbdesk\eBaySDK\Fulfillment\Types\Amount $discountAmount
  */
-class DeliveryCost extends \DTS\eBaySDK\Types\BaseType
+class DeliveryCost extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'importCharges' => [
-            'type' => 'DTS\eBaySDK\Fulfillment\Types\Amount',
+            'type' => 'cbdesk\eBaySDK\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'importCharges'
         ],
         'shippingCost' => [
-            'type' => 'DTS\eBaySDK\Fulfillment\Types\Amount',
+            'type' => 'cbdesk\eBaySDK\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingCost'
         ],
         'shippingIntermediationFee' => [
-            'type' => 'DTS\eBaySDK\Fulfillment\Types\Amount',
+            'type' => 'cbdesk\eBaySDK\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingIntermediationFee'
         ],
         'discountAmount' => [
-            'type' => 'DTS\eBaySDK\Fulfillment\Types\Amount',
+            'type' => 'cbdesk\eBaySDK\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'discountAmount'

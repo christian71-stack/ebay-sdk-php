@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace cbdesk\eBaySDK\Trading\Types;
 
 /**
  *
  * @property \DateTime $ExpectedReleaseDate
- * @property \DTS\eBaySDK\Trading\Types\RequiredSellerActionArrayType $RequiredSellerActionArray
+ * @property \cbdesk\eBaySDK\Trading\Types\RequiredSellerActionArrayType $RequiredSellerActionArray
  * @property integer $NumOfReqSellerActions
- * @property \DTS\eBaySDK\Trading\Enums\PaymentHoldReasonCodeType $PaymentHoldReason
+ * @property \cbdesk\eBaySDK\Trading\Enums\PaymentHoldReasonCodeType $PaymentHoldReason
  */
-class PaymentHoldDetailType extends \DTS\eBaySDK\Types\BaseType
+class PaymentHoldDetailType extends \cbdesk\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -30,7 +30,7 @@ class PaymentHoldDetailType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ExpectedReleaseDate'
         ],
         'RequiredSellerActionArray' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\RequiredSellerActionArrayType',
+            'type' => 'cbdesk\eBaySDK\Trading\Types\RequiredSellerActionArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'RequiredSellerActionArray'

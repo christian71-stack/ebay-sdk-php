@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Shopping\Types;
+namespace cbdesk\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Shopping\Enums\ProductIDCodeType $type
+ * @property \cbdesk\eBaySDK\Shopping\Enums\ProductIDCodeType $type
  */
-class ProductIDType extends \DTS\eBaySDK\Types\StringType
+class ProductIDType extends \cbdesk\eBaySDK\Types\StringType
 {
     /**
      * @var array Properties belonging to objects of this class.
