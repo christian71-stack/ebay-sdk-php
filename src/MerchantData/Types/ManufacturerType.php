@@ -40,11 +40,11 @@ class ManufacturerType extends \cbdesk\eBaySDK\Types\BaseType
             'attribute' => false,
             'elementName' => 'CompanyName'
         ],
-        'County' => [
+        'Country' => [
             'type' => 'string',
             'repeatable' => false,
             'attribute' => false,
-            'elementName' => 'County'
+            'elementName' => 'Country'
         ],
         'Email' => [
             'type' => 'string',
